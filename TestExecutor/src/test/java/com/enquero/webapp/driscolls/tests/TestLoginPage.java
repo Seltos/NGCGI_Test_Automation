@@ -1,12 +1,14 @@
 package com.enquero.webapp.driscolls.tests;
 
 import com.aventstack.extentreports.Status;
+import com.enquero.TestListener.AllureExtentTestNGListener;
+import com.enquero.TestListener.Retry;
 import com.enquero.Testlogs.GenerateLogs;
 import com.enquero.datafactory.DataFactory.TestDataFactory;
 import com.enquero.datafactory.xlsfile.ReadXlsFile;
 import com.enquero.driverfactory.web.WebDriverFactory;
 import com.enquero.reporter.ExtentTestReporter;
-import org.apache.log4j.Level;
+import io.qameta.allure.*;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -14,6 +16,9 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Iterator;
+
+@Epic("Regression Tests")
+@Feature("TestLogin Page Scenarios")
 
 public class TestLoginPage {
 
@@ -36,15 +41,30 @@ public class TestLoginPage {
         logger.info(Thread.currentThread().getName()+" ************* Execution Started *************");
     }
 
-    /*@Epic("first test case")
+    @Test(dataProvider="getTestData",priority = 1)
+    @Severity(SeverityLevel.MINOR)
+    @Description("Test Case description: verify Javscript page")
+    @Story("Story name:to check JS of the page")
+    public void testLoginJavascript(TestDataFactory dataFactory) {
+        logger.info(Thread.currentThread().getName() +" Javascript tc started");
+        driver.get("https://www.w3schools.com/html/default.asp");
+        System.out.println(dataFactory.getInputParameters());
+        System.out.println(dataFactory.getValidationParameters());
+        logger.info(Thread.currentThread().getName() +" Validation successfull for First tc");
+        ExtentTestReporter.getTest().log(Status.INFO,"launched Javascript url...");
+        ExtentTestReporter.getTest().log(Status.PASS,"Validated page title successfully");
+        logger.error(Thread.currentThread().getName()+" validation failed");
+        Assert.assertEquals("Swati","Chetty");
+        logger.error(Thread.currentThread().getName()+" validation failed");
+    }
+
     @Severity(SeverityLevel.NORMAL)
-    @Description("Test Case description: verify login page")
-    @Story("Story name:to check title of the page")*/
-    @Test(dataProvider="getTestData", description="Verifying login page title")
-    public void testLogin(TestDataFactory dataFactory)
-    {
+    @Description("Test Case description: verify login page of Jasmine")
+    @Story("Story name:to check title of the page")
+    //@Test(dataProvider="getTestData", description="Verifying login page titleof jasmine", priority = 0)
+    public void testLoginJasmine(TestDataFactory dataFactory) {
         System.out.println("data path is "+path);
-        logger.info(Thread.currentThread().getName()+" Testlogin Test case started");
+        logger.info(Thread.currentThread().getName()+" Testloginjasmine Test case started");
         ExtentTestReporter.getTest().log(Status.INFO,"Inside Test Method...");
         System.out.println(dataFactory.getInputParameters());
         logger.warn(Thread.currentThread().getName()+" Input Parameters not validated");
@@ -52,29 +72,27 @@ public class TestLoginPage {
         System.out.println(dataFactory.getValidationParameters());
         Assert.assertEquals(username,"SwatiChetty");
         logger.info(Thread.currentThread().getName()+" Username validated successfully");
-        driver.get("https://www.moneycontrol.com/");
-        ExtentTestReporter.getTest().log(Status.INFO,"launched money control url...");
+        driver.get("https://jasmine.github.io/");
+        ExtentTestReporter.getTest().log(Status.INFO,"launched Jasmine url...");
+        Assert.assertEquals("Swati","Chetty");
         ExtentTestReporter.getTest().log(Status.PASS,"Validated url successfully");
-        logger.info(Thread.currentThread().getName()+" testlogin Testcase ended");
+        logger.info(Thread.currentThread().getName()+" testloginjasmine Testcase ended");
     }
 
-  /*  @Link
-    @Epic("Second test case")
     @Severity(SeverityLevel.MINOR)
-    @Description("Test Case description: verify facebook page")*/
-   /* @Story("Story name:to check fb of the page")*/
-    @Test(dataProvider="getTestData")
-    public void testLoginFacebook(TestDataFactory dataFactory) {
-        logger.info(Thread.currentThread().getName() +" facebook tc started");
+    @Description("Test Case description: verify Selenium page")
+    @Story("Story name:to check Selenium of the page")
+    @Test(dataProvider="getTestData",priority = 2)
+    public void testLoginSelenium(TestDataFactory dataFactory) {
+        logger.info(Thread.currentThread().getName() +" Selenium tc started");
         driver.get("https://www.selenium.dev/");
         System.out.println(dataFactory.getInputParameters());
         System.out.println(dataFactory.getValidationParameters());
-        logger.info(Thread.currentThread().getName() +" Validation successfull for second tc");
-        ExtentTestReporter.getTest().log(Status.INFO,"launched facebook url...");
+        logger.info(Thread.currentThread().getName() +" Validation successfull for third tc");
+        ExtentTestReporter.getTest().log(Status.INFO,"launched Selenium url...");
         ExtentTestReporter.getTest().log(Status.PASS,"Validated page title successfully");
         logger.error(Thread.currentThread().getName()+" validation failed");
-        Assert.assertTrue(false);
-        logger.info(Thread.currentThread().getName() +" Validation successfull for second tc");
+        logger.error(Thread.currentThread().getName()+" validation failed");
     }
 
     @AfterClass

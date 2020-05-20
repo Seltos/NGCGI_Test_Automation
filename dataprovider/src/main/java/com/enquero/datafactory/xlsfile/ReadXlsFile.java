@@ -38,7 +38,7 @@ public class ReadXlsFile {
                     dataFactory.setValidationParameters(validation_Obj);
                     provider.add(new Object[]{dataFactory});
                 } else {
-                    System.out.println("Test case " + methodName + "is not enabled for Execution");
+                   // System.out.println("Test case " + methodName + "is not enabled for Execution");
                 }
             }
         }catch(Exception e){

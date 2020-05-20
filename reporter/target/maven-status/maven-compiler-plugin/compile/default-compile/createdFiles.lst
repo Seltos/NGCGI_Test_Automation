@@ -1,4 +1,5 @@
-com\enquero\reporter\AllureTestReporter.class
 com\enquero\reporter\ExtentTestReporter.class
 com\enquero\Testlogs\GenerateLogs.class
-com\enquero\TestNGListener\TestListener.class
+com\enquero\TestListener\Retry.class
+com\enquero\TestListener\AllureExtentTestNGListener.class
+com\enquero\TestListener\AnnotationTransformer.class

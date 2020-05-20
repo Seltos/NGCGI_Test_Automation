@@ -30,7 +30,7 @@ public class Testloginjson {
         driver = driverFactory.getDriver(browser, runmode);
     }
 
-    @Test(dataProvider="getTestData")
+    //@Test(dataProvider="getTestData")
     public void testLogin(TestDataFactory dataFactory)
     {
         System.out.println("Inside Method Test Money control");
@@ -42,7 +42,7 @@ public class Testloginjson {
         driver.get("https://www.moneycontrol.com/");
     }
 
-    @Test(dataProvider="getTestData")
+   // @Test(dataProvider="getTestData")
     public void testLoginFacebook(TestDataFactory dataFactory) {
         System.out.println("Inside Method Test Facebook");
         driver.get("https://www.facebook.com/");

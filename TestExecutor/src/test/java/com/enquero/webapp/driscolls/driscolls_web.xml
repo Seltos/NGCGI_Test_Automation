@@ -3,7 +3,8 @@
 
 <suite name="Regression Test Suite" verbose="1"  thread-count="1">
    <listeners>
-      <listener class-name="com.enquero.TestNGListener.TestListener"></listener>
+      <listener class-name="com.enquero.TestListener.AllureExtentTestNGListener"></listener>
+       <listener class-name="com.enquero.TestListener.AnnotationTransformer"></listener>
    </listeners>
 
     <parameter name="env" value="qa"/>

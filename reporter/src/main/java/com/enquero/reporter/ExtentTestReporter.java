@@ -1,6 +1,5 @@
 package com.enquero.reporter;
 
-import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
 import com.aventstack.extentreports.ExtentReports;
@@ -11,6 +10,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -30,6 +31,11 @@ public class ExtentTestReporter {
     public static String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
     static Map<Integer, ExtentTest> extentTestMap = new HashMap<Integer, ExtentTest>();
 
+    public static void cleanDirectory() throws IOException {
+        File f2 = new File(screenshotFilepath);
+        FileUtils.cleanDirectory(f2);
+    }
+
     public static ExtentReports getInstance() {
         if (extentReport == null)
             createInstance();
@@ -37,11 +43,10 @@ public class ExtentTestReporter {
     }
 
     public static ExtentReports createInstance() {
-        //System.out.println("user directory"+System.getProperty("system.dir"));
         System.out.println("file path: " + reportFileLocation);
         String fileName = getReportPath(reportFilepath);
         htmlReporter = new ExtentHtmlReporter(fileName);
-        htmlReporter.config().setTheme(Theme.STANDARD);
+        htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setDocumentTitle(reportFileName);
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setReportName(reportFileName);
@@ -51,7 +56,6 @@ public class ExtentTestReporter {
         return extentReport;
     }
 
-   // @Step("to get the Report path")
     private static String getReportPath(String path) {
         File testDirectory = new File(path);
         if (!testDirectory.exists()) {
@@ -69,16 +73,16 @@ public class ExtentTestReporter {
     }
 
 
-    public static ExtentTest getTest() {
+    public static synchronized ExtentTest getTest() {
         //return (ExtentTest) extentTestMap.get((int) (long) (Thread.currentThread().getId()));
         return extentTestMap.get((int) Thread.currentThread().getId());
     }
 
-    public static void endTest() {
+    public static synchronized void endTest() {
         extentReport.flush();
     }
 
-    public static ExtentTest startTest(String testName) {
+    public static synchronized ExtentTest startTest(String testName) {
         extentReport = getInstance();
         extentTest = extentReport.createTest(testName);
         System.out.println("extentTest: "+extentTest);
@@ -102,7 +106,6 @@ public class ExtentTestReporter {
         File source = ts.getScreenshotAs(OutputType.FILE);
         String destination = screenshotFilepath + fileSeperator + screenshotName + "_" + dateName + ".png";
         File finalDestination = new File(destination);
-        FileUtils.cleanDirectory(f);
         FileUtils.copyFile(source, finalDestination);
         return destination;
     }
@@ -131,7 +134,6 @@ public class ExtentTestReporter {
             System.out.println("Directory already exists at: " + f1.getAbsolutePath());
         }
         String destination = screenshotFilepath + fileSeperator ;
-        FileUtils.cleanDirectory(f1);
         Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).withName(ScreenshotName + "_" + dateName).save(destination);
         return destination+ScreenshotName + "_" + dateName + ".png";
     }

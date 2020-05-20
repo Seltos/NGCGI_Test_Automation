@@ -1,0 +1,310 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-IOVO5AK9",
+    "children" : [ {
+      "name" : "17560@LAPTOP-IOVO5AK9.main(1)",
+      "children" : [ {
+        "name" : "Verifying login page title",
+        "uid" : "993844a587504836",
+        "parentUid" : "ddd7c64763ce19ab935c84bff4d62df9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589462857462,
+          "stop" : 1589462858393,
+          "duration" : 931
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@3d3b272a", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "585eb2c4c98a0c42",
+        "parentUid" : "ddd7c64763ce19ab935c84bff4d62df9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589462860056,
+          "stop" : 1589462865426,
+          "duration" : 5370
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@3c4ad54", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "3a231729429c74a4",
+        "parentUid" : "ddd7c64763ce19ab935c84bff4d62df9",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1589462858600,
+          "stop" : 1589462860005,
+          "duration" : 1405
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@6614289a", "chrome", "81.0.4044.69", "qa", "local" ]
+      } ],
+      "uid" : "ddd7c64763ce19ab935c84bff4d62df9"
+    }, {
+      "name" : "10212@LAPTOP-IOVO5AK9.main(1)",
+      "children" : [ {
+        "name" : "testLoginFacebook",
+        "uid" : "615eef035c773e0f",
+        "parentUid" : "bb7fa83be6fe9ae789498c38068aae48",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589464407968,
+          "stop" : 1589464414494,
+          "duration" : 6526
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@4b22214d", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "92ba410d1b1288b5",
+        "parentUid" : "bb7fa83be6fe9ae789498c38068aae48",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1589464406263,
+          "stop" : 1589464407902,
+          "duration" : 1639
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@4148ce43", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "Verifying login page title",
+        "uid" : "356c5c6aeeadfc4d",
+        "parentUid" : "bb7fa83be6fe9ae789498c38068aae48",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589464405078,
+          "stop" : 1589464406016,
+          "duration" : 938
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@45b27ad3", "chrome", "81.0.4044.69", "qa", "local" ]
+      } ],
+      "uid" : "bb7fa83be6fe9ae789498c38068aae48"
+    }, {
+      "name" : "18228@LAPTOP-IOVO5AK9.main(1)",
+      "children" : [ {
+        "name" : "Verifying login page title",
+        "uid" : "af6006968a49e9ff",
+        "parentUid" : "e92bae0aa72e3b9031da53aa172ad609",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589462723337,
+          "stop" : 1589462742928,
+          "duration" : 19591
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@5ec6a1b6" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "ec300185f015848e",
+        "parentUid" : "e92bae0aa72e3b9031da53aa172ad609",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589462743059,
+          "stop" : 1589462744559,
+          "duration" : 1500
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@2ed7978c" ]
+      } ],
+      "uid" : "e92bae0aa72e3b9031da53aa172ad609"
+    }, {
+      "name" : "10268@LAPTOP-IOVO5AK9.main(1)",
+      "children" : [ {
+        "name" : "Verifying login page title",
+        "uid" : "af3bdc4f050391dd",
+        "parentUid" : "a535d4d5e36e1f2190a53ead6f98ac0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589463684417,
+          "stop" : 1589463685620,
+          "duration" : 1203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@286dfa20" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "779c02e160a51995",
+        "parentUid" : "a535d4d5e36e1f2190a53ead6f98ac0d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589463676998,
+          "stop" : 1589463678454,
+          "duration" : 1456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@4746fb8c" ]
+      }, {
+        "name" : "testLogin",
+        "uid" : "8f395b9c3fc8a68d",
+        "parentUid" : "a535d4d5e36e1f2190a53ead6f98ac0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589463630249,
+          "stop" : 1589463666809,
+          "duration" : 36560
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@76396509" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "b3914c99b1ae7b15",
+        "parentUid" : "a535d4d5e36e1f2190a53ead6f98ac0d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589463685651,
+          "stop" : 1589463716385,
+          "duration" : 30734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@7f1ad846" ]
+      }, {
+        "name" : "Verifying login page title",
+        "uid" : "933a7ab61aa748b",
+        "parentUid" : "a535d4d5e36e1f2190a53ead6f98ac0d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589463676945,
+          "stop" : 1589463676961,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@450d10cb" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "dc839385c0664965",
+        "parentUid" : "a535d4d5e36e1f2190a53ead6f98ac0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589463666909,
+          "stop" : 1589463670163,
+          "duration" : 3254
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@150fc7a7" ]
+      } ],
+      "uid" : "a535d4d5e36e1f2190a53ead6f98ac0d"
+    }, {
+      "name" : "16580@LAPTOP-IOVO5AK9.main(1)",
+      "children" : [ {
+        "name" : "testLoginFacebook",
+        "uid" : "1c4c6a4ad136bb50",
+        "parentUid" : "cfaaf15d6560c5e2512fe2ea6a33f670",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589469876559,
+          "stop" : 1589469880904,
+          "duration" : 4345
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@254513e8", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "Verifying login page title",
+        "uid" : "840de1b75662bc23",
+        "parentUid" : "cfaaf15d6560c5e2512fe2ea6a33f670",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589469874764,
+          "stop" : 1589469876400,
+          "duration" : 1636
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@35af52dc", "chrome", "81.0.4044.69", "qa", "local" ]
+      } ],
+      "uid" : "cfaaf15d6560c5e2512fe2ea6a33f670"
+    }, {
+      "name" : "9020@LAPTOP-IOVO5AK9.main(1)",
+      "children" : [ {
+        "name" : "Verifying login page title",
+        "uid" : "66517021499e0f3b",
+        "parentUid" : "b6618a614e65b416b0a83450a86cffa0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589464208637,
+          "stop" : 1589464210503,
+          "duration" : 1866
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@30c8c6ab", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "a85a373882aa37e8",
+        "parentUid" : "b6618a614e65b416b0a83450a86cffa0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1589464210645,
+          "stop" : 1589464212792,
+          "duration" : 2147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@6614289a", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "c4440b7e06dfbb89",
+        "parentUid" : "b6618a614e65b416b0a83450a86cffa0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589464212826,
+          "stop" : 1589464213189,
+          "duration" : 363
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@3c4ad54", "chrome", "81.0.4044.69", "qa", "local" ]
+      } ],
+      "uid" : "b6618a614e65b416b0a83450a86cffa0"
+    }, {
+      "name" : "3332@LAPTOP-IOVO5AK9.main(1)",
+      "children" : [ {
+        "name" : "testLoginFacebook",
+        "uid" : "c5bff9ecefaec26f",
+        "parentUid" : "20b35daceaa2887a3760d375a5def4ad",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589462633961,
+          "stop" : 1589462635516,
+          "duration" : 1555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@22002459" ]
+      }, {
+        "name" : "Verifying login page title",
+        "uid" : "46390f1d8f336a4a",
+        "parentUid" : "20b35daceaa2887a3760d375a5def4ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589462632805,
+          "stop" : 1589462633797,
+          "duration" : 992
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@ad5cffa" ]
+      } ],
+      "uid" : "20b35daceaa2887a3760d375a5def4ad"
+    } ],
+    "uid" : "672a84e6342514bb3c3493041d7720dd"
+  } ]
+}

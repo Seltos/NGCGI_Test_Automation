@@ -26,9 +26,8 @@
         <selenium-firefox-driver.version>3.141.59</selenium-firefox-driver.version>
         <mongo-java-driver.version>3.11.0-rc0</mongo-java-driver.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aspectj.version>1.9.4</aspectj.version>
-    <!-- Appium dependencies -->
-    <appium-java-client.version>7.2.0</appium-java-client.version>
+        <!-- Appium dependencies -->
+        <appium-java-client.version>7.2.0</appium-java-client.version>
     </properties>
     <build>
         <plugins>
@@ -43,4 +42,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

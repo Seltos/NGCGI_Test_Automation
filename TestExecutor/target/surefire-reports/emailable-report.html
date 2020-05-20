@@ -8,15 +8,22 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Regression Test Suite</th></tr>
-<tr><td><a href="#t0">Driscolls Web App Test Cases</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,736</td><td></td><td></td></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">26,909</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Driscolls Web App Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.enquero.webapp.driscolls.tests.TestLoginPage</td><td><a href="#m0">testLoginFacebook</a></td><td rowspan="1">1589015740776</td><td rowspan="1">2902</td></tr><tr><th colspan="4">Driscolls Web App Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.enquero.webapp.driscolls.tests.TestLoginPage</td><td><a href="#m1">testLogin</a></td><td rowspan="1">1589015737273</td><td rowspan="1">3421</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.enquero.webapp.driscolls.tests.TestLoginPage</td><td><a href="#m0">testLoginJasmine</a></td><td rowspan="1">1589956993549</td><td rowspan="1">56</td></tr><tr class="failedeven"><td><a href="#m1">testLoginJavascript</a></td><td rowspan="1">1589956993750</td><td rowspan="1">12287</td></tr><tr class="failedeven"><td><a href="#m2">testLoginSelenium</a></td><td rowspan="1">1589957006074</td><td rowspan="1">4443</td></tr></tbody>
 </table>
-<h2>Driscolls Web App Test Cases</h2><h3 id="m0">com.enquero.webapp.driscolls.tests.TestLoginPage#testLoginFacebook</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@27cbfddf</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect to find [true] but found [false]
-	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginFacebook(TestLoginPage.java:76)
+<h2>Surefire test</h2><h3 id="m0">com.enquero.webapp.driscolls.tests.TestLoginPage#testLoginJasmine</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@559e3f67</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJasmine(TestLoginPage.java:68)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.enquero.webapp.driscolls.tests.TestLoginPage#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@5ffc5491</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.enquero.webapp.driscolls.tests.TestLoginPage#testLoginJavascript</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@47eae91d</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJavascript(TestLoginPage.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.enquero.webapp.driscolls.tests.TestLoginPage#testLoginSelenium</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@2862271a</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginSelenium(TestLoginPage.java:92)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
