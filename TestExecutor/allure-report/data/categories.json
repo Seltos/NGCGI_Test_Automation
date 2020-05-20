@@ -1,0 +1,129 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [true] but found [false]",
+      "children" : [ {
+        "name" : "testLoginFacebook",
+        "uid" : "c5bff9ecefaec26f",
+        "parentUid" : "067aa11ae245eca950dc984999fefd6d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589462633961,
+          "stop" : 1589462635516,
+          "duration" : 1555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@22002459" ]
+      } ],
+      "uid" : "067aa11ae245eca950dc984999fefd6d"
+    }, {
+      "name" : "did not expect to find [true] but found [false]",
+      "children" : [ {
+        "name" : "testLoginFacebook",
+        "uid" : "ec300185f015848e",
+        "parentUid" : "d7f4d249d0e9fec364fcbc7a311f0204",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589462743059,
+          "stop" : 1589462744559,
+          "duration" : 1500
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@2ed7978c" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "b3914c99b1ae7b15",
+        "parentUid" : "d7f4d249d0e9fec364fcbc7a311f0204",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589463685651,
+          "stop" : 1589463716385,
+          "duration" : 30734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@7f1ad846" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "c4440b7e06dfbb89",
+        "parentUid" : "d7f4d249d0e9fec364fcbc7a311f0204",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589464212826,
+          "stop" : 1589464213189,
+          "duration" : 363
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@3c4ad54", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "615eef035c773e0f",
+        "parentUid" : "d7f4d249d0e9fec364fcbc7a311f0204",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589464407968,
+          "stop" : 1589464414494,
+          "duration" : 6526
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@4b22214d", "chrome", "81.0.4044.69", "qa", "local" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "1c4c6a4ad136bb50",
+        "parentUid" : "d7f4d249d0e9fec364fcbc7a311f0204",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589469876559,
+          "stop" : 1589469880904,
+          "duration" : 4345
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@254513e8", "chrome", "81.0.4044.69", "qa", "local" ]
+      } ],
+      "uid" : "d7f4d249d0e9fec364fcbc7a311f0204"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "Verifying login page title",
+        "uid" : "933a7ab61aa748b",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589463676945,
+          "stop" : 1589463676961,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@450d10cb" ]
+      }, {
+        "name" : "testLoginFacebook",
+        "uid" : "779c02e160a51995",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589463676998,
+          "stop" : 1589463678454,
+          "duration" : 1456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@4746fb8c" ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

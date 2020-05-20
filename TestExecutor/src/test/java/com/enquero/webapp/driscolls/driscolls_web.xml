@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Test Suite" verbose="1"  thread-count="1">
+   <listeners>
+      <listener class-name="com.enquero.TestListener.AllureExtentTestNGListener"></listener>
+       <listener class-name="com.enquero.TestListener.AnnotationTransformer"></listener>
+   </listeners>
+
+    <parameter name="env" value="qa"/>
+   <parameter name="chromeDriverVersion" value="81.0.4044.69"/>
+    <parameter name="browser" value="chrome" />
+    <parameter name="webRunMode" value="local"/>
+
+    <test name="Driscolls Web App Test Cases">
+        <classes>
+            <class name="com.enquero.webapp.driscolls.tests.TestLoginPage"/>
+        </classes>
+    </test>
+</suite>

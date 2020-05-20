@@ -1,0 +1,5 @@
+com\enquero\datafactory\jsonfile\ReadJsonFile.class
+com\enquero\datafactory\xlsfile\ReadXlsFile.class
+com\enquero\datafactory\csvfile\ReadCSVFile.class
+com\enquero\datafactory\DataFactory\TestDataFactory.class
+com\enquero\datafactory\xmlfile\ReadXMLFile.class

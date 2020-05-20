@@ -1,0 +1,123 @@
+{
+  "uid" : "3a231729429c74a4",
+  "name" : "testLoginFacebook",
+  "fullName" : "com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginFacebook",
+  "historyId" : "43d3ee9c860044aad070f69a9b9652de",
+  "time" : {
+    "start" : 1589462858600,
+    "stop" : 1589462860005,
+    "duration" : 1405
+  },
+  "description" : "Test Case description: verify facebook page",
+  "descriptionHtml" : "<p>Test Case description: verify facebook page</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "did not expect to find [true] but found [false]",
+  "statusTrace" : "java.lang.AssertionError: did not expect to find [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginFacebook(TestLoginPage.java:76)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.util.ArrayList.forEach(ArrayList.java:1257)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:770)\r\n\tat org.testng.TestRunner.run(TestRunner.java:591)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:402)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:304)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1102)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1032)\r\n\tat org.testng.TestNG.run(TestNG.java:1000)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1589462846399,
+      "stop" : 1589462856182,
+      "duration" : 9783
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1589462865428,
+      "stop" : 1589462866098,
+      "duration" : 670
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.enquero.webapp.driscolls.tests.TestLoginPage"
+  }, {
+    "name" : "testClass",
+    "value" : "com.enquero.webapp.driscolls.tests.TestLoginPage"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginFacebook"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Driscolls Web App Test Cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.enquero.webapp.driscolls.tests.TestLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-IOVO5AK9"
+  }, {
+    "name" : "thread",
+    "value" : "17560@LAPTOP-IOVO5AK9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Story name:to check fb of the page"
+  }, {
+    "name" : "feature",
+    "value" : "TestLogin Page Scenarios"
+  }, {
+    "name" : "epic",
+    "value" : "Regression Tests"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "com.enquero.datafactory.DataFactory.TestDataFactory@6614289a"
+  }, {
+    "name" : "browser",
+    "value" : "chrome"
+  }, {
+    "name" : "chromeDriverVersion",
+    "value" : "81.0.4044.69"
+  }, {
+    "name" : "env",
+    "value" : "qa"
+  }, {
+    "name" : "webRunMode",
+    "value" : "local"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a231729429c74a4.json",
+  "parameterValues" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@6614289a", "chrome", "81.0.4044.69", "qa", "local" ]
+}

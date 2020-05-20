@@ -1,0 +1,191 @@
+[ {
+  "uid" : "840de1b75662bc23",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589469874764,
+    "stop" : 1589469876400,
+    "duration" : 1636
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "779c02e160a51995",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589463676998,
+    "stop" : 1589463678454,
+    "duration" : 1456
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "c5bff9ecefaec26f",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589462633961,
+    "stop" : 1589462635516,
+    "duration" : 1555
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "92ba410d1b1288b5",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589464406263,
+    "stop" : 1589464407902,
+    "duration" : 1639
+  },
+  "status" : "skipped",
+  "severity" : "minor"
+}, {
+  "uid" : "af3bdc4f050391dd",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589463684417,
+    "stop" : 1589463685620,
+    "duration" : 1203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "356c5c6aeeadfc4d",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589464405078,
+    "stop" : 1589464406016,
+    "duration" : 938
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af6006968a49e9ff",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589462723337,
+    "stop" : 1589462742928,
+    "duration" : 19591
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc839385c0664965",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589463666909,
+    "stop" : 1589463670163,
+    "duration" : 3254
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4440b7e06dfbb89",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589464212826,
+    "stop" : 1589464213189,
+    "duration" : 363
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "46390f1d8f336a4a",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589462632805,
+    "stop" : 1589462633797,
+    "duration" : 992
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec300185f015848e",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589462743059,
+    "stop" : 1589462744559,
+    "duration" : 1500
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "b3914c99b1ae7b15",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589463685651,
+    "stop" : 1589463716385,
+    "duration" : 30734
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "8f395b9c3fc8a68d",
+  "name" : "testLogin",
+  "time" : {
+    "start" : 1589463630249,
+    "stop" : 1589463666809,
+    "duration" : 36560
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66517021499e0f3b",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589464208637,
+    "stop" : 1589464210503,
+    "duration" : 1866
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "993844a587504836",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589462857462,
+    "stop" : 1589462858393,
+    "duration" : 931
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a85a373882aa37e8",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589464210645,
+    "stop" : 1589464212792,
+    "duration" : 2147
+  },
+  "status" : "skipped",
+  "severity" : "minor"
+}, {
+  "uid" : "933a7ab61aa748b",
+  "name" : "Verifying login page title",
+  "time" : {
+    "start" : 1589463676945,
+    "stop" : 1589463676961,
+    "duration" : 16
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "615eef035c773e0f",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589464407968,
+    "stop" : 1589464414494,
+    "duration" : 6526
+  },
+  "status" : "failed",
+  "severity" : "minor"
+}, {
+  "uid" : "1c4c6a4ad136bb50",
+  "name" : "testLoginFacebook",
+  "time" : {
+    "start" : 1589469876559,
+    "stop" : 1589469880904,
+    "duration" : 4345
+  },
+  "status" : "failed",
+  "severity" : "minor"
+} ]
