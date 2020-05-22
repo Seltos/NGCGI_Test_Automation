@@ -1882,3 +1882,261 @@
 2020-05-20 15:47:31 ERROR TestLoginPage:94 - main validation failed
 2020-05-20 15:47:31 ERROR TestLoginPage:95 - main validation failed
 2020-05-20 15:47:31 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-20 16:19:15 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-20 16:19:16 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-20 16:19:20 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-20 16:19:20 ERROR TestLoginPage:56 - main validation failed
+2020-05-20 16:19:22 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-20 16:19:23 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-20 16:19:23 ERROR TestLoginPage:56 - main validation failed
+2020-05-20 16:19:27 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-20 16:19:34 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-20 16:19:34 ERROR TestLoginPage:94 - main validation failed
+2020-05-20 16:19:34 ERROR TestLoginPage:95 - main validation failed
+2020-05-20 16:19:34 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-20 16:47:06 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-20 16:47:09 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-20 16:47:12 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-20 16:47:12 ERROR TestLoginPage:56 - main validation failed
+2020-05-20 16:47:13 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-20 16:47:13 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-20 16:47:13 ERROR TestLoginPage:56 - main validation failed
+2020-05-20 16:47:17 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-20 16:47:26 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-20 16:47:26 ERROR TestLoginPage:94 - main validation failed
+2020-05-20 16:47:26 ERROR TestLoginPage:95 - main validation failed
+2020-05-20 16:47:26 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 14:22:11 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 14:22:12 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 14:22:15 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 14:22:15 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 14:22:17 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 14:22:17 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 14:22:17 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 14:22:19 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 14:22:25 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 14:22:25 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 14:22:25 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 14:22:25 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 15:03:24 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 15:03:26 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:03:29 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:03:29 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:03:32 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:03:32 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:03:32 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:03:36 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 15:03:44 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 15:03:44 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 15:03:44 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 15:03:44 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 15:04:51 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 15:04:53 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:04:56 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:04:56 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:04:58 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:04:58 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:04:58 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:05:03 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 15:05:11 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 15:05:11 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 15:05:11 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 15:05:11 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 15:10:38 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 15:10:40 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:10:43 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:10:43 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:10:44 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:10:44 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:10:44 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:10:47 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 15:10:54 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 15:10:54 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 15:10:54 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 15:10:54 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 15:34:28 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 15:34:29 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:34:32 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:34:32 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:34:34 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:34:34 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:34:34 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:34:37 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 15:34:44 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 15:34:44 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 15:34:44 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 15:34:44 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 15:39:26 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 15:39:27 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:39:29 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:39:29 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:39:31 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:39:31 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:39:31 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:39:35 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 15:39:57 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 15:39:57 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 15:39:57 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 15:39:57 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 15:43:23 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 15:43:24 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:43:26 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:43:26 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:43:28 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:43:28 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:43:28 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:43:31 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 15:43:39 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 15:43:39 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 15:43:39 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 15:43:39 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 15:55:02 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 15:55:03 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:55:06 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:55:06 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:55:08 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 15:55:08 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 15:55:08 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 15:55:11 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 15:55:45 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 15:55:45 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 15:55:45 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 15:55:45 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 16:11:14 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 16:11:16 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:11:18 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:11:18 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:11:20 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:11:20 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:11:20 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:11:23 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 16:11:30 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 16:11:30 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 16:11:30 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 16:11:30 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 16:13:42 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 16:13:44 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:13:46 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:13:46 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:13:48 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:13:48 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:13:48 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:13:51 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 16:13:59 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 16:13:59 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 16:13:59 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 16:13:59 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 16:15:47 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 16:15:48 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:15:51 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:15:51 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:15:52 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:15:52 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:15:52 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:15:56 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 16:16:03 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 16:16:03 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 16:16:03 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 16:16:03 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 16:25:27 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 16:26:04 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:26:05 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:26:05 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:37:44 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 16:37:46 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:37:49 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:37:49 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:37:51 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:37:51 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:37:51 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:37:55 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 16:38:02 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 16:38:02 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 16:38:02 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 16:38:02 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 16:39:20 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 16:39:21 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:39:24 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:39:24 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:39:25 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:39:25 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:39:25 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:39:26 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 16:39:35 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 16:39:35 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 16:39:35 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 16:39:35 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 16:41:26 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 16:41:29 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:41:31 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:41:31 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:41:34 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 16:41:34 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 16:41:34 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 16:41:37 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 16:41:44 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 16:41:44 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 16:41:44 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 16:41:44 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 19:33:52 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 19:34:04 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:34:05 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:34:05 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:34:12 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:34:12 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:34:12 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:35:40 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 19:36:03 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 19:36:17 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:36:19 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:36:19 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:37:48 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:37:49 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:37:49 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:39:20 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 19:39:23 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 19:39:23 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 19:39:23 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 19:39:23 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 19:40:34 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 19:40:36 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:40:37 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:40:37 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:40:38 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:40:38 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:40:38 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:40:41 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 19:40:44 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 19:40:44 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 19:40:44 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 19:40:44 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 19:44:54 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 19:44:56 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:44:57 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:44:57 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:44:59 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:44:59 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:44:59 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:45:02 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 19:45:03 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 19:45:03 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 19:45:03 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 19:45:03 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-21 19:46:32 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-21 19:46:35 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-21 19:46:35 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-21 19:46:35 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-21 19:46:39 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-21 19:46:39 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-21 19:46:39 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-21 19:46:41 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:46:42 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:46:42 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:46:46 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-21 19:46:46 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-21 19:46:46 ERROR TestLoginPage:56 - main validation failed
+2020-05-21 19:46:50 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-21 19:46:52 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-21 19:46:52 ERROR TestLoginPage:94 - main validation failed
+2020-05-21 19:46:52 ERROR TestLoginPage:95 - main validation failed
+2020-05-21 19:46:52 INFO  TestLoginPage:100 - main ************* Execution Ended *************

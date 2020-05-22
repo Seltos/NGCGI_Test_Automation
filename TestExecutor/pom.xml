@@ -32,9 +32,9 @@
                 <version>2.22.1</version>
 
                 <configuration>
-                   <!-- <suiteXmlFiles>
+                    <suiteXmlFiles>
                         <suiteXmlFile>src/test/java/com/enquero/webapp/driscolls/driscolls_web.xml</suiteXmlFile>
-                    </suiteXmlFiles>-->
+                    </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
