@@ -2140,3 +2140,165 @@
 2020-05-21 19:46:52 ERROR TestLoginPage:94 - main validation failed
 2020-05-21 19:46:52 ERROR TestLoginPage:95 - main validation failed
 2020-05-21 19:46:52 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 16:48:57 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 16:49:00 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 16:49:00 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 16:49:00 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 16:49:04 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 16:49:04 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 16:49:04 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 16:49:06 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 16:49:08 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 16:49:08 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 16:49:10 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 16:49:10 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 16:49:10 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 16:49:12 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 16:49:18 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 16:49:18 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 16:49:18 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 16:49:18 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 18:17:28 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 18:17:29 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 18:17:29 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 18:17:29 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 18:17:33 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 18:17:33 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 18:17:33 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 18:17:34 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 18:17:35 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 18:17:35 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 18:17:36 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 18:17:36 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 18:17:36 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 18:17:38 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 18:18:09 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 18:18:09 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 18:18:09 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 18:18:09 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 19:38:17 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 19:38:19 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 19:38:19 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 19:38:19 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 19:38:23 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 19:38:23 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 19:38:23 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 19:38:24 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 19:38:25 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 19:38:25 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 19:38:26 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 19:38:26 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 19:38:26 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 19:38:29 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 19:38:30 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 19:38:30 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 19:38:30 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 19:38:30 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 20:11:37 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 20:11:38 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:11:38 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:11:38 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:11:42 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:11:42 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:11:42 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:11:43 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:11:44 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:11:44 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:11:45 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:11:45 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:11:45 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:11:47 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 20:12:19 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 20:12:19 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 20:12:19 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 20:12:19 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 20:14:12 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 20:14:13 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:14:13 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:14:13 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:14:16 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:14:16 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:14:16 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:14:17 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:14:18 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:14:18 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:14:20 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:14:20 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:14:20 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:14:22 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 20:14:24 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 20:14:24 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 20:14:24 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 20:14:24 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 20:23:02 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 20:23:03 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:23:03 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:23:03 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:23:07 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:23:07 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:23:07 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:23:09 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:23:10 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:23:10 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:23:13 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:23:13 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:23:13 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:23:16 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 20:23:17 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 20:23:17 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 20:23:17 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 20:23:17 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 20:28:42 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 20:28:44 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:28:44 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:28:44 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:28:48 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:28:48 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:28:48 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:28:50 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:28:51 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:28:51 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:29:23 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:29:23 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:29:23 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:29:27 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 20:29:29 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 20:29:29 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 20:29:29 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 20:29:29 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-25 13:11:52 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-25 13:11:54 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-25 13:11:54 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-25 13:11:54 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-25 13:11:58 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-25 13:11:58 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-25 13:11:58 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-25 13:12:01 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-25 13:12:01 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-25 13:12:01 ERROR TestLoginPage:56 - main validation failed
+2020-05-25 13:12:03 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-25 13:12:03 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-25 13:12:03 ERROR TestLoginPage:56 - main validation failed
+2020-05-25 13:12:08 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-25 13:12:09 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-25 13:12:09 ERROR TestLoginPage:94 - main validation failed
+2020-05-25 13:12:09 ERROR TestLoginPage:95 - main validation failed
+2020-05-25 13:12:09 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-26 12:21:45 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-26 12:21:47 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-26 12:21:47 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-26 12:21:47 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-26 12:21:51 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-26 12:21:51 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-26 12:21:51 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-26 12:21:53 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-26 12:21:55 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-26 12:21:55 ERROR TestLoginPage:56 - main validation failed
+2020-05-26 12:21:56 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-26 12:21:56 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-26 12:21:56 ERROR TestLoginPage:56 - main validation failed
+2020-05-26 12:21:58 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-26 12:22:04 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-26 12:22:04 ERROR TestLoginPage:94 - main validation failed
+2020-05-26 12:22:04 ERROR TestLoginPage:95 - main validation failed
+2020-05-26 12:22:04 INFO  TestLoginPage:100 - main ************* Execution Ended *************

@@ -21,6 +21,7 @@ public class Retry implements IRetryAnalyzer {
                 retryCount++;
                 iTestResult.setStatus(ITestResult.FAILURE);
                 extendReportsFailOperations(iTestResult);
+                ExtentTestReporter.getInstance().removeTest(AllureExtentTestNGListener.extent);
                 return true;
             }else{
                 retryCount=0;

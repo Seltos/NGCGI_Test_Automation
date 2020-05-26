@@ -1,5 +1,6 @@
 package com.enquero.TestListener;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.enquero.driverfactory.web.WebDriverFactory;
 import com.enquero.reporter.ExtentTestReporter;
@@ -8,21 +9,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.*;
-
 import java.io.IOException;
-import java.util.Iterator;
+import java.util.Set;
 
-public class AllureExtentTestNGListener implements ITestListener, ISuiteListener,IInvokedMethodListener {
-    @Override
-    public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
 
-    }
-
-    @Override
-    public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-    System.out.println(testResult.isSuccess()+" gap "+method.isTestMethod());
-    method.getTestMethod().getMethodName();
-    }
+    public static ExtentTest extent;
+    public String testName;
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -62,7 +55,9 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
     @Override
     public void onTestStart(ITestResult result) {
         System.out.println("Running Test Method: "+result.getMethod().getMethodName());
-        ExtentTestReporter.startTest(result.getMethod().getMethodName());
+        extent= ExtentTestReporter.startTest(result.getMethod().getMethodName());
+        System.out.println("extent is: "+extent);
+        ExtentTestReporter.getTest().assignCategory("RegressionTests");
         ExtentTestReporter.getTest().log(Status.INFO,"Execution of "+result.getMethod().getMethodName()+" STARTED ");
     }
 
@@ -78,16 +73,18 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         System.out.println("I am in onTestFailure method " +  getTestMethodName(result) + " failed");
         String path = null;
         String testMethodName = result.getName().trim();
-        try {
-            //path=ExtentTestReporter.getScreenshot(WebDriverFactory.getDriverinstance(),testMethodName);
-            path= ExtentTestReporter.getFullPageShutterbug(WebDriverFactory.getDriverinstance(),testMethodName);
-        } catch (Exception e) {
-            e.printStackTrace();
-            ExtentTestReporter.getTest().info(("An exception occurred while taking screenshot " + e.getCause()));
+        if (!testName.toUpperCase().contains("API")) {
+            try {
+                //path=ExtentTestReporter.getScreenshot(WebDriverFactory.getDriverinstance(),testMethodName);
+                path = ExtentTestReporter.getFullPageShutterbug(WebDriverFactory.getDriverinstance(), testMethodName);
+            } catch (Exception e) {
+                e.printStackTrace();
+                ExtentTestReporter.getTest().info(("An exception occurred while taking screenshot " + e.getCause()));
+            }
+            String tag = "<a href=" + "\"" + path + "\"" + "target='_blank'" + ">" + "Click here" + "</a";
+            System.out.print("tag name: " + tag);
+            ExtentTestReporter.getTest().log(Status.FAIL, "Test Case failed and screenshot attached: " + tag);
         }
-        String tag= "<a href="+"\""+path+"\""+"target='_blank'"+">"+"Click here"+"</a";
-        System.out.print("tag name: "+tag);
-        ExtentTestReporter.getTest().log(Status.FAIL,"Test Case failed and screenshot attached: "+tag);
         final Throwable error= result.getThrowable();
         final String message= ExtentTestReporter.getCustomStackTrace(error);
         String tag1= "<a href=\"javascript:window.alert('"+message+"');\">Click here</a>";
@@ -107,7 +104,6 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
     @Override
     public void onTestSkipped(ITestResult result) {
         System.out.println("*** Test " + result.getMethod().getMethodName() + " skipped...");
-        //ExtentTestReporter.getTest().log(Status.SKIP, "Test Skipped");
     }
 
     @Override
@@ -122,35 +118,25 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
 
     @Override
     public void onStart(ITestContext context) {
+        testName=context.getName();
         System.out.println("***** Test "+context.getName()+" started *******");
     }
 
     @Override
     public void onFinish(ITestContext context) {
         System.out.println("On Finish Context level executing");
-        Iterator<ITestResult> failedTests = context.getFailedTests().getAllResults().iterator();
-        Iterator<ITestResult> skippedTests = context.getSkippedTests().getAllResults().iterator();
-        while (failedTests.hasNext()) {
-            ITestResult failedTestCases = failedTests.next();
-            ITestNGMethod method = failedTestCases.getMethod();
-            if (context.getFailedTests().getResults(method).size() > 1) {
-                failedTests.remove();
+        Set<ITestResult> skippedTests = context.getSkippedTests().getAllResults();
+        for (ITestResult temp : skippedTests) {
+            ITestNGMethod method = temp.getMethod();
+            if (context.getFailedTests().getResults(method).size() > 0) {
+                skippedTests.remove(temp);
             } else {
                 if (context.getPassedTests().getResults(method).size() > 0) {
-                    failedTests.remove();
-                }
-            }
-        }
-        while (skippedTests.hasNext()) {
-            ITestResult skippedTestCases = skippedTests.next();
-            ITestNGMethod method = skippedTestCases.getMethod();
-            if (context.getSkippedTests().getResults(method).size() > 1) {
-                skippedTests.remove();
-            } else {
-                if (context.getSkippedTests().getResults(method).size() > 0) {
-                    skippedTests.remove();
+                    skippedTests.remove(temp);
                 }
             }
         }
     }
+
+
 }

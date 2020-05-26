@@ -19,7 +19,6 @@ import java.util.Iterator;
 
 @Epic("Regression Tests")
 @Feature("TestLogin Page Scenarios")
-
 public class TestLoginPage {
 
     Logger logger= Logger.getLogger(TestLoginPage.class.getName());

@@ -1,16 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 28.433 s <<< FAILURE! - in TestSuite
-testLoginJasmine(com.enquero.webapp.driscolls.tests.TestLoginPage)  Time elapsed: 0.066 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJasmine(TestLoginPage.java:68)
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 33.198 s <<< FAILURE! - in TestSuite
+testLoginJasmine(com.enquero.webapp.driscolls.tests.TestLoginPage)  Time elapsed: 2.591 s  <<< FAILURE!
+java.lang.AssertionError: expected [Chetty] but found [Swati]
+	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJasmine(TestLoginPage.java:77)
 
-testLoginJavascript(com.enquero.webapp.driscolls.tests.TestLoginPage)  Time elapsed: 12.288 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJavascript(TestLoginPage.java:54)
-
-testLoginSelenium(com.enquero.webapp.driscolls.tests.TestLoginPage)  Time elapsed: 4.443 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginSelenium(TestLoginPage.java:92)
+testLoginJavascript(com.enquero.webapp.driscolls.tests.TestLoginPage)  Time elapsed: 4.498 s  <<< FAILURE!
+java.lang.AssertionError: expected [Chetty] but found [Swati]
+	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJavascript(TestLoginPage.java:57)
 

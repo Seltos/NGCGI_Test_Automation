@@ -27,13 +27,16 @@ public class ExtentTestReporter {
     private static String fileSeperator = System.getProperty("file.separator");
     private static String reportFilepath = System.getProperty("user.dir") + fileSeperator + "src\\Reports";
     private static final String screenshotFilepath = System.getProperty("user.dir") + fileSeperator + "src\\Reports\\Screenshots";
+    private static final String allureResultsPath= System.getProperty("user.dir") + fileSeperator +"allure-results";
     private static String reportFileLocation = reportFilepath + fileSeperator + reportFileName;
     public static String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
     static Map<Integer, ExtentTest> extentTestMap = new HashMap<Integer, ExtentTest>();
 
     public static void cleanDirectory() throws IOException {
         File f2 = new File(screenshotFilepath);
+        File f3= new File(allureResultsPath);
         FileUtils.cleanDirectory(f2);
+        FileUtils.cleanDirectory(f3);
     }
 
     public static ExtentReports getInstance() {
@@ -79,6 +82,7 @@ public class ExtentTestReporter {
     }
 
     public static synchronized void endTest() {
+
         extentReport.flush();
     }
 
