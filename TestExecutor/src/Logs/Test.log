@@ -1882,3 +1882,20 @@
 2020-05-20 15:47:31 ERROR TestLoginPage:94 - main validation failed
 2020-05-20 15:47:31 ERROR TestLoginPage:95 - main validation failed
 2020-05-20 15:47:31 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-26 16:00:23 INFO  TestLoginPage:62 - main****************** Execution  Started ****************
+2020-05-26 16:00:24 INFO  TestLoginPage:71 - TestNG-test=Driscolls api App Test Cases-1 Get Employee tc started
+2020-05-26 16:00:28 INFO  TestLoginPage:76 - TestNG-test=Driscolls api App Test Cases-1 Get request is executed Successfully
+2020-05-26 16:00:29 INFO  TestLoginPage:71 - TestNG-test=Driscolls api App Test Cases-1 Get Employee tc started
+2020-05-26 16:00:29 INFO  TestLoginPage:76 - TestNG-test=Driscolls api App Test Cases-1 Get request is executed Successfully
+2020-05-26 16:00:30 INFO  TestLoginPage:91 - TestNG-test=Driscolls api App Test Cases-1 Post Employee Details tc started
+2020-05-26 16:00:31 INFO  TestLoginPage:111 - TestNG-test=Driscolls api App Test Cases-1 Post request is executed Successfully
+2020-05-26 16:00:31 INFO  TestLoginPage:124 - TestNG-test=Driscolls api App Test Cases-1Post Employee details created Successfully
+2020-05-26 16:00:31 INFO  TestLoginPage:132 - TestNG-test=Driscolls api App Test Cases-1 Get Employee Details based on ID search tc started
+2020-05-26 16:00:32 INFO  TestLoginPage:132 - TestNG-test=Driscolls api App Test Cases-1 Get Employee Details based on ID search tc started
+2020-05-26 16:00:34 INFO  TestLoginPage:153 - TestNG-test=Driscolls api App Test Cases-1 Update Employee Details tc started
+2020-05-26 16:00:35 INFO  TestLoginPage:173 - TestNG-test=Driscolls api App Test Cases-1 Update request is executed Successfully
+2020-05-26 16:00:35 INFO  TestLoginPage:184 - TestNG-test=Driscolls api App Test Cases-1 Employee details Updated Successfully
+2020-05-26 16:00:35 INFO  TestLoginPage:193 - TestNG-test=Driscolls api App Test Cases-1 Delete Employee Details tc started
+2020-05-26 16:00:36 INFO  TestLoginPage:200 - TestNG-test=Driscolls api App Test Cases-1 Delete request is executed Successfully
+2020-05-26 16:00:36 INFO  TestLoginPage:204 - TestNG-test=Driscolls api App Test Cases-1 Employee details Deleted Successfully
+2020-05-26 16:00:36 INFO  TestLoginPage:212 - TestNG-test=Driscolls api App Test Cases-1 *************** Execution Completed ********************
