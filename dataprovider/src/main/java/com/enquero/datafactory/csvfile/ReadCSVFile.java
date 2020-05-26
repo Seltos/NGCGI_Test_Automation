@@ -1,5 +1,6 @@
 package com.enquero.datafactory.csvfile;
 
+import com.enquero.datafactory.DataFactory.TestDataFactory;
 import org.json.simple.JSONObject;
 import java.io.*;
 import java.util.ArrayList;
@@ -7,14 +8,6 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class ReadCSVFile {
-    public static void main(String[] args) {
-        ReadCSVFile rd = new ReadCSVFile();
-        Iterator<Object[]> hello;
-        hello=rd.getTestData("C:\\Enquero_Automation_Framework\\TestExecutor\\src\\main\\resources\\testData.csv","testLogin");
-        while(hello.hasNext()) {
-            System.out.println(hello.next().toString());
-        }
-    }
 
     /**
      * @param csvFilepath the CSV file path which need to read
@@ -23,7 +16,7 @@ public class ReadCSVFile {
      */
     public Iterator<Object[]> getTestData(String csvFilepath,String methodName){
         Collection<Object[]> provider = new ArrayList<Object[]>();
-        CSVTestDataFactory dataFactory= new CSVTestDataFactory();
+        TestDataFactory dataFactory= new TestDataFactory();
         String line="";
         try {
             BufferedReader br = new BufferedReader(new FileReader(csvFilepath));

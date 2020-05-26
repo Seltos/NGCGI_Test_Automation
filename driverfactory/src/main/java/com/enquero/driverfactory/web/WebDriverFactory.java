@@ -10,14 +10,13 @@ import java.util.logging.Logger;
 
 public class WebDriverFactory {
 
-    public Logger logger = Logger.getLogger(this.getClass().getSimpleName());
-    private WebDriver driver;
-
+    //public Logger logger = Logger.getLogger(this.getClass().getSimpleName());
+    private static WebDriver driver;
     public WebDriverFactory() {
 
     }
 
-    @SuppressWarnings("deprecation")
+
     public WebDriver getDriver(String driverType, String webRunMode) throws MalformedURLException {
         if (webRunMode.equalsIgnoreCase("remote")) {
             driver = new RemoteDriverConfig().getRemoteDriver();
@@ -40,6 +39,10 @@ public class WebDriverFactory {
                     break;
             }
         }
+        return driver;
+    }
+
+    public static WebDriver getDriverinstance(){
         return driver;
     }
 }

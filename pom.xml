@@ -3,20 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.enquero</groupId>
     <artifactId>Enquero_Automation_Framework</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>driverfactory</module>
-        <module>TestExecutor</module>
-        <module>dataprovider</module>
         <module>reporter</module>
+        <module>driverfactory</module>
+        <module>dataprovider</module>
         <module>common_utility</module>
         <module>db_utility</module>
+        <module>bdd_Executor</module>
         <module>api_utility</module>
+        <module>TestExecutor</module>
     </modules>
     <properties>
         <testng.version>7.0.0</testng.version>
@@ -24,9 +24,11 @@
         <selenium-java.version>3.141.59</selenium-java.version>
         <selenium-chrome-driver.version>3.141.59</selenium-chrome-driver.version>
         <selenium-remote-driver.version>3.141.59</selenium-remote-driver.version>
+        <selenium-firefox-driver.version>3.141.59</selenium-firefox-driver.version>
         <mongo-java-driver.version>3.11.0-rc0</mongo-java-driver.version>
-    <!-- Appium dependencies -->
-    <appium-java-client.version>7.2.0</appium-java-client.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Appium dependencies -->
+        <appium-java-client.version>7.2.0</appium-java-client.version>
     </properties>
     <build>
         <plugins>
@@ -41,4 +43,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

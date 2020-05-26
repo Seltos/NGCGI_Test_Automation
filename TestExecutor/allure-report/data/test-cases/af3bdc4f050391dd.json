@@ -1,0 +1,111 @@
+{
+  "uid" : "af3bdc4f050391dd",
+  "name" : "Verifying login page title",
+  "fullName" : "com.enquero.webapp.driscolls.tests.TestLoginPage1.testLogin",
+  "historyId" : "ed9773ef6353da4ef6d1579012a25e97",
+  "time" : {
+    "start" : 1589463684417,
+    "stop" : 1589463685620,
+    "duration" : 1203
+  },
+  "description" : "Test Case description: verify login page",
+  "descriptionHtml" : "<p>Test Case description: verify login page</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1589463679081,
+      "stop" : 1589463684380,
+      "duration" : 5299
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1589463716388,
+      "stop" : 1589463717005,
+      "duration" : 617
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.enquero.webapp.driscolls.tests.TestLoginPage1"
+  }, {
+    "name" : "testClass",
+    "value" : "com.enquero.webapp.driscolls.tests.TestLoginPage1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.enquero.webapp.driscolls.tests.TestLoginPage1"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-IOVO5AK9"
+  }, {
+    "name" : "thread",
+    "value" : "10268@LAPTOP-IOVO5AK9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Story name:to check title of the page"
+  }, {
+    "name" : "epic",
+    "value" : "Regression Tests"
+  }, {
+    "name" : "feature",
+    "value" : "TestLogin Page Scenarios"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "com.enquero.datafactory.DataFactory.TestDataFactory@286dfa20"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "af3bdc4f050391dd.json",
+  "parameterValues" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@286dfa20" ]
+}

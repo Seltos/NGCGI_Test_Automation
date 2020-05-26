@@ -1,5 +1,6 @@
 package com.enquero.datafactory.jsonfile;
 
+import com.enquero.datafactory.DataFactory.TestDataFactory;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -10,15 +11,6 @@ import java.util.Iterator;
 
 public class ReadJsonFile {
 
-    public static void main(String[] args) {
-        ReadJsonFile rd = new ReadJsonFile();
-        Iterator<Object[]> readData;
-        readData=rd.getTestData("C:\\Enquero_Automation_Framework\\TestExecutor\\src\\main\\resources\\testData.json","testLogin");
-        while(readData.hasNext()) {
-            System.out.println(readData.next().toString());
-        }
-    }
-
     /**
      * @param jsonFilepath the path of the Json File.
      * @param methodName the testcase name
@@ -28,7 +20,7 @@ public class ReadJsonFile {
         Collection<Object[]> provider = new ArrayList<Object[]>();
         JSONParser jsonParser = new JSONParser();
         try {
-            JsonTestDataFactory dataFactory = new JsonTestDataFactory();
+            TestDataFactory dataFactory = new TestDataFactory();
             FileReader reader = new FileReader(jsonFilepath);
             Object obj = jsonParser.parse(reader);
             JSONObject json=  (JSONObject) obj;

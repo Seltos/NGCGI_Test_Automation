@@ -1,5 +1,7 @@
 package com.enquero.datafactory.xmlfile;
 
+import com.enquero.datafactory.DataFactory.TestDataFactory;
+import org.json.simple.JSONObject;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import org.w3c.dom.Document;
@@ -23,15 +25,8 @@ public class ReadXMLFile {
     private static Element rootElement;
     public static HashMap<Object,Object> input_Parameter= new HashMap<Object,Object>();
     public static HashMap<Object,Object> validation_Parameter= new HashMap<Object,Object>();
-
-    public static void main(String[] args){
-       ReadXMLFile rd = new ReadXMLFile();
-       Iterator<Object[]> testData;
-       testData =rd.getTestData("C:\\Enquero_Automation_Framework\\TestExecutor\\src\\main\\resources\\testData.xml","First");
-       while(testData.hasNext()) {
-           System.out.println(testData.next().toString());
-       }
-   }
+    public static JSONObject input_Parameter1;
+    public static JSONObject validation_Parameter1;
 
     /**
      * @param xmlFilename the path for the XML file
@@ -41,7 +36,7 @@ public class ReadXMLFile {
     public Iterator<Object[]> getTestData(String xmlFilename, String nodeValue){
         Collection<Object[]> provider = new ArrayList<Object[]>();
     try{
-        XMLTestDataFactory xmldataFactory= new XMLTestDataFactory();
+        TestDataFactory xmldataFactory= new TestDataFactory();
         dbfactory=DocumentBuilderFactory.newInstance();
         dBuilder=dbfactory.newDocumentBuilder();
         document=  dBuilder.parse(new File(xmlFilename));
@@ -56,8 +51,8 @@ public class ReadXMLFile {
                 xmldataFactory.setTestCaseId(nNode.getAttributes().getNamedItem("testcaseId").getTextContent());
                 xmldataFactory.setTestCaseName(nNode.getAttributes().getNamedItem("testcaseName").getTextContent());
                 printNodeList(nNode.getChildNodes());
-                xmldataFactory.setInputParameters(input_Parameter);
-                xmldataFactory.setValidationParameters(validation_Parameter);
+                xmldataFactory.setInputParameters(input_Parameter1);
+                xmldataFactory.setValidationParameters(validation_Parameter1);
                 provider.add(new Object[]{xmldataFactory});
             }
         }
@@ -85,10 +80,12 @@ public class ReadXMLFile {
                     if (elemNode.getNodeName().equals("InputParameters")) {
                         if (!elemNode.getChildNodes().item(j).getNodeName().equals("#text")) {
                             input_Parameter.put(elemNode.getChildNodes().item(j).getNodeName(), elemNode.getChildNodes().item(j).getTextContent());
+                            input_Parameter1= new JSONObject(input_Parameter);
                         }
                     } else if (elemNode.getNodeName().equals("ValidationParameters")){
                         if (!elemNode.getChildNodes().item(j).getNodeName().equals("#text")) {
                             validation_Parameter.put(elemNode.getChildNodes().item(j).getNodeName(), elemNode.getChildNodes().item(j).getTextContent());
+                            validation_Parameter1= new JSONObject(validation_Parameter);
                         }
                         }
                 }

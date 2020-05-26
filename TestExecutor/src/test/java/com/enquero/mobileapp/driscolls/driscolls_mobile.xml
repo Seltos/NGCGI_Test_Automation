@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Regression Test Suite" verbose="1" parallel="methods"  thread-count="3">
+
     <parameter name="env" value="qa"/>
     <parameter name="apkFilePath" value="C:\Users\VivekVerma\Downloads\app-debug.apk"/>
     <test name="Driscolls Mobile App Test Cases">

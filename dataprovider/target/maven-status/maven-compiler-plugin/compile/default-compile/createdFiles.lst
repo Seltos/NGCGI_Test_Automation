@@ -1,8 +1,0 @@
-com\enquero\datafactory\xlsfile\ReadXlsFile.class
-com\enquero\datafactory\csvfile\CSVTestDataFactory.class
-com\enquero\datafactory\jsonfile\JsonTestDataFactory.class
-com\enquero\datafactory\csvfile\ReadCSVFile.class
-com\enquero\datafactory\xmlfile\XMLTestDataFactory.class
-com\enquero\datafactory\xlsfile\TestDataFactory.class
-com\enquero\datafactory\jsonfile\ReadJsonFile.class
-com\enquero\datafactory\xmlfile\ReadXMLFile.class
