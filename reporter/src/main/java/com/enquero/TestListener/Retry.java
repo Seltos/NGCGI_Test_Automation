@@ -21,6 +21,7 @@ public class Retry implements IRetryAnalyzer {
                 retryCount++;
                 iTestResult.setStatus(ITestResult.FAILURE);
                 extendReportsFailOperations(iTestResult);
+                ExtentTestReporter.getInstance().removeTest(AllureExtentTestNGListener.extent);
                 return true;
             }else{
                 retryCount=0;
@@ -46,15 +47,17 @@ public class Retry implements IRetryAnalyzer {
         WebDriver webDriver = WebDriverFactory.getDriverinstance();
         String path = null;
         String testMethodName = iTestResult.getName().trim();
-        try {
-            path= ExtentTestReporter.getFullPageShutterbug(WebDriverFactory.getDriverinstance(),testMethodName);
-        } catch (Exception e) {
-            e.printStackTrace();
-            ExtentTestReporter.getTest().info(("An exception occurred while taking screenshot " + e.getCause()));
+        if (AllureExtentTestNGListener.testName.toUpperCase().contains(("API"))) {
+            try {
+                path = ExtentTestReporter.getFullPageShutterbug(WebDriverFactory.getDriverinstance(), testMethodName);
+            } catch (Exception e) {
+                e.printStackTrace();
+                ExtentTestReporter.getTest().info(("An exception occurred while taking screenshot " + e.getCause()));
+            }
+            String tag = "<a href=" + "\"" + path + "\"" + "target='_blank'" + ">" + "Click here" + "</a";
+            System.out.print("tag name: " + tag);
+            ExtentTestReporter.getTest().log(Status.FAIL, "Retried Test Case failed and screenshot attached: " + tag);
         }
-        String tag= "<a href="+"\""+path+"\""+"target='_blank'"+">"+"Click here"+"</a";
-        System.out.print("tag name: "+tag);
-        ExtentTestReporter.getTest().log(Status.FAIL,"Retried Test Case failed and screenshot attached: "+tag);
         final Throwable error= iTestResult.getThrowable();
         final String message= ExtentTestReporter.getCustomStackTrace(error);
         String tag1= "<a href=\"javascript:window.alert('"+message+"');\">Click here</a>";
