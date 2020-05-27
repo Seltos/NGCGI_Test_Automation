@@ -8,22 +8,42 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">26,909</td><td></td><td></td></tr>
+<tr><th colspan="7">Regression API Test Suite</th></tr>
+<tr><td><a href="#t0">Driscolls API App Test Cases</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">18,735</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.enquero.webapp.driscolls.tests.TestLoginPage</td><td><a href="#m0">testLoginJasmine</a></td><td rowspan="1">1589956993549</td><td rowspan="1">56</td></tr><tr class="failedeven"><td><a href="#m1">testLoginJavascript</a></td><td rowspan="1">1589956993750</td><td rowspan="1">12287</td></tr><tr class="failedeven"><td><a href="#m2">testLoginSelenium</a></td><td rowspan="1">1589957006074</td><td rowspan="1">4443</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression API Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Driscolls API App Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.enquero.api.driscolls.tests.EmployeeTest</td><td><a href="#m0">getEmployeeDetails</a></td><td rowspan="1">1590584377032</td><td rowspan="1">946</td></tr><tr class="failedeven"><td><a href="#m1">getEmployeeIdDetails</a></td><td rowspan="1">1590584382774</td><td rowspan="1">970</td></tr><tr><th colspan="4">Driscolls API App Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.enquero.api.driscolls.tests.EmployeeTest</td><td><a href="#m2">deleteEmployeeRecord</a></td><td rowspan="1">1590584386224</td><td rowspan="1">990</td></tr><tr class="passedeven"><td><a href="#m3">postEmployeeDetails</a></td><td rowspan="1">1590584380747</td><td rowspan="1">1006</td></tr><tr class="passedeven"><td><a href="#m4">updateEmployeeDetails</a></td><td rowspan="1">1590584385319</td><td rowspan="1">903</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.enquero.webapp.driscolls.tests.TestLoginPage#testLoginJasmine</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@559e3f67</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJasmine(TestLoginPage.java:68)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.enquero.webapp.driscolls.tests.TestLoginPage#testLoginJavascript</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@47eae91d</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginJavascript(TestLoginPage.java:54)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.enquero.webapp.driscolls.tests.TestLoginPage#testLoginSelenium</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.enquero.datafactory.DataFactory.TestDataFactory@2862271a</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.enquero.webapp.driscolls.tests.TestLoginPage.testLoginSelenium(TestLoginPage.java:92)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Driscolls API App Test Cases</h2><h3 id="m0">com.enquero.api.driscolls.tests.EmployeeTest#getEmployeeDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [success] but found [fail]
+	at com.enquero.api.driscolls.tests.EmployeeTest.getEmployeeDetails(EmployeeTest.java:75)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.enquero.api.driscolls.tests.EmployeeTest#getEmployeeIdDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: &apos;void org.hamcrest.Matcher.describeMismatch(java.lang.Object, org.hamcrest.Description)&apos;
+	at io.restassured.internal.util.MatcherErrorMessageBuilder.buildError(MatcherErrorMessageBuilder.java:19)
+	at io.restassured.internal.util.MatcherErrorMessageBuilder$buildError.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validateStatusCodeAndStatusLine(ResponseSpecificationImpl.groovy:536)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:449)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.enquero.apiutility.RestUtil.getRequest(RestUtil.java:208)
+	at com.enquero.api.driscolls.tests.EmployeeTest.getEmployeeIdDetails(EmployeeTest.java:130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.enquero.api.driscolls.tests.EmployeeTest#deleteEmployeeRecord</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.enquero.api.driscolls.tests.EmployeeTest#postEmployeeDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.enquero.api.driscolls.tests.EmployeeTest#updateEmployeeDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

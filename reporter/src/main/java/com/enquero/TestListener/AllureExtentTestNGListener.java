@@ -1,6 +1,8 @@
 package com.enquero.TestListener;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.enquero.api.driscolls.APICommon.JiraReusableUtility;
 import com.enquero.driverfactory.web.WebDriverFactory;
 import com.enquero.reporter.ExtentTestReporter;
 import io.qameta.allure.Attachment;
@@ -12,17 +14,10 @@ import org.testng.*;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class AllureExtentTestNGListener implements ITestListener, ISuiteListener,IInvokedMethodListener {
-    @Override
-    public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
-
-    }
-
-    @Override
-    public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-    System.out.println(testResult.isSuccess()+" gap "+method.isTestMethod());
-    method.getTestMethod().getMethodName();
-    }
+public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
+    public static ExtentTest extent;
+    public static String testName;
+    public static String testCasename;
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -53,6 +48,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         System.out.println("***** Test Suite "+suite.getName()+" started *******");
     }
 
+
     @Override
     public void onFinish(ISuite suite) {
         System.out.println("Test Suite Finished: "+suite.getName());
@@ -61,8 +57,10 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
 
     @Override
     public void onTestStart(ITestResult result) {
+        testCasename=result.getMethod().getMethodName();
         System.out.println("Running Test Method: "+result.getMethod().getMethodName());
-        ExtentTestReporter.startTest(result.getMethod().getMethodName());
+        extent=ExtentTestReporter.startTest(result.getMethod().getMethodName());
+        ExtentTestReporter.getTest().assignCategory("RegressionTests");
         ExtentTestReporter.getTest().log(Status.INFO,"Execution of "+result.getMethod().getMethodName()+" STARTED ");
     }
 
@@ -78,16 +76,18 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         System.out.println("I am in onTestFailure method " +  getTestMethodName(result) + " failed");
         String path = null;
         String testMethodName = result.getName().trim();
-        try {
-            //path=ExtentTestReporter.getScreenshot(WebDriverFactory.getDriverinstance(),testMethodName);
-            path= ExtentTestReporter.getFullPageShutterbug(WebDriverFactory.getDriverinstance(),testMethodName);
-        } catch (Exception e) {
-            e.printStackTrace();
-            ExtentTestReporter.getTest().info(("An exception occurred while taking screenshot " + e.getCause()));
+        if (!testName.toUpperCase().contains("API")) {
+            try {
+                //path=ExtentTestReporter.getScreenshot(WebDriverFactory.getDriverinstance(),testMethodName);
+                path = ExtentTestReporter.getFullPageShutterbug(WebDriverFactory.getDriverinstance(), testMethodName);
+            } catch (Exception e) {
+                e.printStackTrace();
+                ExtentTestReporter.getTest().info(("An exception occurred while taking screenshot " + e.getCause()));
+            }
+            String tag = "<a href=" + "\"" + path + "\"" + "target='_blank'" + ">" + "Click here" + "</a";
+            System.out.print("tag name: " + tag);
+            ExtentTestReporter.getTest().log(Status.FAIL, "Test Case failed and screenshot attached: " + tag);
         }
-        String tag= "<a href="+"\""+path+"\""+"target='_blank'"+">"+"Click here"+"</a";
-        System.out.print("tag name: "+tag);
-        ExtentTestReporter.getTest().log(Status.FAIL,"Test Case failed and screenshot attached: "+tag);
         final Throwable error= result.getThrowable();
         final String message= ExtentTestReporter.getCustomStackTrace(error);
         String tag1= "<a href=\"javascript:window.alert('"+message+"');\">Click here</a>";
@@ -102,6 +102,8 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         saveTextLog(getTestMethodName(result) + " testcase failed and screenshot taken!");
         Boolean flag= result.wasRetried();
         System.out.println("The test: "+result.getTestName()+"retried flag is: "+flag);
+        String bugId= JiraReusableUtility.createIssue();
+        ExtentTestReporter.getTest().log(Status.FAIL,"Bug Id created in Jira is: "+bugId);
     }
 
     @Override
@@ -122,7 +124,8 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
 
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("***** Test "+context.getName()+" started *******");
+        testName=context.getName();
+        System.out.println("***** Test "+ context.getName() +" started *******");
     }
 
     @Override
