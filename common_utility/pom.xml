@@ -16,20 +16,20 @@
         <version>${testng.version}</version>
         <!-- <scope>test</scope>-->
     </dependency>
-    <dependency>
+<!--    <dependency>
         <groupId>com.enquero</groupId>
         <artifactId>reporter</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <scope>compile</scope>
-       <!-- <scope>${scope-compile.version}</scope>-->
-    </dependency>
-    <dependency>
+&lt;!&ndash;        <scope>compile</scope>&ndash;&gt;
+        <scope>${scope-compile.version}</scope>
+    </dependency>-->
+<!--    <dependency>
         <groupId>com.enquero</groupId>
         <artifactId>api_utility</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <scope>compile</scope>
-      <!--  <scope>${scope-compile.version}</scope>-->
-    </dependency>
+        &lt;!&ndash;<scope>compile</scope>&ndash;&gt;
+       <scope>${scope-compile.version}</scope>
+    </dependency>-->
    <!-- <dependency>
         <groupId>com.aventstack</groupId>
         <artifactId>extentreports</artifactId>

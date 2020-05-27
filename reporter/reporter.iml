@@ -72,14 +72,14 @@
     <orderEntry type="library" name="Maven: com.github.zafarkhaja:java-semver:0.9.0" level="project" />
     <orderEntry type="library" name="Maven: io.qameta.allure:allure-java-commons:2.12.0" level="project" />
     <orderEntry type="library" name="Maven: io.qameta.allure:allure-model:2.12.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.tika:tika-core:1.20" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.jooq:joor-java-8:0.9.10" level="project" />
     <orderEntry type="module" module-name="common_utility" />
     <orderEntry type="module" module-name="api_utility" />
-    <orderEntry type="library" name="Maven: org.json:json:20190722" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.json:json:20190722" level="project" />
     <orderEntry type="library" name="Maven: io.rest-assured:rest-assured:3.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:2.4.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-xml:2.4.12" level="project" />
