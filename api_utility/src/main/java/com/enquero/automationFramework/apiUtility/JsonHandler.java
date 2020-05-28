@@ -19,19 +19,25 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class JsonHandler {
 
 	ObjectMapper mapper = new ObjectMapper();
-	
+
 	public File updateJson(String location, String updateSequence, List<String> updates) throws IOException {
+		File file = new File(location);
+		return updateJson(file,updateSequence,updates);
+	}
+
+
+	public File updateJson(File file, String updateSequence, List<String> updates) throws IOException {
 		
 		String[] sequences = updateSequence.split(",");
 		List<String> updateSequences = new ArrayList<String>(Arrays.asList(sequences));
 				
-		File file = new File(location);
+
 
 		File tempDir = new File(System.getProperty("java.io.tmpdir"));
 		File tempFile = File.createTempFile("updatedJson", ".txt", tempDir);
 		FileWriter updatedFile = new FileWriter(tempFile);
 		
-		JSONObject json = new JSONObject(new String(Files.readAllBytes(Paths.get(location)))); 
+		JSONObject json = new JSONObject(new String(Files.readAllBytes(Paths.get(file.getAbsolutePath()))));
 		
 		
 		// When no updation
