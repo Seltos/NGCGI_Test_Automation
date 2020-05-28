@@ -17,7 +17,7 @@ import java.util.Iterator;
 public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
     public static ExtentTest extent;
     public static String testName;
-
+    public static String testCasename;
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -57,6 +57,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
 
     @Override
     public void onTestStart(ITestResult result) {
+        testCasename=result.getMethod().getMethodName();
         System.out.println("Running Test Method: "+result.getMethod().getMethodName());
         extent=ExtentTestReporter.startTest(result.getMethod().getMethodName());
         ExtentTestReporter.getTest().assignCategory("RegressionTests");

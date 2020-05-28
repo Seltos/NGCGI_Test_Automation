@@ -34,7 +34,9 @@ import static org.testng.Assert.assertTrue;
 
 
 public class EmployeeTest {
-    Logger logger= Logger.getLogger(TestLoginPage.class.getName());
+
+    Logger logger= Logger.getLogger(EmployeeTest.class.getName());
+
     public ExtentReports extentReports;
     private Response res = null; //Response object
     private JsonPath jp = null; //JsonPath object
@@ -44,17 +46,13 @@ public class EmployeeTest {
     public String endpoint = "";
     public String queryParam = "";
     public static String empid ="";
-//    public ExcelUtils excelutils;
 
 
     @BeforeTest
     public void beforeTest() throws IOException {
         System.out.println("Present Project Directory : "+ System.getProperty("user.dir"));
         pr = new Properties();
-//        FileInputStream f = new FileInputStream(System.getProperty("user.dir") + "/src/test/java/com/enquero/api/driscolls/Input.properties");
-//        pr.load(f);
-//        baseURI = pr.getProperty("baseURI");
-//        basePath = pr.getProperty("basePath");
+
         baseURI = Endpoints.APP_BASE_URI;
         basePath = Endpoints.APP_BASE_PATH;
         RestAssured.baseURI = baseURI;
