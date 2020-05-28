@@ -12,16 +12,15 @@ import java.io.IOException;
 
 public class XmlValidate {
 
-    public boolean validateXmlWithSchema(String xmlLocation, String schemaLocation){
+    public boolean validateXmlWithSchema(File xmlFile, File schemaFile){
 
 
         try {
             SchemaFactory schemaFactory = SchemaFactory
                     .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = schemaFactory.newSchema(new File(
-                    schemaLocation));
+            Schema schema = schemaFactory.newSchema(schemaFile);
             Validator validator = schema.newValidator();
-            validator.validate(new StreamSource(new File(xmlLocation)));
+            validator.validate(new StreamSource(xmlFile));
             return true;
         } catch (SAXException e) {
             e.printStackTrace();
@@ -30,6 +29,11 @@ public class XmlValidate {
             e.printStackTrace();
             return false;
         }
+    }
+    public boolean validateXmlWithSchema(String xmlLocation, String schemaLocation){
+        File xmlFile = new File(xmlLocation);
+        File schemaFile = new File(schemaLocation);
+        return validateXmlWithSchema(xmlFile,schemaFile);
     }
 
 

@@ -24,21 +24,25 @@ import org.xml.sax.SAXException;
 public class XmlHandler {
 
     public File updateXml(String location, String updateSequence, List<String> updates) throws Exception {
+        File xmlFile = new File(location);
+        return updateXml(xmlFile,updateSequence,updates);
+    }
+
+    public File updateXml(File xmlFile, String updateSequence, List<String> updates) throws Exception {
 
         String[] updateSequences = updateSequence.split(",");
-        File file = new File(location);
 
-        System.out.println(location);
+
 
         // When no updation
         if(updates.size()==0||updateSequences.length==0) {
-            return file;
+            return xmlFile;
         }
 
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 
         try {
-            Document doc = dbFactory.newDocumentBuilder().parse(file);
+            Document doc = dbFactory.newDocumentBuilder().parse(xmlFile);
             NodeList nodes = doc.getElementsByTagName(updateSequence);
             for(int i=0; i<nodes.getLength(); i++){
                 Node tempNode = nodes.item(i).getFirstChild();
