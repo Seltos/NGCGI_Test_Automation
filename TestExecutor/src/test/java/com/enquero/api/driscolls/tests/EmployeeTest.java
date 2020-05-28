@@ -34,7 +34,9 @@ import static org.testng.Assert.assertTrue;
 
 
 public class EmployeeTest {
+
     Logger logger= Logger.getLogger(EmployeeTest.class.getName());
+
     public ExtentReports extentReports;
     private Response res = null; //Response object
     private JsonPath jp = null; //JsonPath object
@@ -50,6 +52,7 @@ public class EmployeeTest {
     public void beforeTest() throws IOException {
         System.out.println("Present Project Directory : "+ System.getProperty("user.dir"));
         pr = new Properties();
+
         baseURI = Endpoints.APP_BASE_URI;
         basePath = Endpoints.APP_BASE_PATH;
         RestAssured.baseURI = baseURI;

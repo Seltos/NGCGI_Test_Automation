@@ -125,7 +125,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
     @Override
     public void onStart(ITestContext context) {
         testName=context.getName();
-        System.out.println("***** Test "+ context.getName() +" started *******");
+        System.out.println("***** Test "+context.getName()+" started *******");
     }
 
     @Override

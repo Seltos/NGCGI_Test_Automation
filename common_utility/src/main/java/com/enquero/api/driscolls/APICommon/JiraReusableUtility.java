@@ -1,12 +1,13 @@
 package com.enquero.api.driscolls.APICommon;
 
 
-
 import com.enquero.TestListener.AllureExtentTestNGListener;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
@@ -22,6 +23,7 @@ public class JiraReusableUtility {
         issuetype.setId(Properties.JIRA_ISSUE_TYPE);
 
         fields.setProject(project);
+
         String TestName= AllureExtentTestNGListener.testCasename;
         System.out.println("Test case name for bug creation"+TestName);
         fields.setSummary("Test " + TestName + " is failed");
@@ -43,6 +45,4 @@ public class JiraReusableUtility {
         String bugId = response.jsonPath().getString("key");
         return bugId;
     }
-
-
 }
