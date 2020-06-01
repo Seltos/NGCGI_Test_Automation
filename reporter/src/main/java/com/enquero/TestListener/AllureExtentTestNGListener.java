@@ -17,7 +17,7 @@ import java.util.Iterator;
 public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
     public static ExtentTest extent;
     public static String testName;
-    public static String testCasename;
+
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -57,7 +57,6 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
 
     @Override
     public void onTestStart(ITestResult result) {
-        testCasename=result.getMethod().getMethodName();
         System.out.println("Running Test Method: "+result.getMethod().getMethodName());
         extent=ExtentTestReporter.startTest(result.getMethod().getMethodName());
         ExtentTestReporter.getTest().assignCategory("RegressionTests");
@@ -75,7 +74,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         //Added ExtentReports part
         System.out.println("I am in onTestFailure method " +  getTestMethodName(result) + " failed");
         String path = null;
-        String testMethodName = result.getName().trim();
+        String testMethodName = result.getMethod().getMethodName();
         if (!testName.toUpperCase().contains("API")) {
             try {
                 //path=ExtentTestReporter.getScreenshot(WebDriverFactory.getDriverinstance(),testMethodName);
@@ -102,7 +101,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         saveTextLog(getTestMethodName(result) + " testcase failed and screenshot taken!");
         Boolean flag= result.wasRetried();
         System.out.println("The test: "+result.getTestName()+"retried flag is: "+flag);
-        String bugId= JiraReusableUtility.createIssue();
+        String bugId= JiraReusableUtility.createIssue(testMethodName);
         ExtentTestReporter.getTest().log(Status.FAIL,"Bug Id created in Jira is: "+bugId);
     }
 

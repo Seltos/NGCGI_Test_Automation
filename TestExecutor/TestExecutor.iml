@@ -73,6 +73,7 @@
     <orderEntry type="library" name="Maven: org.json:json:20190722" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.10" level="project" />
+    <orderEntry type="module" module-name="db_utility" />
     <orderEntry type="module" module-name="api_utility" />
     <orderEntry type="library" name="Maven: io.rest-assured:rest-assured:3.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:2.4.12" level="project" />

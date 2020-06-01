@@ -1,5 +1,4 @@
-TestExecutor\allure-results\*
-TestExecutor\src\Reports\*
-TestExecutor\src\Reports\Screenshots\*
-**\target
 TestExecutor/allure-results/*
+TestExecutor/src/Reports/*.html
+TestExecutor/src/Reports/Screenshots/*
+**/target
