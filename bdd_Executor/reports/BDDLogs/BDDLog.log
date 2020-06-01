@@ -1,0 +1,24 @@
+2020-06-01 18:06:265 INFO  WebDriverManager:615 - Using chromedriver 83.0.4103.39 (since Google Chrome 83 is installed in your machine)
+2020-06-01 18:06:381 INFO  WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\MalaShreeSiddalingaP\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-06-01 18:06:20 INFO  browser:35 - Driver is initialized
+2020-06-01 18:06:21 INFO  browser:36 - *******Execution Started**************
+2020-06-01 18:06:792 INFO  browser:80 - Navigated to the urlhttps://vivek-enquero.atlassian.net/
+2020-06-01 18:06:530 INFO  browser:57 - Username Enteredvivek.verma@enquero.com
+2020-06-01 18:06:38 INFO  browser:72 - Sigin into the Application
+2020-06-01 18:06:62 INFO  browser:65 - Password EnteredQazxsw12
+2020-06-01 18:06:380 INFO  browser:72 - Sigin into the Application
+2020-06-01 18:06:450 INFO  ServiceHooks:68 - Atlassian_login is pass
+2020-06-01 18:06:90 INFO  ServiceHooks:32 - Create Story in Jira is Failed
+2020-06-01 18:06:774 INFO  ServiceHooks:46 - Create Story in JiraOn this test failure it started cretaing bug
+2020-06-01 18:06:459 INFO  ServiceHooks:48 - Create Story in Jira is Failed
+2020-06-01 18:06:462 INFO  ServiceHooks:56 - Create Story in JiraOn this test failure it started created bugAUT-443
+2020-06-01 18:06:643 INFO  browser:200 - Adding SummmaryCreate an Instance of Partner
+2020-06-01 18:06:388 INFO  ServiceHooks:68 - Create Bug in Jira is pass
+2020-06-01 18:06:415 INFO  ServiceHooks:32 - Create Ticket on Failures is Failed
+2020-06-01 18:06:187 INFO  ServiceHooks:46 - Create Ticket on FailuresOn this test failure it started cretaing bug
+2020-06-01 18:06:853 INFO  ServiceHooks:48 - Create Ticket on Failures is Failed
+2020-06-01 18:06:855 INFO  ServiceHooks:56 - Create Ticket on FailuresOn this test failure it started created bugAUT-445
+2020-06-01 18:06:15 INFO  browser:123 - Logged out Successfully
+2020-06-01 18:06:925 INFO  browser:47 - Driver is Terminated
+2020-06-01 18:06:927 INFO  browser:48 - *******Execution Stopped**************
+2020-06-01 18:06:932 INFO  ServiceHooks:68 - Logout From the Application is pass
