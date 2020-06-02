@@ -18,8 +18,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonHandler {
 
-	ObjectMapper mapper = new ObjectMapper();
-
 	public File updateJson(String location, String updateSequence, List<String> updates) throws IOException {
 		File file = new File(location);
 		return updateJson(file,updateSequence,updates);
@@ -94,7 +92,7 @@ public class JsonHandler {
 	
 	
 	
-	public JSONArray jsonArrayUpdater(JSONArray jsonObjects, List<String> updateSequences , List<String> updates) throws JSONException, IOException {
+	private JSONArray jsonArrayUpdater(JSONArray jsonObjects, List<String> updateSequences , List<String> updates) throws JSONException, IOException {
 		
 		for(int i=0;i<jsonObjects.length();i++) {
 			jsonObjectUpdater(jsonObjects.getJSONObject(i), updateSequences, updates);
@@ -104,7 +102,7 @@ public class JsonHandler {
 	}
 
 	
-	public JSONObject jsonObjectUpdater(JSONObject json, List<String> updateSequences, List<String> updates) throws IOException {
+	private JSONObject jsonObjectUpdater(JSONObject json, List<String> updateSequences, List<String> updates) throws IOException {
 		if(updates.size()<1) {
 			throw new IOException("There are different number of objects to be replaced and given to replace.");
 		}
@@ -130,7 +128,7 @@ public class JsonHandler {
 		return json;
 	}
 	
-	public JSONObject jsonFinalKeyUpdater(JSONObject json, List<String> updateSequences, List<String> updates) {
+	private JSONObject jsonFinalKeyUpdater(JSONObject json, List<String> updateSequences, List<String> updates) {
 		json.put(updateSequences.get(0), updates.get(0));
 		updates.remove(0);
 		return json;
