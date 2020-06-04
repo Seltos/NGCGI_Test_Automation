@@ -1,5 +1,6 @@
 package com.enquero.Testlogs;
 
+import com.enquero.TestListener.AllureExtentTestNGListener;
 import org.apache.log4j.PropertyConfigurator;
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,7 +23,11 @@ public class GenerateLogs {
             file = new File(filepath);
             Properties props = new Properties();
             props.load(new FileInputStream(filepath));
-            props.setProperty("log4j.appender.file.File",System.getProperty("user.dir")+fileSeperator+"src\\Logs\\Test.log");
+            if(!AllureExtentTestNGListener.testName.toUpperCase().contains("API")) {
+                props.setProperty("log4j.appender.file.File", System.getProperty("user.dir") + fileSeperator + "src\\Logs\\Test.log");
+            }else{
+                props.setProperty("log4j.appender.file.File", System.getProperty("user.dir") + fileSeperator + "src\\Logs\\APITest.log");
+            }
             PropertyConfigurator.configure(props);
         } catch (Exception e) {
             e.printStackTrace();

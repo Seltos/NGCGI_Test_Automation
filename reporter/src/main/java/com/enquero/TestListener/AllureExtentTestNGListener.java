@@ -15,7 +15,7 @@ import java.util.Set;
 public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
 
     public static ExtentTest extent;
-    public String testName;
+    public static String testName;
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
