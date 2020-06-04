@@ -1,3 +1,0 @@
-TestCaseId;TestCaseName;InputParameters;ValidationParameters
-1;testLogin;"username:123,data:Swati";"validation:true"
-2;testLoginFacebook;"username:SwatiChetty,password:tfr456";"validate:text"

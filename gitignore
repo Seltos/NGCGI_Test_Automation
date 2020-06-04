@@ -1,0 +1,4 @@
+TestExecutor/allure-results/*
+TestExecutor/src/Reports/*.html
+TestExecutor/src/Reports/Screenshots/*
+**/target

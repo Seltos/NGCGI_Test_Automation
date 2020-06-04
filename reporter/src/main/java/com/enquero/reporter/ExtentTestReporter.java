@@ -34,9 +34,11 @@ public class ExtentTestReporter {
 
     public static void cleanDirectory() throws IOException {
         File f2 = new File(screenshotFilepath);
-        File f3= new File(allureResultsPath);
         FileUtils.cleanDirectory(f2);
+
+        File f3= new File(allureResultsPath);
         FileUtils.cleanDirectory(f3);
+
     }
 
     public static ExtentReports getInstance() {
@@ -82,7 +84,6 @@ public class ExtentTestReporter {
     }
 
     public static synchronized void endTest() {
-
         extentReport.flush();
     }
 

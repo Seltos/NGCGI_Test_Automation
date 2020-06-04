@@ -9,6 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>common_utility</artifactId>
+<dependencies>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>${testng.version}</version>
+        <!-- <scope>test</scope>-->
+    </dependency>
 
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>3.0.6</version>
+        <scope>compile</scope>
+    </dependency>
+</dependencies>
 
 </project>

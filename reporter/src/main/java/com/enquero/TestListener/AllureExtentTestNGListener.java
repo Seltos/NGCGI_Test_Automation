@@ -2,6 +2,7 @@ package com.enquero.TestListener;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.enquero.api.driscolls.APICommon.JiraReusableUtility;
 import com.enquero.driverfactory.web.WebDriverFactory;
 import com.enquero.reporter.ExtentTestReporter;
 import io.qameta.allure.Attachment;
@@ -9,13 +10,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.*;
+
 import java.io.IOException;
-import java.util.Set;
+import java.util.Iterator;
 
 public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
-
     public static ExtentTest extent;
     public static String testName;
+
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -46,6 +48,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         System.out.println("***** Test Suite "+suite.getName()+" started *******");
     }
 
+
     @Override
     public void onFinish(ISuite suite) {
         System.out.println("Test Suite Finished: "+suite.getName());
@@ -55,8 +58,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
     @Override
     public void onTestStart(ITestResult result) {
         System.out.println("Running Test Method: "+result.getMethod().getMethodName());
-        extent= ExtentTestReporter.startTest(result.getMethod().getMethodName());
-        System.out.println("extent is: "+extent);
+        extent=ExtentTestReporter.startTest(result.getMethod().getMethodName());
         ExtentTestReporter.getTest().assignCategory("RegressionTests");
         ExtentTestReporter.getTest().log(Status.INFO,"Execution of "+result.getMethod().getMethodName()+" STARTED ");
     }
@@ -72,7 +74,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         //Added ExtentReports part
         System.out.println("I am in onTestFailure method " +  getTestMethodName(result) + " failed");
         String path = null;
-        String testMethodName = result.getName().trim();
+        String testMethodName = result.getMethod().getMethodName();
         if (!testName.toUpperCase().contains("API")) {
             try {
                 //path=ExtentTestReporter.getScreenshot(WebDriverFactory.getDriverinstance(),testMethodName);
@@ -99,11 +101,14 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         saveTextLog(getTestMethodName(result) + " testcase failed and screenshot taken!");
         Boolean flag= result.wasRetried();
         System.out.println("The test: "+result.getTestName()+"retried flag is: "+flag);
+        String bugId= JiraReusableUtility.createIssue(testMethodName);
+        ExtentTestReporter.getTest().log(Status.FAIL,"Bug Id created in Jira is: "+bugId);
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         System.out.println("*** Test " + result.getMethod().getMethodName() + " skipped...");
+        //ExtentTestReporter.getTest().log(Status.SKIP, "Test Skipped");
     }
 
     @Override
@@ -125,18 +130,29 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
     @Override
     public void onFinish(ITestContext context) {
         System.out.println("On Finish Context level executing");
-        Set<ITestResult> skippedTests = context.getSkippedTests().getAllResults();
-        for (ITestResult temp : skippedTests) {
-            ITestNGMethod method = temp.getMethod();
-            if (context.getFailedTests().getResults(method).size() > 0) {
-                skippedTests.remove(temp);
+        Iterator<ITestResult> failedTests = context.getFailedTests().getAllResults().iterator();
+        Iterator<ITestResult> skippedTests = context.getSkippedTests().getAllResults().iterator();
+        while (failedTests.hasNext()) {
+            ITestResult failedTestCases = failedTests.next();
+            ITestNGMethod method = failedTestCases.getMethod();
+            if (context.getFailedTests().getResults(method).size() > 1) {
+                failedTests.remove();
             } else {
                 if (context.getPassedTests().getResults(method).size() > 0) {
-                    skippedTests.remove(temp);
+                    failedTests.remove();
+                }
+            }
+        }
+        while (skippedTests.hasNext()) {
+            ITestResult skippedTestCases = skippedTests.next();
+            ITestNGMethod method = skippedTestCases.getMethod();
+            if (context.getSkippedTests().getResults(method).size() > 1) {
+                skippedTests.remove();
+            } else {
+                if (context.getSkippedTests().getResults(method).size() > 0) {
+                    skippedTests.remove();
                 }
             }
         }
     }
-
-
 }

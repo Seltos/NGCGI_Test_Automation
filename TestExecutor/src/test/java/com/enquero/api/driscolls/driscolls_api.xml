@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression API Test Suite" verbose="1"  thread-count="1">
+    <listeners>
+        <listener class-name="com.enquero.TestListener.AllureExtentTestNGListener"></listener>
+        <listener class-name="com.enquero.TestListener.AnnotationTransformer"></listener>
+    </listeners>
+
+    <test name="Driscolls API App Test Cases">
+
+        <classes>
+            <class name="com.enquero.api.driscolls.tests.EmployeeTest"/>
+        </classes>
+
+    </test>
+</suite>

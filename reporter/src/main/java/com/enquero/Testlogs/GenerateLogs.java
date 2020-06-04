@@ -23,9 +23,12 @@ public class GenerateLogs {
             file = new File(filepath);
             Properties props = new Properties();
             props.load(new FileInputStream(filepath));
+            String testCasename= AllureExtentTestNGListener.testName.toUpperCase();
+            System.out.println("Testcase name is: "+testCasename);
             if(!AllureExtentTestNGListener.testName.toUpperCase().contains("API")) {
                 props.setProperty("log4j.appender.file.File", System.getProperty("user.dir") + fileSeperator + "src\\Logs\\Test.log");
             }else{
+                System.out.println("entered into API log file...");
                 props.setProperty("log4j.appender.file.File", System.getProperty("user.dir") + fileSeperator + "src\\Logs\\APITest.log");
             }
             PropertyConfigurator.configure(props);
@@ -33,6 +36,7 @@ public class GenerateLogs {
             e.printStackTrace();
         }
     }
+
 
     private static String getLogPath(String path) {
         PropertyFileLocation=root+fileSeperator+"reporter\\src\\main\\java\\com\\enquero\\Testlogs"+fileSeperator+propertyFileName;
