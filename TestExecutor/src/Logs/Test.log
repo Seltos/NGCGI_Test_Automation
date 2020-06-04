@@ -2302,3 +2302,10 @@
 2020-05-26 12:22:04 ERROR TestLoginPage:94 - main validation failed
 2020-05-26 12:22:04 ERROR TestLoginPage:95 - main validation failed
 2020-05-26 12:22:04 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-06-04 19:40:04 INFO  TestLoginPage:40 - main ************* Execution Started *************
+2020-06-04 19:40:06 INFO  TestLoginPage:66 - main Testloginjasmine Test case started
+2020-06-04 19:40:06 WARN  TestLoginPage:69 - main Input Parameters not validated
+2020-06-04 19:40:06 INFO  TestLoginPage:73 - main Username validated successfully
+2020-06-04 19:40:10 INFO  TestLoginPage:66 - main Testloginjasmine Test case started
+2020-06-04 19:40:10 WARN  TestLoginPage:69 - main Input Parameters not validated
+2020-06-04 19:40:10 INFO  TestLoginPage:73 - main Username validated successfully
