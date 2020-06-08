@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="driverFactory" />
+        <module name="reporter" />
+        <module name="BDD_Utlities" />
+        <module name="db_utility" />
+        <module name="TestExecutor" />
+        <module name="driverfactory" />
+        <module name="common_utility" />
+        <module name="api_utility" />
+        <module name="dataprovider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BDD_Utlities" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

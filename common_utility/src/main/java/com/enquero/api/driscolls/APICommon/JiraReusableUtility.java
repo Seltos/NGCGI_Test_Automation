@@ -7,7 +7,6 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
-
 public class JiraReusableUtility {
 
     public static String createIssue(String TestName){
