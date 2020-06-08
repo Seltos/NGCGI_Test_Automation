@@ -1882,20 +1882,212 @@
 2020-05-20 15:47:31 ERROR TestLoginPage:94 - main validation failed
 2020-05-20 15:47:31 ERROR TestLoginPage:95 - main validation failed
 2020-05-20 15:47:31 INFO  TestLoginPage:100 - main ************* Execution Ended *************
-2020-05-26 16:00:23 INFO  TestLoginPage:62 - main****************** Execution  Started ****************
-2020-05-26 16:00:24 INFO  TestLoginPage:71 - TestNG-test=Driscolls api App Test Cases-1 Get Employee tc started
-2020-05-26 16:00:28 INFO  TestLoginPage:76 - TestNG-test=Driscolls api App Test Cases-1 Get request is executed Successfully
-2020-05-26 16:00:29 INFO  TestLoginPage:71 - TestNG-test=Driscolls api App Test Cases-1 Get Employee tc started
-2020-05-26 16:00:29 INFO  TestLoginPage:76 - TestNG-test=Driscolls api App Test Cases-1 Get request is executed Successfully
-2020-05-26 16:00:30 INFO  TestLoginPage:91 - TestNG-test=Driscolls api App Test Cases-1 Post Employee Details tc started
-2020-05-26 16:00:31 INFO  TestLoginPage:111 - TestNG-test=Driscolls api App Test Cases-1 Post request is executed Successfully
-2020-05-26 16:00:31 INFO  TestLoginPage:124 - TestNG-test=Driscolls api App Test Cases-1Post Employee details created Successfully
-2020-05-26 16:00:31 INFO  TestLoginPage:132 - TestNG-test=Driscolls api App Test Cases-1 Get Employee Details based on ID search tc started
-2020-05-26 16:00:32 INFO  TestLoginPage:132 - TestNG-test=Driscolls api App Test Cases-1 Get Employee Details based on ID search tc started
-2020-05-26 16:00:34 INFO  TestLoginPage:153 - TestNG-test=Driscolls api App Test Cases-1 Update Employee Details tc started
-2020-05-26 16:00:35 INFO  TestLoginPage:173 - TestNG-test=Driscolls api App Test Cases-1 Update request is executed Successfully
-2020-05-26 16:00:35 INFO  TestLoginPage:184 - TestNG-test=Driscolls api App Test Cases-1 Employee details Updated Successfully
-2020-05-26 16:00:35 INFO  TestLoginPage:193 - TestNG-test=Driscolls api App Test Cases-1 Delete Employee Details tc started
-2020-05-26 16:00:36 INFO  TestLoginPage:200 - TestNG-test=Driscolls api App Test Cases-1 Delete request is executed Successfully
-2020-05-26 16:00:36 INFO  TestLoginPage:204 - TestNG-test=Driscolls api App Test Cases-1 Employee details Deleted Successfully
-2020-05-26 16:00:36 INFO  TestLoginPage:212 - TestNG-test=Driscolls api App Test Cases-1 *************** Execution Completed ********************
+2020-05-22 18:45:23 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 18:45:25 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 18:45:25 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 18:45:25 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 18:45:28 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 18:45:28 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 18:45:28 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 18:45:31 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 18:45:33 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 18:45:33 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 18:45:40 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 18:45:46 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 18:45:46 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 18:45:53 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 18:45:54 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 18:45:54 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 18:45:54 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 18:45:54 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 19:42:02 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 19:42:04 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 19:42:04 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 19:42:04 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 19:42:07 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 19:42:07 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 19:42:07 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 19:42:09 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 19:42:11 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 19:42:11 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 19:42:16 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 19:42:22 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 19:42:22 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 19:42:26 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 19:43:12 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 19:43:12 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 19:43:12 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 19:43:12 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-22 20:33:03 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-22 20:33:06 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:33:06 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:33:06 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:33:10 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-22 20:33:10 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-22 20:33:10 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-22 20:33:12 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:33:16 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:33:16 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:33:25 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-22 20:33:31 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-22 20:33:31 ERROR TestLoginPage:56 - main validation failed
+2020-05-22 20:33:40 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-22 20:34:35 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-22 20:34:35 ERROR TestLoginPage:94 - main validation failed
+2020-05-22 20:34:35 ERROR TestLoginPage:95 - main validation failed
+2020-05-22 20:34:35 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-25 11:57:43 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-25 11:57:46 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-25 11:57:46 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-25 11:57:46 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-25 11:57:50 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-25 11:57:50 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-25 11:57:50 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-25 11:57:52 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-25 11:57:57 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-25 11:57:57 ERROR TestLoginPage:56 - main validation failed
+2020-05-25 11:58:21 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-25 11:58:27 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-25 11:58:27 ERROR TestLoginPage:56 - main validation failed
+2020-05-25 11:58:43 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-25 11:59:20 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-25 11:59:20 ERROR TestLoginPage:94 - main validation failed
+2020-05-25 11:59:20 ERROR TestLoginPage:95 - main validation failed
+2020-05-25 11:59:20 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-05-25 12:02:55 INFO  TestLoginPage:41 - main ************* Execution Started *************
+2020-05-25 12:02:59 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-25 12:02:59 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-25 12:02:59 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-25 12:03:04 INFO  TestLoginPage:67 - main Testloginjasmine Test case started
+2020-05-25 12:03:04 WARN  TestLoginPage:70 - main Input Parameters not validated
+2020-05-25 12:03:04 INFO  TestLoginPage:74 - main Username validated successfully
+2020-05-25 12:03:06 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-25 12:03:08 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-25 12:03:08 ERROR TestLoginPage:56 - main validation failed
+2020-05-25 12:03:16 INFO  TestLoginPage:49 - main Javascript tc started
+2020-05-25 12:03:17 INFO  TestLoginPage:53 - main Validation successfull for First tc
+2020-05-25 12:03:17 ERROR TestLoginPage:56 - main validation failed
+2020-05-25 12:03:24 INFO  TestLoginPage:87 - main Selenium tc started
+2020-05-25 12:05:38 INFO  TestLoginPage:91 - main Validation successfull for third tc
+2020-05-25 12:05:38 ERROR TestLoginPage:94 - main validation failed
+2020-05-25 12:05:38 ERROR TestLoginPage:95 - main validation failed
+2020-05-25 12:05:38 INFO  TestLoginPage:100 - main ************* Execution Ended *************
+2020-06-01 10:49:32 INFO  EmployeeTest:60 - main****************** Execution  Started ****************
+2020-06-01 10:49:33 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 10:49:37 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 10:49:38 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 10:49:38 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 10:49:38 INFO  EmployeeTest:89 - TestNG-test=Driscolls API App Test Cases-1 Post Employee Details tc started
+2020-06-01 10:49:39 INFO  EmployeeTest:109 - TestNG-test=Driscolls API App Test Cases-1 Post request is executed Successfully
+2020-06-01 10:49:39 INFO  EmployeeTest:122 - TestNG-test=Driscolls API App Test Cases-1Post Employee details created Successfully
+2020-06-01 10:49:39 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 10:49:40 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 10:49:41 INFO  EmployeeTest:151 - TestNG-test=Driscolls API App Test Cases-1 Update Employee Details tc started
+2020-06-01 10:49:42 INFO  EmployeeTest:171 - TestNG-test=Driscolls API App Test Cases-1 Update request is executed Successfully
+2020-06-01 10:49:42 INFO  EmployeeTest:182 - TestNG-test=Driscolls API App Test Cases-1 Employee details Updated Successfully
+2020-06-01 10:49:42 INFO  EmployeeTest:191 - TestNG-test=Driscolls API App Test Cases-1 Delete Employee Details tc started
+2020-06-01 10:49:43 INFO  EmployeeTest:198 - TestNG-test=Driscolls API App Test Cases-1 Delete request is executed Successfully
+2020-06-01 10:49:43 INFO  EmployeeTest:202 - TestNG-test=Driscolls API App Test Cases-1 Employee details Deleted Successfully
+2020-06-01 10:49:43 INFO  EmployeeTest:210 - TestNG-test=Driscolls API App Test Cases-1 *************** Execution Completed ********************
+2020-06-01 10:56:05 INFO  EmployeeTest:60 - main****************** Execution  Started ****************
+2020-06-01 10:56:06 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 10:56:10 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 10:56:11 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 10:56:11 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 10:56:11 INFO  EmployeeTest:89 - TestNG-test=Driscolls API App Test Cases-1 Post Employee Details tc started
+2020-06-01 10:56:12 INFO  EmployeeTest:109 - TestNG-test=Driscolls API App Test Cases-1 Post request is executed Successfully
+2020-06-01 10:56:12 INFO  EmployeeTest:122 - TestNG-test=Driscolls API App Test Cases-1Post Employee details created Successfully
+2020-06-01 10:56:12 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 10:56:13 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 10:56:14 INFO  EmployeeTest:151 - TestNG-test=Driscolls API App Test Cases-1 Update Employee Details tc started
+2020-06-01 10:56:15 INFO  EmployeeTest:171 - TestNG-test=Driscolls API App Test Cases-1 Update request is executed Successfully
+2020-06-01 10:56:15 INFO  EmployeeTest:182 - TestNG-test=Driscolls API App Test Cases-1 Employee details Updated Successfully
+2020-06-01 10:56:15 INFO  EmployeeTest:191 - TestNG-test=Driscolls API App Test Cases-1 Delete Employee Details tc started
+2020-06-01 10:56:16 INFO  EmployeeTest:198 - TestNG-test=Driscolls API App Test Cases-1 Delete request is executed Successfully
+2020-06-01 10:56:16 INFO  EmployeeTest:202 - TestNG-test=Driscolls API App Test Cases-1 Employee details Deleted Successfully
+2020-06-01 10:56:16 INFO  EmployeeTest:210 - TestNG-test=Driscolls API App Test Cases-1 *************** Execution Completed ********************
+2020-06-01 11:26:35 INFO  EmployeeTest:60 - main****************** Execution  Started ****************
+2020-06-01 11:26:35 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 11:26:38 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 11:26:39 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 11:26:39 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 11:26:40 INFO  EmployeeTest:89 - TestNG-test=Driscolls API App Test Cases-1 Post Employee Details tc started
+2020-06-01 11:26:41 INFO  EmployeeTest:109 - TestNG-test=Driscolls API App Test Cases-1 Post request is executed Successfully
+2020-06-01 11:26:41 INFO  EmployeeTest:122 - TestNG-test=Driscolls API App Test Cases-1Post Employee details created Successfully
+2020-06-01 11:26:41 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 11:26:42 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 11:26:43 INFO  EmployeeTest:151 - TestNG-test=Driscolls API App Test Cases-1 Update Employee Details tc started
+2020-06-01 11:26:44 INFO  EmployeeTest:171 - TestNG-test=Driscolls API App Test Cases-1 Update request is executed Successfully
+2020-06-01 11:26:44 INFO  EmployeeTest:182 - TestNG-test=Driscolls API App Test Cases-1 Employee details Updated Successfully
+2020-06-01 11:26:44 INFO  EmployeeTest:191 - TestNG-test=Driscolls API App Test Cases-1 Delete Employee Details tc started
+2020-06-01 11:26:45 INFO  EmployeeTest:198 - TestNG-test=Driscolls API App Test Cases-1 Delete request is executed Successfully
+2020-06-01 11:26:45 INFO  EmployeeTest:202 - TestNG-test=Driscolls API App Test Cases-1 Employee details Deleted Successfully
+2020-06-01 11:26:45 INFO  EmployeeTest:210 - TestNG-test=Driscolls API App Test Cases-1 *************** Execution Completed ********************
+2020-06-01 12:09:41 INFO  EmployeeTest:60 - main****************** Execution  Started ****************
+2020-06-01 12:09:43 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 12:09:49 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 12:09:50 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 12:09:50 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 12:09:51 INFO  EmployeeTest:89 - TestNG-test=Driscolls API App Test Cases-1 Post Employee Details tc started
+2020-06-01 12:09:52 INFO  EmployeeTest:109 - TestNG-test=Driscolls API App Test Cases-1 Post request is executed Successfully
+2020-06-01 12:09:52 INFO  EmployeeTest:122 - TestNG-test=Driscolls API App Test Cases-1Post Employee details created Successfully
+2020-06-01 12:09:52 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 12:09:53 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 12:09:55 INFO  EmployeeTest:151 - TestNG-test=Driscolls API App Test Cases-1 Update Employee Details tc started
+2020-06-01 12:09:56 INFO  EmployeeTest:171 - TestNG-test=Driscolls API App Test Cases-1 Update request is executed Successfully
+2020-06-01 12:09:56 INFO  EmployeeTest:182 - TestNG-test=Driscolls API App Test Cases-1 Employee details Updated Successfully
+2020-06-01 12:09:56 INFO  EmployeeTest:191 - TestNG-test=Driscolls API App Test Cases-1 Delete Employee Details tc started
+2020-06-01 12:09:57 INFO  EmployeeTest:198 - TestNG-test=Driscolls API App Test Cases-1 Delete request is executed Successfully
+2020-06-01 12:09:57 INFO  EmployeeTest:202 - TestNG-test=Driscolls API App Test Cases-1 Employee details Deleted Successfully
+2020-06-01 12:09:57 INFO  EmployeeTest:210 - TestNG-test=Driscolls API App Test Cases-1 *************** Execution Completed ********************
+2020-06-01 12:17:17 INFO  EmployeeTest:60 - main****************** Execution  Started ****************
+2020-06-01 12:17:18 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 12:17:22 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 12:17:24 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 12:17:24 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 12:17:24 INFO  EmployeeTest:89 - TestNG-test=Driscolls API App Test Cases-1 Post Employee Details tc started
+2020-06-01 12:17:25 INFO  EmployeeTest:109 - TestNG-test=Driscolls API App Test Cases-1 Post request is executed Successfully
+2020-06-01 12:17:26 INFO  EmployeeTest:122 - TestNG-test=Driscolls API App Test Cases-1Post Employee details created Successfully
+2020-06-01 12:17:26 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 12:17:27 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 12:17:27 INFO  EmployeeTest:151 - TestNG-test=Driscolls API App Test Cases-1 Update Employee Details tc started
+2020-06-01 12:17:28 INFO  EmployeeTest:171 - TestNG-test=Driscolls API App Test Cases-1 Update request is executed Successfully
+2020-06-01 12:17:29 INFO  EmployeeTest:182 - TestNG-test=Driscolls API App Test Cases-1 Employee details Updated Successfully
+2020-06-01 12:17:29 INFO  EmployeeTest:191 - TestNG-test=Driscolls API App Test Cases-1 Delete Employee Details tc started
+2020-06-01 12:17:29 INFO  EmployeeTest:198 - TestNG-test=Driscolls API App Test Cases-1 Delete request is executed Successfully
+2020-06-01 12:17:29 INFO  EmployeeTest:202 - TestNG-test=Driscolls API App Test Cases-1 Employee details Deleted Successfully
+2020-06-01 12:17:29 INFO  EmployeeTest:210 - TestNG-test=Driscolls API App Test Cases-1 *************** Execution Completed ********************
+2020-06-01 12:19:29 INFO  EmployeeTest:60 - main****************** Execution  Started ****************
+2020-06-01 12:19:30 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 12:19:33 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 12:19:34 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 12:19:34 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 12:19:34 INFO  EmployeeTest:89 - TestNG-test=Driscolls API App Test Cases-1 Post Employee Details tc started
+2020-06-01 12:19:35 INFO  EmployeeTest:109 - TestNG-test=Driscolls API App Test Cases-1 Post request is executed Successfully
+2020-06-01 12:19:35 INFO  EmployeeTest:122 - TestNG-test=Driscolls API App Test Cases-1Post Employee details created Successfully
+2020-06-01 12:19:35 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 12:19:36 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 12:19:37 INFO  EmployeeTest:151 - TestNG-test=Driscolls API App Test Cases-1 Update Employee Details tc started
+2020-06-01 12:19:38 INFO  EmployeeTest:171 - TestNG-test=Driscolls API App Test Cases-1 Update request is executed Successfully
+2020-06-01 12:19:38 INFO  EmployeeTest:182 - TestNG-test=Driscolls API App Test Cases-1 Employee details Updated Successfully
+2020-06-01 12:19:38 INFO  EmployeeTest:191 - TestNG-test=Driscolls API App Test Cases-1 Delete Employee Details tc started
+2020-06-01 12:19:39 INFO  EmployeeTest:198 - TestNG-test=Driscolls API App Test Cases-1 Delete request is executed Successfully
+2020-06-01 12:19:39 INFO  EmployeeTest:202 - TestNG-test=Driscolls API App Test Cases-1 Employee details Deleted Successfully
+2020-06-01 12:19:39 INFO  EmployeeTest:210 - TestNG-test=Driscolls API App Test Cases-1 *************** Execution Completed ********************
+2020-06-01 13:21:52 INFO  EmployeeTest:60 - main****************** Execution  Started ****************
+2020-06-01 13:21:53 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 13:21:57 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 13:21:58 INFO  EmployeeTest:69 - TestNG-test=Driscolls API App Test Cases-1 Get Employee tc started
+2020-06-01 13:21:58 INFO  EmployeeTest:74 - TestNG-test=Driscolls API App Test Cases-1 Get request is executed Successfully
+2020-06-01 13:21:58 INFO  EmployeeTest:89 - TestNG-test=Driscolls API App Test Cases-1 Post Employee Details tc started
+2020-06-01 13:22:00 INFO  EmployeeTest:109 - TestNG-test=Driscolls API App Test Cases-1 Post request is executed Successfully
+2020-06-01 13:22:00 INFO  EmployeeTest:122 - TestNG-test=Driscolls API App Test Cases-1Post Employee details created Successfully
+2020-06-01 13:22:00 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 13:22:01 INFO  EmployeeTest:130 - TestNG-test=Driscolls API App Test Cases-1 Get Employee Details based on ID search tc started
+2020-06-01 13:22:02 INFO  EmployeeTest:151 - TestNG-test=Driscolls API App Test Cases-1 Update Employee Details tc started
+2020-06-01 13:22:03 INFO  EmployeeTest:171 - TestNG-test=Driscolls API App Test Cases-1 Update request is executed Successfully
+2020-06-01 13:22:03 INFO  EmployeeTest:182 - TestNG-test=Driscolls API App Test Cases-1 Employee details Updated Successfully
+2020-06-01 13:22:03 INFO  EmployeeTest:191 - TestNG-test=Driscolls API App Test Cases-1 Delete Employee Details tc started
+2020-06-01 13:22:04 INFO  EmployeeTest:198 - TestNG-test=Driscolls API App Test Cases-1 Delete request is executed Successfully
+2020-06-01 13:22:04 INFO  EmployeeTest:202 - TestNG-test=Driscolls API App Test Cases-1 Employee details Deleted Successfully
+2020-06-01 13:22:04 INFO  EmployeeTest:210 - TestNG-test=Driscolls API App Test Cases-1 *************** Execution Completed ********************

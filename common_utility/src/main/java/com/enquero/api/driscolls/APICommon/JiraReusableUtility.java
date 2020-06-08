@@ -4,12 +4,13 @@ package com.enquero.api.driscolls.APICommon;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+
 import static io.restassured.RestAssured.given;
 
 
 public class JiraReusableUtility {
 
-    public static String createIssue(){
+    public static String createIssue(String TestName){
         PojoUtility.Fields fields = new PojoUtility.Fields();
         PojoUtility.Project project =  new PojoUtility.Project();
         project.setId(Properties.JIRA_PROJECT_ID);
@@ -18,8 +19,10 @@ public class JiraReusableUtility {
         issuetype.setId(Properties.JIRA_ISSUE_TYPE);
 
         fields.setProject(project);
-        fields.setSummary("Demo Check - Post Employee Enpoint failed");
-        fields.setDescription("Creating of an issue using IDs for projects and issue types using the REST API");
+
+        System.out.println("Test case name for bug creation"+TestName);
+        fields.setSummary("Test " + TestName + " is failed");
+        fields.setDescription(TestName + " is failed");
         fields.setIssuetype(issuetype);
 
         PojoUtility.Root root = new PojoUtility.Root();
@@ -37,5 +40,4 @@ public class JiraReusableUtility {
         String bugId = response.jsonPath().getString("key");
         return bugId;
     }
-
 }

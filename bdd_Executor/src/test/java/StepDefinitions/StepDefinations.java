@@ -88,10 +88,10 @@ public class StepDefinations {
         WebDriver driver=new ChromeDriver();
 //
 //        // Launch Website
-        driver.navigate().to("http://www.google.com/");
+        driver.navigate().to("http://www.javatpoint.com/");
 //
 //        //Maximize the browser
         driver.manage().window().maximize();
-        System.out.println("I am opening chrome Browser");
+        System.out.println("I am opening chrome Brwser");
     }
 }

@@ -115,7 +115,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-jcl:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-expression:5.1.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.aspectj:aspectjweaver:1.9.4" level="project" />
-    <orderEntry type="module" module-name="driverFactory" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Maven: com.assertthat:selenium-shutterbug:0.9.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.github.zafarkhaja:java-semver:0.9.0" level="project" />
@@ -123,9 +122,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: io.qameta.allure:allure-model:2.12.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.tika:tika-core:1.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.jooq:joor-java-8:0.9.10" level="project" />
+    <orderEntry type="module" module-name="driverFactory" scope="TEST" />
     <orderEntry type="module" module-name="common_utility" scope="TEST" />
-    <orderEntry type="module" module-name="api_utility" scope="TEST" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.json:json:20190722" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:rest-assured:3.0.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.groovy:groovy:2.4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.groovy:groovy-xml:2.4.12" level="project" />

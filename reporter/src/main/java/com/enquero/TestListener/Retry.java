@@ -47,7 +47,7 @@ public class Retry implements IRetryAnalyzer {
         WebDriver webDriver = WebDriverFactory.getDriverinstance();
         String path = null;
         String testMethodName = iTestResult.getName().trim();
-        if (AllureExtentTestNGListener.testName.toUpperCase().contains(("API"))) {
+        if (!AllureExtentTestNGListener.testName.toUpperCase().contains(("API"))) {
             try {
                 path = ExtentTestReporter.getFullPageShutterbug(WebDriverFactory.getDriverinstance(), testMethodName);
             } catch (Exception e) {

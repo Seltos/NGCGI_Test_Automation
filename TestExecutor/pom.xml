@@ -78,13 +78,28 @@
         </dependency>
         <dependency>
             <groupId>com.enquero</groupId>
+            <artifactId>db_utility</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <!--<scope>${scope-compile.version}</scope>-->
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.enquero</groupId>
             <artifactId>api_utility</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>${scope-compile.version}</scope>
+            <scope>compile</scope>
+          <!--  <scope>${scope-compile.version}</scope>-->
         </dependency>
         <dependency>
             <groupId>com.enquero</groupId>
             <artifactId>reporter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <!-- <scope>${scope-compile.version}</scope>-->
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.enquero</groupId>
+            <artifactId>common_utility</artifactId>
             <version>1.0-SNAPSHOT</version>
             <!-- <scope>${scope-compile.version}</scope>-->
             <scope>compile</scope>
