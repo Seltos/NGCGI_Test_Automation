@@ -6,6 +6,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.enquero.TestListener.AllureExtentTestNGListener;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -31,6 +33,10 @@ public class ExtentTestReporter {
     private static String reportFileLocation = reportFilepath + fileSeperator + reportFileName;
     public static String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
     static Map<Integer, ExtentTest> extentTestMap = new HashMap<Integer, ExtentTest>();
+    private static String testDetailFilepath = System.getProperty("user.dir") + fileSeperator + "src\\Reports\\TestDetails";
+    private static String apiTestDetailsFilePath = testDetailFilepath + fileSeperator + "APITestDetails.txt";
+    private static String webTestDetailsFilePath = testDetailFilepath + fileSeperator + "WebTestDetails.txt";
+    private static FileWriter fileWriter;
 
     public static void cleanDirectory() throws IOException {
         File f2 = new File(screenshotFilepath);
@@ -142,5 +148,62 @@ public class ExtentTestReporter {
         Shutterbug.shootPage(driver, ScrollStrategy.WHOLE_PAGE).withName(ScreenshotName + "_" + dateName).save(destination);
         return destination+ScreenshotName + "_" + dateName + ".png";
     }
+
+    public static void addTestCountDetailsToFile(HashMap<String,String> hmap,int tcPassed, int tcFailed) throws IOException {
+        String testType= getTestType();
+        String testDetailsPath= getTestDetailFilepath(reportFilepath,testType);
+        fileWriter= new FileWriter(testDetailsPath);
+        int tcTotal= tcPassed+tcFailed;
+        for (Map.Entry<String, String> entry : hmap.entrySet()) {
+            System.out.println(entry.getKey() + " = " + entry.getValue());
+            fileWriter.write("TC_Name:"+entry.getKey()+",");
+            fileWriter.write("Bug_Id:"+entry.getValue()+System.getProperty("line.separator"));
+        }
+        fileWriter.write("TC_Total:"+tcTotal+",");
+        fileWriter.write("TC_Passed:"+tcPassed+",");
+        fileWriter.write("TC_Failed:"+tcFailed);
+        fileWriter.close();
+    }
+
+    public static String getTestDetailFilepath(String filePath, String testType){
+        File testDirectory = new File(filePath);
+        String testDetailPath;
+        if (!testDirectory.exists()) {
+            if (testDirectory.mkdir()) {
+                System.out.println("Directory: " + filePath + " is created!");
+                return reportFileLocation;
+            } else {
+                System.out.println("Failed to create directory: " + filePath);
+                return System.getProperty("user.dir");
+            }
+        } else {
+            System.out.println("Directory already exists: " + filePath);
+        }
+        switch(testType){
+            case "API":
+                System.out.println("API Test detail file path: "+apiTestDetailsFilePath);
+                testDetailPath= apiTestDetailsFilePath;
+                break;
+            case "WEB":
+                System.out.println("WEB Test detail file path: "+webTestDetailsFilePath);
+                testDetailPath= webTestDetailsFilePath;
+                break;
+            default:
+                testDetailPath= webTestDetailsFilePath;
+        }
+        return testDetailPath;
+    }
+
+    public static String getTestType(){
+        String testType= AllureExtentTestNGListener.testName;
+            if (testType.toUpperCase().contains("API")){
+                return "API";
+            }else if (testType.toUpperCase().contains("WEB")){
+                return "WEB";
+        }else{
+                return "WEB";
+            }
+    }
+
 
 }
