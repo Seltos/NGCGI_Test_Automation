@@ -41,7 +41,7 @@ public class AndroidDriverFactory {
     /*
     For Local Emulator
      */
-    public AndroidDriver getAndroidDriver(String apkFilePath,String platformVersion) throws MalformedURLException {
+    public AndroidDriver getAndroidDriver(String apkFilePath,int platformVersion) throws MalformedURLException {
         File app = new File(apkFilePath);
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName","emulator-5554");

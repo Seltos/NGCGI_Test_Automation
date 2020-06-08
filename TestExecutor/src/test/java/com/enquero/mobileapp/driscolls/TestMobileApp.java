@@ -16,7 +16,7 @@ public class TestMobileApp {
     @Parameters("apkFilePath")
     @BeforeClass
     public void setup(@Optional("C:\\Users\\VivekVerma\\Downloads\\app-debug.apk") String appLocation) throws MalformedURLException {
-         new AndroidDriverFactory().getAndroidDriver(appLocation,"7");
+         new AndroidDriverFactory().getAndroidDriver(appLocation,7);
         //androidDriver.quit();
     }
     //@Test
