@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class JiraReusableUtility {
 
-    public static String createIssue(String TestName){
+    public static String createIssue(String TestName, String suiteName, String exceptionMsg){
         PojoUtility.Fields fields = new PojoUtility.Fields();
         PojoUtility.Project project =  new PojoUtility.Project();
         project.setId(Properties.JIRA_PROJECT_ID);
@@ -20,8 +20,8 @@ public class JiraReusableUtility {
         fields.setProject(project);
 
         System.out.println("Test case name for bug creation"+TestName);
-        fields.setSummary("Test " + TestName + " is failed");
-        fields.setDescription(TestName + " is failed");
+        fields.setSummary(suiteName + " : "+ TestName);
+        fields.setDescription("Test got failed due to the mentioned "+exceptionMsg);
         fields.setIssuetype(issuetype);
 
         PojoUtility.Root root = new PojoUtility.Root();

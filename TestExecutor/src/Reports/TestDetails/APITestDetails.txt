@@ -1,3 +1,3 @@
-TC_Name:getEmployeeDetails,Bug_Id:AUT-559
-TC_Name:getEmployeeIdDetails,Bug_Id:AUT-560
+TC_Name:getEmployeeDetails,Bug_Id:AUT-581
+TC_Name:getEmployeeIdDetails,Bug_Id:AUT-582
 TC_Total:5,TC_Passed:3,TC_Failed:2

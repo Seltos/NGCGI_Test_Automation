@@ -9,6 +9,7 @@ Scenario: Atlassian_login
   And I click Submit Button
   Then It Navigates to the Homepage
 
+
   Scenario: Create Story in Jira
     Given I open the Grid in Jira Software
     When I click on Enquero link
