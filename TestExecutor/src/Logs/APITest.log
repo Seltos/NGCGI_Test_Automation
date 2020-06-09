@@ -326,3 +326,20 @@
 2020-06-08 20:30:39 INFO  EmployeeTest:199 - main Delete request is executed Successfully
 2020-06-08 20:30:39 INFO  EmployeeTest:203 - main Employee details Deleted Successfully
 2020-06-08 20:30:39 INFO  EmployeeTest:211 - main *************** Execution Completed ********************
+2020-06-09 23:34:13 INFO  EmployeeTest:61 - main****************** Execution  Started ****************
+2020-06-09 23:34:13 INFO  EmployeeTest:70 - main Get Employee tc started
+2020-06-09 23:34:19 INFO  EmployeeTest:75 - main Get request is executed Successfully
+2020-06-09 23:34:20 INFO  EmployeeTest:70 - main Get Employee tc started
+2020-06-09 23:34:20 INFO  EmployeeTest:75 - main Get request is executed Successfully
+2020-06-09 23:34:22 INFO  EmployeeTest:90 - main Post Employee Details tc started
+2020-06-09 23:34:24 INFO  EmployeeTest:110 - main Post request is executed Successfully
+2020-06-09 23:34:24 INFO  EmployeeTest:123 - mainPost Employee details created Successfully
+2020-06-09 23:34:24 INFO  EmployeeTest:131 - main Get Employee Details based on ID search tc started
+2020-06-09 23:34:26 INFO  EmployeeTest:131 - main Get Employee Details based on ID search tc started
+2020-06-09 23:34:29 INFO  EmployeeTest:152 - main Update Employee Details tc started
+2020-06-09 23:34:32 INFO  EmployeeTest:172 - main Update request is executed Successfully
+2020-06-09 23:34:32 INFO  EmployeeTest:183 - main Employee details Updated Successfully
+2020-06-09 23:34:32 INFO  EmployeeTest:192 - main Delete Employee Details tc started
+2020-06-09 23:34:34 INFO  EmployeeTest:199 - main Delete request is executed Successfully
+2020-06-09 23:34:34 INFO  EmployeeTest:203 - main Employee details Deleted Successfully
+2020-06-09 23:34:34 INFO  EmployeeTest:211 - main *************** Execution Completed ********************
