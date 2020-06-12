@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Grouping Test Cases">
+    <groups>
+        <run>
+            <include name="Include the suite name to be executed
+            which has been grouped like sanity or regression tests ">
+            </include>
+        </run>
+    </groups>
+    <test name="Grouping Test cases ">
+        <classes>
+            <class name=""></class>
+        </classes>
+    </test>
+</suite>
