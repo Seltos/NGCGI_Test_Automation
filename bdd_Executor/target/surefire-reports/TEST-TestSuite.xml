@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="99.928" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
+    <property name="java.vm.version" value="25.241-b07"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\MalaShreeSiddalingaP\Desktop\Demo\Demo5\TestAutomationFramework-develop\TestAutomationFramework-develop\bdd_Executor"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\MalaShreeSiddalingaP\Desktop\Demo\Demo5\TestAutomationFramework-develop\TestAutomationFramework-develop\bdd_Executor"/>
+    <property name="java.runtime.version" value="1.8.0_241-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\MALASH~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="idea.version2020.1" value="true"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Python\Scripts\;C:\Program Files\Python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Softwares\apache-maven-3.6.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jre1.8.0_241\bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Git\cmd;C:\Users\MalaShreeSiddalingaP\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\bin;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\bin;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\MalaShreeSiddalingaP"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="MalaShreeSiddalingaP"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_241\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2020.1 install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_241"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="feature" classname="CukesRunner.TestRunner" time="99.928">
+    <failure message="org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-OSEHH6NR&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MALASH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 87d6d3f4a3558d66458121c812105bf1" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-OSEHH6NR', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MALASH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 87d6d3f4a3558d66458121c812105bf1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at StepDefinitions.browser.iCreateTheStoryWithTheType(browser.java:163)
+	at ✽.And I create the Story with the Type "Task"(login.feature:16)
+</failure>
+    <system-out>Feature: Jira Automation
+chrome
+2020-06-01 18:06:265 INFO  WebDriverManager :615 - Using chromedriver 83.0.4103.39 (since Google Chrome 83 is installed in your machine)
+2020-06-01 18:06:381 INFO  WebDriverManager :1113 - Exporting webdriver.chrome.driver as C:\Users\MalaShreeSiddalingaP\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-06-01 18:06:20 INFO  browser :35 - Driver is initialized
+2020-06-01 18:06:21 INFO  browser :36 - *******Execution Started**************
+2020-06-01 18:06:792 INFO  browser :80 - Navigated to the urlhttps://vivek-enquero.atlassian.net/
+UserName is  vivek.verma@enquero.com
+2020-06-01 18:06:530 INFO  browser :57 - Username Enteredvivek.verma@enquero.com
+2020-06-01 18:06:38 INFO  browser :72 - Sigin into the Application
+2020-06-01 18:06:62 INFO  browser :65 - Password EnteredQazxsw12
+2020-06-01 18:06:380 INFO  browser :72 - Sigin into the Application
+Log in to continue - Log in with Atlassian account
+2020-06-01 18:06:450 INFO  ServiceHooks :68 - Atlassian_login is pass
+
+  Scenario: Atlassian_login                                           # login.feature:3
+    Given I open application in "Chrome" browser                      # browser.i_open_application_in_browser(String)
+    When I Navigate to the url "https://vivek-enquero.atlassian.net/" # browser.iNavigateToTheUrl(String)
+    When I type text "vivek.verma@enquero.com" into UserName Field    # browser.iTypeTextIntoUserNameField(String)
+    And I click Submit Button                                         # browser.iClickSubmitButton()
+    When I type text Password into Password Field                     # browser.iTypeTextPasswordIntoPasswordField()
+    And I click Submit Button                                         # browser.iClickSubmitButton()
+    Then It Navigates to the Homepage                                 # browser.itNavigatesToTheHomepage()
+2020-06-01 18:06:90 INFO  ServiceHooks :32 - Create Story in Jira is Failed
+Create Story in JiraFAILED
+Create Story in Jira
+2020-06-01 18:06:774 INFO  ServiceHooks :46 - Create Story in JiraOn this test failure it started cretaing bug
+Test case name for bug creationCreate Story in Jira
+2020-06-01 18:06:459 INFO  ServiceHooks :48 - Create Story in Jira is Failed
+2020-06-01 18:06:462 INFO  ServiceHooks :56 - Create Story in JiraOn this test failure it started created bugAUT-443
+Create Story in JiraOn this test failure it started created bugAUT-443
+
+  Scenario: Create Story in Jira                                                      # login.feature:12
+    Given I open the Grid in Jira Software                                            # browser.iOpenTheGridInJiraSoftware()
+    When I click on Enquero link                                                      # browser.iClickOnEnqueroLink()
+    Then I see create Button and Enter the Details                                    # browser.iSeeCreateButtonAndEnterTheDetails()
+    And I create the Story with the Type "Task"                                       # browser.iCreateTheStoryWithTheType(String)
+      org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+        (Session info: chrome=83.0.4103.61)
+      For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'LAPTOP-OSEHH6NR', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MALASH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+      Session ID: 87d6d3f4a3558d66458121c812105bf1
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+      	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+      	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+      	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+      	at StepDefinitions.browser.iCreateTheStoryWithTheType(browser.java:163)
+      	at ?.And I create the Story with the Type "Task"(login.feature:16)
+
+    Then I add Summary to the Story as "New customer"                                 # browser.iAddSummaryToTheStoryAs(String)
+    Then I add Description to the Story as "Login into App with Customer Credentials" # browser.iAddDescriptionToTheStoryAs(String)
+    And I assign Priority as "High"                                                   # browser.iAssignPriorityAs(String)
+    Then I set DueDate as "8/May/20"                                                  # browser.iSetDueDateAs(String)
+    And I assign Story to the Person "Automatic"                                      # browser.iAssignStoryToThePerson(String)
+    Then Story is Created                                                             # browser.storyIsCreated()
+Button Clickedtrue
+Creation Button Clicked
+SelectedBug
+SUMMARYCreate an Instance of Partner
+Random No : 47
+2020-06-01 18:06:643 INFO  browser :200 - Adding SummmaryCreate an Instance of Partner
+DescLogin into App with Customer Credentials
+PriHigh
+Date8/May/20
+AssigneeAutomatic
+Submitted
+2020-06-01 18:06:388 INFO  ServiceHooks :68 - Create Bug in Jira is pass
+
+  Scenario: Create Bug in Jira                                                        # login.feature:24
+    Given I open the Grid in Jira Software                                            # browser.iOpenTheGridInJiraSoftware()
+    When I click on Enquero link                                                      # browser.iClickOnEnqueroLink()
+    Then I see create Button and Enter the Details                                    # browser.iSeeCreateButtonAndEnterTheDetails()
+    And I create the Story with the Type "Bug"                                        # browser.iCreateTheStoryWithTheType(String)
+    Then I add Summary to the Story as "Create an Instance of Partner"                # browser.iAddSummaryToTheStoryAs(String)
+    Then I add Description to the Story as "Login into App with Customer Credentials" # browser.iAddDescriptionToTheStoryAs(String)
+    And I assign Priority as "High"                                                   # browser.iAssignPriorityAs(String)
+    Then I set DueDate as "8/May/20"                                                  # browser.iSetDueDateAs(String)
+    And I assign Story to the Person "Automatic"                                      # browser.iAssignStoryToThePerson(String)
+    Then Bug is Created                                                               # browser.bugIsCreated()
+2020-06-01 18:06:415 INFO  ServiceHooks :32 - Create Ticket on Failures is Failed
+Create Ticket on FailuresFAILED
+Create Ticket on Failures
+2020-06-01 18:06:187 INFO  ServiceHooks :46 - Create Ticket on FailuresOn this test failure it started cretaing bug
+Test case name for bug creationCreate Ticket on Failures
+2020-06-01 18:06:853 INFO  ServiceHooks :48 - Create Ticket on Failures is Failed
+2020-06-01 18:06:855 INFO  ServiceHooks :56 - Create Ticket on FailuresOn this test failure it started created bugAUT-445
+Create Ticket on FailuresOn this test failure it started created bugAUT-445
+
+  Scenario: Create Ticket on Failures # login.feature:36
+    Given I Fail the TestCase         # browser.iFailTheTestCase()
+      java.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:94)
+      	at org.testng.Assert.failNotEquals(Assert.java:496)
+      	at org.testng.Assert.assertTrue(Assert.java:42)
+      	at org.testng.Assert.assertTrue(Assert.java:52)
+      	at StepDefinitions.browser.iFailTheTestCase(browser.java:300)
+      	at ?.Given I Fail the TestCase(login.feature:37)
+
+Logged out from application
+2020-06-01 18:06:15 INFO  browser :123 - Logged out Successfully
+2020-06-01 18:06:925 INFO  browser :47 - Driver is Terminated
+2020-06-01 18:06:927 INFO  browser :48 - *******Execution Stopped**************
+2020-06-01 18:06:932 INFO  ServiceHooks :68 - Logout From the Application is pass
+
+  Scenario: Logout From the Application # login.feature:39
+    Then I logout from application      # browser.logout()
+    And I close web browser             # browser.i_close_web_browser()
+</system-out>
+    <system-err>Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 44628
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 01, 2020 6:10:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+</testsuite>
