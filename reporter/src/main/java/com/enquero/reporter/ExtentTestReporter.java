@@ -40,10 +40,17 @@ public class ExtentTestReporter {
 
     public static void cleanDirectory() throws IOException {
         File f2 = new File(screenshotFilepath);
-        FileUtils.cleanDirectory(f2);
-
+        if (f2.exists()) {
+            FileUtils.cleanDirectory(f2);
+        }else{
+            System.out.println("Folder does not exist "+screenshotFilepath);
+        }
         File f3= new File(allureResultsPath);
-        FileUtils.cleanDirectory(f3);
+        if (f3.exists()) {
+            FileUtils.cleanDirectory(f3);
+        }else{
+            System.out.println("Folder does not exist "+allureResultsPath);
+        }
 
     }
 
