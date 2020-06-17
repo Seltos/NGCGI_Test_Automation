@@ -1,4 +1,6 @@
-TestExecutor/allure-results/*
-TestExecutor/src/Reports/TestDetails/*
+TestExecutor/src/Reports/TestDetails/APITestDetails.txt
 **/target
-TestExecutor/src/Reports/Extent_TestReport
+TestExecutor/src/Reports/Extent_TestReport.html
+TestExecutor/src/Logs/*
+TestExecutor/allure-results/*
+TestExecutor/src/Reports/Screenshots/*
