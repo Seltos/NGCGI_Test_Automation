@@ -154,6 +154,9 @@ public class ExtentTestReporter {
         String testDetailsPath= getTestDetailFilepath(reportFilepath,testType);
         fileWriter= new FileWriter(testDetailsPath);
         int tcTotal= tcPassed+tcFailed;
+        fileWriter.write("TC_Total="+tcTotal+",");
+        fileWriter.write("TC_Passed="+tcPassed+",");
+        fileWriter.write("TC_Failed="+tcFailed+System.getProperty("line.separator"));
         int i=1;
         for (Map.Entry<String, String> entry : hmap.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
@@ -161,9 +164,6 @@ public class ExtentTestReporter {
             fileWriter.write("Bug_Id"+i+"="+entry.getValue()+System.getProperty("line.separator"));
             i++;
         }
-        fileWriter.write("TC_Total="+tcTotal+",");
-        fileWriter.write("TC_Passed="+tcPassed+",");
-        fileWriter.write("TC_Failed="+tcFailed);
         fileWriter.close();
     }
 
