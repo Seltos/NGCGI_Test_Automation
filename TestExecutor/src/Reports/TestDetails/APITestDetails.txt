@@ -1,0 +1,3 @@
+TC_Name1=getEmployeeDetails,Bug_Id1=AUT-616
+TC_Name2=getEmployeeIdDetails,Bug_Id2=AUT-617
+TC_Total=5,TC_Passed=3,TC_Failed=2

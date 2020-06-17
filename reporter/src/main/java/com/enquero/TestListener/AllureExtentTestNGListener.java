@@ -12,12 +12,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.*;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Iterator;
 
 public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
     public static ExtentTest extent;
     public static String testName;
-
+    public static HashMap<String,String> hmap= new HashMap<String,String>();
+    public static String suiteName;
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -41,6 +43,7 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
     @Override
     public void onStart(ISuite suite) {
         try {
+            suiteName=suite.getName();
             ExtentTestReporter.cleanDirectory();
         } catch (IOException e) {
             e.printStackTrace();
@@ -101,7 +104,8 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         saveTextLog(getTestMethodName(result) + " testcase failed and screenshot taken!");
         Boolean flag= result.wasRetried();
         System.out.println("The test: "+result.getTestName()+"retried flag is: "+flag);
-        String bugId= JiraReusableUtility.createIssue(testMethodName);
+        String bugId= JiraReusableUtility.createIssue(testMethodName,suiteName,message);
+        hmap.put(testMethodName,bugId);
         ExtentTestReporter.getTest().log(Status.FAIL,"Bug Id created in Jira is: "+bugId);
     }
 
@@ -153,6 +157,13 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
                     skippedTests.remove();
                 }
             }
+        }
+        System.out.println("failed Testcase count: "+context.getFailedTests().size());
+        System.out.println("passed Testcase count: "+context.getPassedTests().size());
+        try {
+            ExtentTestReporter.addTestCountDetailsToFile(hmap,context.getPassedTests().size(),context.getFailedTests().size());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

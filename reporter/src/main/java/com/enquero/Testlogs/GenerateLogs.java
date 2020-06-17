@@ -15,21 +15,6 @@ public class GenerateLogs {
     private static String propertyFilepath = root+fileSeperator+"reporter\\src\\main\\java\\com\\enquero\\Testlogs";
     private static String PropertyFileLocation;
 
-//    public static void loadLogPropertyFile() {
-//        File file;
-//        String filepath= getLogPath(propertyFilepath);
-//        try {
-//            System.out.println("logfilepath: "+filepath);
-//            file = new File(filepath);
-//            Properties props = new Properties();
-//            props.load(new FileInputStream(filepath));
-//            props.setProperty("log4j.appender.file.File",System.getProperty("user.dir")+fileSeperator+"src\\Logs\\Test.log");
-//            PropertyConfigurator.configure(props);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-
     public static void loadLogPropertyFile() {
         File file;
         String filepath= getLogPath(propertyFilepath);

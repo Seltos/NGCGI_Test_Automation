@@ -32,10 +32,10 @@
                 <version>2.22.1</version>
 
                 <configuration>
-                     <suiteXmlFiles>
-<!--                         <suiteXmlFile>src/test/java/com/enquero/webapp/driscolls/driscolls_web.xml</suiteXmlFile>-->
-                         <suiteXmlFile>src/test/java/com/enquero/api/driscolls/driscolls_api.xml</suiteXmlFile>
-                     </suiteXmlFiles>
+                    <suiteXmlFiles>
+                        <!--                         <suiteXmlFile>src/test/java/com/enquero/webapp/driscolls/driscolls_web.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/java/com/enquero/api/driscolls/driscolls_api.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
@@ -88,7 +88,7 @@
             <artifactId>api_utility</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
-          <!--  <scope>${scope-compile.version}</scope>-->
+            <!--  <scope>${scope-compile.version}</scope>-->
         </dependency>
         <dependency>
             <groupId>com.enquero</groupId>

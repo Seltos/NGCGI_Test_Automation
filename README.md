@@ -1,2 +1,0 @@
-# TestAutomationFramework
-Generic TestAutomationFramework

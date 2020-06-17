@@ -18,7 +18,6 @@ import java.util.Iterator;
 
 @Epic("Regression Tests")
 @Feature("TestLogin Page Scenarios")
-
 public class TestLoginPage {
 
     Logger logger= Logger.getLogger(TestLoginPage.class.getName());
@@ -46,7 +45,7 @@ public class TestLoginPage {
     @Story("Story name:to check JS of the page")
     public void testLoginJavascript(TestDataFactory dataFactory) {
         logger.info(Thread.currentThread().getName() +" Javascript tc started");
-        driver.get("https://www.w3schools.com/html/default.asp");
+        driver.get("https://www.protractortest.org/#/");
         System.out.println(dataFactory.getInputParameters());
         System.out.println(dataFactory.getValidationParameters());
         logger.info(Thread.currentThread().getName() +" Validation successfull for First tc");
@@ -60,7 +59,7 @@ public class TestLoginPage {
     @Severity(SeverityLevel.NORMAL)
     @Description("Test Case description: verify login page of Jasmine")
     @Story("Story name:to check title of the page")
-    //@Test(dataProvider="getTestData", description="Verifying login page titleof jasmine", priority = 0)
+    @Test(dataProvider="getTestData", description="Verifying login page titleof jasmine", priority = 0)
     public void testLoginJasmine(TestDataFactory dataFactory) {
         System.out.println("data path is "+path);
         logger.info(Thread.currentThread().getName()+" Testloginjasmine Test case started");
