@@ -44,8 +44,7 @@ public class browser extends base {
     @Given("^I close web browser$")
     public void i_close_web_browser() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        Assert.assertTrue(false);
-        driver.quit();
+        driver.close();
         log.info("Driver is Terminated");
         log.info("*******Execution Stopped**************");
     }
