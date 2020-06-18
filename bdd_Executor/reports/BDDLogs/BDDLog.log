@@ -1,21 +1,10 @@
-2020-06-18 15:06:04 INFO  WebDriverManager:615 - Using chromedriver 83.0.4103.39 (since Google Chrome 83 is installed in your machine)
-2020-06-18 15:06:25 INFO  WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\SwatiChetty\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
-2020-06-18 15:06:299 INFO  browser:36 - Driver is initialized
-2020-06-18 15:06:301 INFO  browser:37 - *******Execution Started**************
-2020-06-18 15:06:612 INFO  browser:82 - Navigated to the urlhttps://vivek-enquero.atlassian.net/
-2020-06-18 15:06:317 INFO  browser:59 - Username Enteredvivek.verma@enquero.com
-2020-06-18 15:06:559 INFO  browser:74 - Sigin into the Application
-2020-06-18 15:06:252 INFO  browser:67 - Password EnteredQazxsw12
-2020-06-18 15:06:374 INFO  browser:74 - Sigin into the Application
-2020-06-18 15:06:400 INFO  ServiceHooks:81 - Atlassian_login is pass
-2020-06-18 15:06:496 INFO  ServiceHooks:44 - Create Story in Jira is Failed
-2020-06-18 15:06:937 INFO  ServiceHooks:58 - Create Story in JiraOn this test failure it started cretaing bug
-2020-06-18 15:06:584 INFO  ServiceHooks:61 - Create Story in Jira is Failed
-2020-06-18 15:06:588 INFO  ServiceHooks:69 - Create Story in JiraOn this test failure it started created bugAUT-851
-2020-06-18 15:06:388 INFO  browser:206 - Adding SummmaryCreate an Instance of Partner
-2020-06-18 15:06:109 INFO  ServiceHooks:81 - Create Bug in Jira is pass
-2020-06-18 15:06:122 INFO  ServiceHooks:81 - Create Ticket on Failures is pass
-2020-06-18 15:06:775 INFO  ServiceHooks:44 - Logout From the Application is Failed
-2020-06-18 15:06:679 INFO  ServiceHooks:58 - Logout From the ApplicationOn this test failure it started cretaing bug
-2020-06-18 15:06:532 INFO  ServiceHooks:61 - Logout From the Application is Failed
-2020-06-18 15:06:534 INFO  ServiceHooks:69 - Logout From the ApplicationOn this test failure it started created bugAUT-853
+2020-06-18 16:06:137 INFO  WebDriverManager:615 - Using chromedriver 83.0.4103.39 (since Google Chrome 83 is installed in your machine)
+2020-06-18 16:06:160 INFO  WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\SwatiChetty\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
+2020-06-18 16:06:25 INFO  browser:36 - Driver is initialized
+2020-06-18 16:06:26 INFO  browser:37 - *******Execution Started**************
+2020-06-18 16:06:425 INFO  browser:82 - Navigated to the urlhttps://vivek-enquero.atlassian.net/
+2020-06-18 16:06:994 INFO  browser:59 - Username Enteredvivek.verma@enquero.com
+2020-06-18 16:06:210 INFO  browser:74 - Sigin into the Application
+2020-06-18 16:06:30 INFO  browser:67 - Password EnteredQazxsw12
+2020-06-18 16:06:157 INFO  browser:74 - Sigin into the Application
+2020-06-18 16:06:181 INFO  ServiceHooks:88 - Atlassian_login is pass

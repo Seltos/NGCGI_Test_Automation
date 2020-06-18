@@ -35,9 +35,11 @@ public class ServiceHooks extends base {
     String Bugid;
     Logger log = LoggerHelper.getLogger(ServiceHooks.class);
     @Before
-    public void initializeTest(Scenario scenario, ISuite suite) {
-
+    public void initializeTest(Scenario scenario) {
         this.scenario = scenario;
+    }
+
+    public void getSuiteName(ISuite suite){
         suiteName=suite.getName();
     }
 
