@@ -30,13 +30,13 @@ public class ExtentTestReporter {
     private static String reportFilepath = System.getProperty("user.dir") + fileSeperator + "src\\Reports";
     private static final String screenshotFilepath = System.getProperty("user.dir") + fileSeperator + "src\\Reports\\Screenshots";
     private static final String allureResultsPath= System.getProperty("user.dir") + fileSeperator +"allure-results";
-    private static String reportFileLocation = reportFilepath + fileSeperator + reportFileName;
+    public static String reportFileLocation = reportFilepath + fileSeperator + reportFileName;
     public static String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
     static Map<Integer, ExtentTest> extentTestMap = new HashMap<Integer, ExtentTest>();
     private static String testDetailFilepath = System.getProperty("user.dir") + fileSeperator + "src\\Reports\\TestDetails";
     private static String apiTestDetailsFilePath = testDetailFilepath + fileSeperator + "APITestDetails.txt";
-    private static String webTestDetailsFilePath = testDetailFilepath + fileSeperator + "WebTestDetails.txt";
-    private static FileWriter fileWriter;
+    public static String webTestDetailsFilePath = testDetailFilepath + fileSeperator + "WebTestDetails.txt";
+    public static FileWriter fileWriter;
 
     public static void cleanDirectory() throws IOException {
         File f2 = new File(screenshotFilepath);
@@ -149,9 +149,8 @@ public class ExtentTestReporter {
         return destination+ScreenshotName + "_" + dateName + ".png";
     }
 
-    public static void addTestCountDetailsToFile(HashMap<String,String> hmap,int tcPassed, int tcFailed) throws IOException {
-        String testType= getTestType();
-        String testDetailsPath= getTestDetailFilepath(reportFilepath,testType);
+    public static void addTestCountDetailsToFile(String filePath,String testType, HashMap<String,String> hmap,int tcPassed, int tcFailed) throws IOException {
+        String testDetailsPath= getTestDetailFilepath(filePath,testType);
         fileWriter= new FileWriter(testDetailsPath);
         int tcTotal= tcPassed+tcFailed;
         fileWriter.write("TC_Total="+tcTotal+",");
@@ -189,6 +188,10 @@ public class ExtentTestReporter {
             case "WEB":
                 System.out.println("WEB Test detail file path: "+webTestDetailsFilePath);
                 testDetailPath= webTestDetailsFilePath;
+                break;
+            case "BDDWEB":
+                System.out.println("BDD WEB Test detail file path: "+filePath+"\\TestDetails\\BDDWebTestDetails.txt");
+                testDetailPath= filePath+"\\TestDetails\\BDDWebTestDetails.txt";
                 break;
             default:
                 testDetailPath= webTestDetailsFilePath;
