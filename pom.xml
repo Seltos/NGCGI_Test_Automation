@@ -14,9 +14,9 @@
         <module>dataprovider</module>
         <module>common_utility</module>
         <module>db_utility</module>
-        <!--<module>bdd_Executor</module>-->
+        <module>bdd_Executor</module>
         <module>api_utility</module>
-        <module>TestExecutor</module>
+        <!--<module>TestExecutor</module>-->
     </modules>
     <properties>
         <testng.version>7.0.0</testng.version>
