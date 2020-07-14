@@ -63,7 +63,7 @@ public class ServiceHooks extends base {
                     Reporter.addScenarioLog(scenario+" FAILED");
                     //Call API Module in this File
                     log.info(testName +"On this test failure it started cretaing bug");
-                    Bugid=JiraReusableUtility.createIssue(testName,suiteName,"");
+                    Bugid=JiraReusableUtility.createIssue(testName,"Regression Web Test Suite","");
                     hp.put(scenario.getName(),Bugid);
                     log.info(scenario.getName() + " is Failed");
                     if(Bugid.isEmpty())
