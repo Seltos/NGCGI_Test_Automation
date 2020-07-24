@@ -10,11 +10,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
-import org.openqa.selenium.remote.*;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 import web_selenium.logging.Logger;
@@ -106,7 +105,7 @@ public class SeleniumHelper {
                     }
                     webDriver = new FirefoxDriver(firefoxOptions);
                     break;
-                case "ie":
+                /*case "ie":
                 case "internet explorer":
                     setDriverExecutable(config.getString("selenium.ieDriverExePath", null), "internet explorer");
                     caps = getCapsForBrowser("internet explorer");
@@ -119,7 +118,7 @@ public class SeleniumHelper {
                         ieOptions.addCommandSwitches((String[]) config.getList("selenium.ieDriverExeArgs").toArray());
                     }
                     webDriver = new InternetExplorerDriver(ieOptions);
-                    break;
+                    break;*/
                 case "opera":
                     setDriverExecutable(config.getString("selenium.operaDriverExePath", null), "opera");
                     caps = getCapsForBrowser("opera");
