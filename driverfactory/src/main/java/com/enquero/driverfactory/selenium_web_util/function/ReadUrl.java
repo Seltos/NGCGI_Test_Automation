@@ -1,13 +1,13 @@
 package com.enquero.driverfactory.selenium_web_util.function;
 
 import com.enquero.driverfactory.web_selenium.SeleniumTestAction;
+import org.openqa.selenium.WebDriver;
 
 import java.net.URL;
 
 public class ReadUrl extends SeleniumTestAction {
 
-    @Override
-    public void run() {
+    public void run(WebDriver driver) {
         super.run();
 
         try {
