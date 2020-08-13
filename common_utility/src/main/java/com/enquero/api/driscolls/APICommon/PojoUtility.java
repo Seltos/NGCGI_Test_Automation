@@ -1,7 +1,10 @@
 package com.enquero.api.driscolls.APICommon;
 
 //==================================
-public class PojoUtility {
+public class
+
+
+PojoUtility {
 
     public static class Project {
         private String id;

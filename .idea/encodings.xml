@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/TestExecutor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TestExecutor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api_utility/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/api_utility/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bdd_Executor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_utility/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/common_utility/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dataprovider/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dataprovider/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/db_utility/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/db_utility/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/driverfactory/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/driverfactory/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/reporter/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/reporter/src/main/resources" charset="UTF-8" />
   </component>
 </project>
