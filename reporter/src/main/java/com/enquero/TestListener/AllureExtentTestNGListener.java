@@ -20,6 +20,9 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
     public static String testName;
     public static HashMap<String,String> hmap= new HashMap<String,String>();
     public static String suiteName;
+    public static String fileSeperator = System.getProperty("file.separator");
+    public static String reportFilepath = System.getProperty("user.dir") + fileSeperator + "src\\Reports";
+    public static String testType;
 
     public static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
@@ -161,7 +164,8 @@ public class AllureExtentTestNGListener implements ITestListener, ISuiteListener
         System.out.println("failed Testcase count: "+context.getFailedTests().size());
         System.out.println("passed Testcase count: "+context.getPassedTests().size());
         try {
-            ExtentTestReporter.addTestCountDetailsToFile(hmap,context.getPassedTests().size(),context.getFailedTests().size());
+            testType= ExtentTestReporter.getTestType();
+            ExtentTestReporter.addTestCountDetailsToFile(reportFilepath,testType,hmap,context.getPassedTests().size(),context.getFailedTests().size());
         } catch (IOException e) {
             e.printStackTrace();
         }

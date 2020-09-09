@@ -1,5 +1,6 @@
 package CukesRunner;
 
+import StepDefinitions.ServiceHooks;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.testng.CucumberFeatureWrapper;
@@ -26,10 +27,7 @@ import cucumber.api.junit.Cucumber;
                 "rerun:target/cucumber-reports/rerun.txt"
         })
 public class TestRunner {
-    @AfterClass
-    public static void writeExtentReport() {
-        Reporter.loadXMLConfig("src/test/configs/extent-config.xml");
-    }
+
     private TestNGCucumberRunner testNGCucumberRunner;
 
     @BeforeClass(alwaysRun = true)
@@ -50,6 +48,10 @@ public class TestRunner {
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {
         testNGCucumberRunner.finish();
+        ServiceHooks.getTestDetails();
+        Reporter.loadXMLConfig("src/test/configs/extent-config.xml");
     }
+
+
 
 }
