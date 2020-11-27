@@ -5,7 +5,8 @@ package com.enquero.driverfactory.web;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
@@ -45,7 +46,7 @@ public WebDriver driver;
 
 	public void AssertAttributeValue(String locator,String locatorName,String attributeName,String attributeValue,String valueContains,String valueMatches,String caseInsensitive)
 	{
-		String actualValue;
+		String actualValue="";
 			switch(caseInsensitive) {
 			
 			
@@ -522,7 +523,7 @@ break;
 	 *@NOTE: It will return true If Element Not Present in the DOM else false.
 	 */
 	public boolean AssertElementNotPresent(String locator,String locatorName) {
-		int size;
+		int size=0;
 		switch(locatorName) {
 		
 		case "id":
@@ -580,6 +581,138 @@ break;
 		return false;
 	}
 	
+	/**
+	 * @param locator as the Value of the locator like xpath value or id value etc
+	 * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+	 
+	 *@NOTE: It will return true if element is not readonly else false.
+	 */
+	public boolean AssertElementNotReadOnly(String locator,String locatorName) {
+		boolean isReadOnly = false;
+		switch(locatorName) {
+		
+		case "id":
+			isReadOnly=driver.findElement(By.id(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}case "xpath":
+			isReadOnly=driver.findElement(By.xpath(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}case "classname":
+			isReadOnly=driver.findElement(By.className(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}case "tagname":
+			isReadOnly=driver.findElement(By.tagName(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}case "linktext":
+			isReadOnly=driver.findElement(By.linkText(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}
+			
+		case "partaillinktext":
+			isReadOnly=driver.findElement(By.partialLinkText(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}case "css":
+			isReadOnly=driver.findElement(By.cssSelector(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}
+		case "name":
+			isReadOnly=driver.findElement(By.name(locator)).isEnabled();
+			if(isReadOnly==false) {
+		return true;
+		}else {
+			return false;
+		}
+	}
+		return isReadOnly;
+	}
+	
+	/**
+	 * @param locator as the Value of the locator like xpath value or id value etc
+	 * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+	 	 * @param classExpected as the class of the locator.
+
+	 *@NOTE: It will return true if class matches with the locator mentioned.
+	 */
+	public boolean AssertElementHasClass(String locator,String locatorName,String classExpected) {
+		String classActual="";
+		switch(locatorName) {
+		
+		case "id":
+			classActual=driver.findElement(By.id(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {
+		return true;
+		}else {
+			return false;
+		}case "xpath":
+			classActual=driver.findElement(By.xpath(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {
+				return true;
+		}else {
+			return false;
+		}case "classname":
+			classActual=driver.findElement(By.className(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {
+		return true;
+		}else {
+			return false;
+		}case "tagname":
+			classActual=driver.findElement(By.tagName(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {
+		return true;
+		}else {
+			return false;
+		}case "linktext":
+			classActual=driver.findElement(By.linkText(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {
+		return true;
+		}else {
+			return false;
+		}
+			
+		case "partaillinktext":
+			classActual=driver.findElement(By.partialLinkText(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {		return true;
+		}else {
+			return false;
+		}case "css":
+			classActual=driver.findElement(By.cssSelector(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {
+		return true;
+		}else {
+			return false;
+		}
+		case "name":
+			classActual=driver.findElement(By.name(locator)).getAttribute("class");
+			if(classActual.equals(classExpected)) {
+		return true;
+		}else {
+			return false;
+		}
+	}
+		return false;
+	}
+
 	/**
 	 * @param locator as the Value of the locator like xpath value or id value etc
 	 * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
@@ -645,72 +778,148 @@ break;
 	}
 		return isDisabled;
 	}
-	
 	/**
 	 * @param locator as the Value of the locator like xpath value or id value etc
 	 * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
-	 	 * @param classExpected as the class of the locator.
-
-	 *@NOTE: It will return true if class matches with the locator mentioned.
+	 
+	 *@NOTE: It will return true if element is not visible else false.
 	 */
-	public boolean AssertElementHasClass(String locator,String locatorName,String classExpected) {
-		String classActual;
+	public boolean AssertElementNotVisible(String locator,String locatorName) {
+		WebDriverWait wait = new WebDriverWait(driver, 30); 
+		boolean visible=false;
 		switch(locatorName) {
 		
 		case "id":
-			classActual=driver.findElement(By.id(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id(locator))); 
+
+			if(visible==true) {
 		return true;
 		}else {
 			return false;
 		}case "xpath":
-			classActual=driver.findElement(By.xpath(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {
-				return true;
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(locator))); 
+
+			if(visible==true) {
+
+		return true;
 		}else {
 			return false;
 		}case "classname":
-			classActual=driver.findElement(By.className(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className(locator))); 
+
+			if(visible==true) {
 		return true;
 		}else {
 			return false;
 		}case "tagname":
-			classActual=driver.findElement(By.tagName(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.tagName(locator))); 
+
+			if(visible==true) {
+
 		return true;
 		}else {
 			return false;
 		}case "linktext":
-			classActual=driver.findElement(By.linkText(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id(locator))); 
+
+			if(visible==true) {
+
 		return true;
 		}else {
 			return false;
 		}
 			
 		case "partaillinktext":
-			classActual=driver.findElement(By.partialLinkText(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {		return true;
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.partialLinkText(locator))); 
+
+			if(visible==true) {
+
+		return true;
 		}else {
 			return false;
 		}case "css":
-			classActual=driver.findElement(By.cssSelector(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(locator))); 
+
+			if(visible==true) {
 		return true;
 		}else {
 			return false;
 		}
 		case "name":
-			classActual=driver.findElement(By.name(locator)).getAttribute("class");
-			if(classActual.equals(classExpected)) {
+			visible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.name(locator))); 
+
+			if(visible==true) {
+
 		return true;
 		}else {
 			return false;
 		}
 	}
-		return false;
+		return visible;
+	}
+	/**
+	 * @param locator as the Value of the locator like xpath value or id value etc
+	 * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+	 
+	 *@NOTE: It will return true if element is not selected else false.
+	 */
+	public boolean AssertElementNotSelected(String locator,String locatorName) {
+		boolean isSelected = false;
+		switch(locatorName) {
+		
+		case "id":
+			isSelected=driver.findElement(By.id(locator)).isSelected();
+			if(isSelected==false) {
+		return true;
+		}else {
+			return false;
+		}case "xpath":
+			isSelected=driver.findElement(By.xpath(locator)).isSelected();
+			if(isSelected==false) {
+		return true;
+		}else {
+			return false;
+		}case "classname":
+			isSelected=driver.findElement(By.className(locator)).isSelected();
+			if(isSelected==false) {
+		return true;
+		}else {
+			return false;
+		}case "tagname":
+			isSelected=driver.findElement(By.tagName(locator)).isSelected();
+			if(isSelected==false) {
+		return true;
+		}else {
+			return false;
+		}case "linktext":
+			isSelected=driver.findElement(By.linkText(locator)).isSelected();
+			if(isSelected==false) {
+		return true;
+		}else {
+			return false;
+		}
+			
+		case "partaillinktext":
+			isSelected=driver.findElement(By.partialLinkText(locator)).isSelected();
+			if(isSelected==false) {
+		return true;
+		}else {
+			return false;
+		}case "css":
+			isSelected=driver.findElement(By.cssSelector(locator)).isSelected();
+			if(isSelected==false) {		return true;
+		}else {
+			return false;
+		}
+		case "name":
+			isSelected=driver.findElement(By.name(locator)).isSelected();
+			if(isSelected==false) {
+		return true;
+		}else {
+			return false;
+		}
+	}
+		return isSelected;
 	}
 
-	
 }
