@@ -1,4 +1,4 @@
-package com.enquero.apiutility;
+package com.enquero.automationFramework.apiUtility;
 
 
 

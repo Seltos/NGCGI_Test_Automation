@@ -1,19 +1,26 @@
 package com.enquero.TestListener;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestNGMethod;
+import org.testng.ITestResult;
+
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.enquero.api.driscolls.APICommon.JiraReusableUtility;
 import com.enquero.driverfactory.web.WebDriverFactory;
 import com.enquero.reporter.ExtentTestReporter;
-import io.qameta.allure.Attachment;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.testng.*;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
+import io.qameta.allure.Attachment;
 
 public class AllureExtentTestNGListener implements ITestListener, ISuiteListener {
     public static ExtentTest extent;

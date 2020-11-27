@@ -1,3 +1,1 @@
-TC_Total=5,TC_Passed=3,TC_Failed=2
-TC_Name1=Create Story in Jira,Bug_Id1=AUT-851
-TC_Name2=Logout From the Application,Bug_Id2=AUT-853
+TC_Total=5,TC_Passed=5,TC_Failed=0

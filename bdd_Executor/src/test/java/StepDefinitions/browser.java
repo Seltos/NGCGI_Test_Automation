@@ -1,27 +1,25 @@
 package StepDefinitions;
 
-import BaseTest.base;
-import com.aventstack.extentreports.ExtentTest;
-import HelperUtilities.LoggerHelper;
-import org.apache.log4j.Logger;
+import java.io.IOException;
 
-import org.junit.AfterClass;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
-import pages.CreateStory;
-import pages.HomePage;
-import pages.loginpage;
 import org.openqa.selenium.JavascriptExecutor;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentTest;
 
-
-import java.io.IOException;
+import BaseTest.base;
+import HelperUtilities.LoggerHelper;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import pages.CreateStory;
+import pages.HomePage;
+import pages.loginpage;
 
 public class browser extends base {
     //  public WebDriver driver = null;

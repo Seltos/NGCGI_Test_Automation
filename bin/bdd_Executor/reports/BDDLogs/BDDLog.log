@@ -1,0 +1,22 @@
+2020-11-26 14:11:409 INFO  WebDriverManager:615 - Using chromedriver 87.0.4280.20 (since Google Chrome 87 is installed in your machine)
+2020-11-26 14:11:429 INFO  WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\GauravMahajan\.m2\repository\webdriver\chromedriver\win32\87.0.4280.20\chromedriver.exe
+2020-11-26 14:11:256 INFO  browser:37 - Driver is initialized
+2020-11-26 14:11:256 INFO  browser:38 - *******Execution Started**************
+2020-11-26 14:11:115 INFO  browser:82 - Navigated to the urlhttps://vivek-enquero.atlassian.net/
+2020-11-26 14:11:484 INFO  browser:59 - Username Enteredvivek.verma@enquero.com
+2020-11-26 14:11:627 INFO  browser:74 - Sigin into the Application
+2020-11-26 14:11:131 INFO  browser:67 - Password EnteredQazxsw12
+2020-11-26 14:11:309 INFO  browser:74 - Sigin into the Application
+2020-11-26 14:11:374 INFO  ServiceHooks:88 - Atlassian_login is pass
+2020-11-26 14:11:675 INFO  ServiceHooks:51 - Create Story in Jira is Failed
+2020-11-26 14:11:535 INFO  ServiceHooks:65 - Create Story in JiraOn this test failure it started cretaing bug
+2020-11-26 14:11:148 INFO  ServiceHooks:68 - Create Story in Jira is Failed
+2020-11-26 14:11:149 INFO  ServiceHooks:76 - Create Story in JiraOn this test failure it started created bugAUT-1181
+2020-11-26 14:11:351 INFO  ServiceHooks:51 - Create Bug in Jira is Failed
+2020-11-26 14:11:957 INFO  ServiceHooks:65 - Create Bug in JiraOn this test failure it started cretaing bug
+2020-11-26 14:11:732 INFO  ServiceHooks:68 - Create Bug in Jira is Failed
+2020-11-26 14:11:733 INFO  ServiceHooks:76 - Create Bug in JiraOn this test failure it started created bugAUT-1182
+2020-11-26 14:11:739 INFO  ServiceHooks:88 - Create Ticket on Failures is pass
+2020-11-26 14:11:454 INFO  browser:49 - Driver is Terminated
+2020-11-26 14:11:457 INFO  browser:50 - *******Execution Stopped**************
+2020-11-26 14:11:460 INFO  ServiceHooks:88 - Logout From the Application is pass
