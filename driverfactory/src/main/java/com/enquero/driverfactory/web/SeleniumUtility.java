@@ -3,12 +3,21 @@ package com.enquero.driverfactory.web;
 
 
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.NoSuchWindowException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -1838,7 +1847,6 @@ public void CloseWindow()
 	             .sendKeys(Keys.chord("w"))
 	             .keyUp(Keys.CONTROL)
 	             .perform();
-
 	    driver.switchTo().defaultContent();	
 
 
@@ -1855,114 +1863,98 @@ public void DeleteCookie(String CookieName)
 /**
  * @param locator as the Value of the locator like xpath value or id value etc
  * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
- * @param optionValue is given then it will select value from dropdown using Value
- * @param optionText is given then From DropDown,it will select value on basis of visibletext method
- * @param optionNumber is given then From DropDown,it will select value on basis of selectbyindex method
+ * @param frameName uses driver.switchTo().frame(framename);
+ * @param frameIndex is given uses driver.switchTo().frame(frameIndex);
 
- *@NOTE: Only One value from optionValue,optionText,optionNumber can be given to select the value.
+ *@NOTE: Only One value from frameName,frameIndex,locator can be given to switch to frame.
  */
-public void AssertListOption(String locator,String locatorName,String optionValue,String optionText,String optionNumber) {
-	switch(locatorName) {
-	
-	case "id":
-		if(optionValue!="") {
-		Select select=new Select(driver.findElement(By.id(locator)));
-select.selectByValue(optionValue);
+public void SwitchToFrame(String locator,String locatorName,String frameName,String frameIndex) {
+	try {
+		switch(locatorName) {
+		
+		case "id":
+			if(locator!="") {
+			driver.switchTo().frame(driver.findElement(By.id(locator)));
+}else if(frameName!="") {
+		driver.switchTo().frame(frameName);
 
-}else if(optionText!="") {
-Select select=new Select(driver.findElement(By.id(locator)));
-select.selectByVisibleText(optionText);
 
-}else if(optionNumber!="") {
-Select select=new Select(driver.findElement(By.id(locator)));
-select.selectByIndex(Integer.parseInt(optionNumber));
+}else if(frameIndex!="") {
+		driver.switchTo().frame(frameIndex);
+
 
 }
-		case "xpath":
-			if(optionValue!="") {
-				Select select=new Select(driver.findElement(By.xpath(locator)));
-	select.selectByValue(optionValue);
+			case "xpath":
+				if(locator!="") {
+					driver.switchTo().frame(driver.findElement(By.xpath(locator)));
+			}else if(frameName!="") {
+				driver.switchTo().frame(frameName);
 
-	}else if(optionText!="") {
-		Select select=new Select(driver.findElement(By.xpath(locator)));
-		select.selectByVisibleText(optionText);
 
-	}else if(optionNumber!="") {
-		Select select=new Select(driver.findElement(By.xpath(locator)));
-		select.selectByIndex(Integer.parseInt(optionNumber));
+			}else if(frameIndex!="") {
+				driver.switchTo().frame(frameIndex);
 
+
+			}case "classname":
+				if(locator!="") {
+					driver.switchTo().frame(driver.findElement(By.className(locator)));
+			}else if(frameName!="") {
+				driver.switchTo().frame(frameName);
+
+
+			}else if(frameIndex!="") {
+				driver.switchTo().frame(frameIndex);
+
+
+			}case "tagname":
+				if(locator!="") {
+					driver.switchTo().frame(driver.findElement(By.tagName(locator)));
+			}else if(frameName!="") {
+				driver.switchTo().frame(frameName);
+
+
+			}else if(frameIndex!="") {
+				driver.switchTo().frame(frameIndex);
+
+
+			}	case "partaillinktext":
+				if(locator!="") {
+					driver.switchTo().frame(driver.findElement(By.partialLinkText(locator)));
+			}else if(frameName!="") {
+				driver.switchTo().frame(frameName);
+
+
+			}else if(frameIndex!="") {
+				driver.switchTo().frame(frameIndex);
+
+
+			}case "css":
+				if(locator!="") {
+					driver.switchTo().frame(driver.findElement(By.cssSelector(locator)));
+			}else if(frameName!="") {
+				driver.switchTo().frame(frameName);
+
+
+			}else if(frameIndex!="") {
+				driver.switchTo().frame(frameIndex);
+
+
+			}	case "name":
+				if(locator!="") {
+					driver.switchTo().frame(driver.findElement(By.name(locator)));
+			}else if(frameName!="") {
+				driver.switchTo().frame(frameName);
+
+
+			}else if(frameIndex!="") {
+				driver.switchTo().frame(frameIndex);
+
+
+			}	}
+	} catch (NoSuchFrameException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
-case "classname":
-if(optionValue!="") {
-	Select select=new Select(driver.findElement(By.className(locator)));
-select.selectByValue(optionValue);
-
-}else if(optionText!="") {
-Select select=new Select(driver.findElement(By.className(locator)));
-select.selectByVisibleText(optionText);
-
-}else if(optionNumber!="") {
-Select select=new Select(driver.findElement(By.className(locator)));
-select.selectByIndex(Integer.parseInt(optionNumber));
-
-}
-case "tagname":
-		if(optionValue!="") {
-			Select select=new Select(driver.findElement(By.tagName(locator)));
-	select.selectByValue(optionValue);
-
-	}else if(optionText!="") {
-	Select select=new Select(driver.findElement(By.tagName(locator)));
-	select.selectByVisibleText(optionText);
-
-	}else if(optionNumber!="") {
-	Select select=new Select(driver.findElement(By.tagName(locator)));
-	select.selectByIndex(Integer.parseInt(optionNumber));
-
-	}	
-	case "partaillinktext":
-		if(optionValue!="") {
-			Select select=new Select(driver.findElement(By.partialLinkText(locator)));
-	select.selectByValue(optionValue);
-
-	}else if(optionText!="") {
-	Select select=new Select(driver.findElement(By.partialLinkText(locator)));
-	select.selectByVisibleText(optionText);
-
-	}else if(optionNumber!="") {
-	Select select=new Select(driver.findElement(By.partialLinkText(locator)));
-	select.selectByIndex(Integer.parseInt(optionNumber));
-
-	}	
-case "css":
-if(optionValue!="") {
-	Select select=new Select(driver.findElement(By.cssSelector(locator)));
-select.selectByValue(optionValue);
-
-}else if(optionText!="") {
-Select select=new Select(driver.findElement(By.cssSelector(locator)));
-select.selectByVisibleText(optionText);
-
-}else if(optionNumber!="") {
-Select select=new Select(driver.findElement(By.cssSelector(locator)));
-select.selectByIndex(Integer.parseInt(optionNumber));
-
-}	
-
-	case "name":
-		if(optionValue!="") {
-			Select select=new Select(driver.findElement(By.name(locator)));
-	select.selectByValue(optionValue);
-
-	}else if(optionText!="") {
-	Select select=new Select(driver.findElement(By.name(locator)));
-	select.selectByVisibleText(optionText);
-
-	}else if(optionNumber!="") {
-	Select select=new Select(driver.findElement(By.name(locator)));
-	select.selectByIndex(Integer.parseInt(optionNumber));
-
-	}}
 }
 /**
  * @param locator as the Value of the locator like xpath value or id value etc
@@ -2053,35 +2045,40 @@ public String ReadCookie(String CookieName)
  */
 public List<WebElement> GetElements(String locator,String locatorName) {
 	List<WebElement> element=new ArrayList<WebElement>();
-	switch(locatorName) {
-	
-	case "id":
-		element=driver.findElements(By.id(locator));
-		return element;
+	try {
+		switch(locatorName) {
 		
-	case "xpath":
-		element=driver.findElements(By.xpath(locator));
-		return element;
-case "classname":
-	element=driver.findElements(By.className(locator));
-	return element;
-case "tagname":
-	element=driver.findElements(By.tagName(locator));
-	return element;
-case "linktext":
-	element=driver.findElements(By.linkText(locator));
-	return element;
-		
-	case "partaillinktext":
-		element=driver.findElements(By.partialLinkText(locator));
-		return element;
-		case "css":
-			element=driver.findElements(By.cssSelector(locator));
+		case "id":
+			element=driver.findElements(By.id(locator));
 			return element;
-	case "name":
-		element=driver.findElements(By.name(locator));
+			
+		case "xpath":
+			element=driver.findElements(By.xpath(locator));
+			return element;
+case "classname":
+		element=driver.findElements(By.className(locator));
 		return element;
+case "tagname":
+		element=driver.findElements(By.tagName(locator));
+		return element;
+case "linktext":
+		element=driver.findElements(By.linkText(locator));
+		return element;
+			
+		case "partaillinktext":
+			element=driver.findElements(By.partialLinkText(locator));
+			return element;
+			case "css":
+				element=driver.findElements(By.cssSelector(locator));
+				return element;
+		case "name":
+			element=driver.findElements(By.name(locator));
+			return element;
 }
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	return element;	}
 
 
@@ -2103,35 +2100,41 @@ public String ReadCurrentUrl()
  */
 public String ReadElementAttribute(String locator,String locatorName,String property) {
 	String element="";
-	switch(locatorName) {
-	
-	case "id":
-		element=driver.findElement(By.id(locator)).getAttribute(property);
-		return element;
+
+	try {
+		switch(locatorName) {
 		
-	case "xpath":
-		element=driver.findElement(By.xpath(locator)).getAttribute(property);
-		return element;
-case "classname":
-	element=driver.findElement(By.className(locator)).getAttribute(property);
-	return element;
-case "tagname":
-	element=driver.findElement(By.tagName(locator)).getAttribute(property);
-	return element;
-case "linktext":
-	element=driver.findElement(By.linkText(locator)).getAttribute(property);
-	return element;
-		
-	case "partaillinktext":
-		element=driver.findElement(By.partialLinkText(locator)).getAttribute(property);
-		return element;
-		case "css":
-			element=driver.findElement(By.cssSelector(locator)).getAttribute(property);
+		case "id":
+			element=driver.findElement(By.id(locator)).getAttribute(property);
 			return element;
-	case "name":
-		element=driver.findElement(By.name(locator)).getAttribute(property);
+			
+		case "xpath":
+			element=driver.findElement(By.xpath(locator)).getAttribute(property);
+			return element;
+case "classname":
+		element=driver.findElement(By.className(locator)).getAttribute(property);
 		return element;
+case "tagname":
+		element=driver.findElement(By.tagName(locator)).getAttribute(property);
+		return element;
+case "linktext":
+		element=driver.findElement(By.linkText(locator)).getAttribute(property);
+		return element;
+			
+		case "partaillinktext":
+			element=driver.findElement(By.partialLinkText(locator)).getAttribute(property);
+			return element;
+			case "css":
+				element=driver.findElement(By.cssSelector(locator)).getAttribute(property);
+				return element;
+		case "name":
+			element=driver.findElement(By.name(locator)).getAttribute(property);
+			return element;
 }
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	return element;	}
 /**
  * @param locator as the Value of the locator like xpath value or id value etc
@@ -2218,6 +2221,590 @@ public String ReadPageSource()
 {
 	return driver.getPageSource();
 
+}
+/**
+ * @NOTE: Returns Page Title
+ */
+
+public String ReadPageTitle()
+{
+	return driver.getTitle();
+
+}
+/**
+ * @NOTE Switch to last window opened
+ */
+
+public void SwitchToLastWindow()
+{
+	try {
+		Set<String> set=driver.getWindowHandles();
+		List<String> list=new ArrayList<String>();
+		for(String str:set) {
+			list.add(str);
+		}
+
+		String lastElement = list.get(list.size()-1);
+driver.switchTo().window(lastElement);
+	} catch (NoSuchWindowException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+/**
+ * @NOTE Switch to default window opened
+ */
+
+public void SwitchToDefaultContent()
+{
+	
+driver.switchTo().defaultContent();
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ * @param text The text to type. Exactly one of the text or key arguments must be provided.
+ * @param key One of the values from the Selenium Keys enumeration ("ENTER", "CONTROL", "SHIFT", etc.)
+ * @param clearContent is given then From DropDown,it will select value on basis of selectbyindex method
+ * @param sendEnter Instructs the action to send the ENTER key after typing the text. Useful for submitting a form after filling its last input element. Default: false.    
+
+ *@NOTE: Only One value from text,key,optionNumber can be given to enter the value.
+ */
+public void SendKeys(String locator,String locatorName,String text,String key,boolean clearContent,boolean sendEnter) {
+	try {
+		switch(locatorName) {
+		
+		case "id":
+			if(clearContent==true&&text!="") {
+				driver.findElement(By.id(locator)).clear();
+				driver.findElement(By.id(locator)).sendKeys(text);;
+
+}else if(key!="") {
+	driver.findElement(By.id(locator)).sendKeys("Keys."+key);
+
+
+}else if(clearContent==false) {
+	driver.findElement(By.id(locator)).sendKeys(text);;
+
+
+}else if(sendEnter==true) {
+	driver.findElement(By.id(locator)).sendKeys(Keys.ENTER);
+
+}
+			case "xpath":
+				if(clearContent==true&&text!="") {
+					driver.findElement(By.xpath(locator)).clear();
+					driver.findElement(By.xpath(locator)).sendKeys(text);;
+
+	}else if(key!="") {
+		driver.findElement(By.xpath(locator)).sendKeys("Keys."+key);
+
+
+	}else if(clearContent==false) {
+		driver.findElement(By.xpath(locator)).sendKeys(text);;
+
+
+	}else if(sendEnter==true) {
+		driver.findElement(By.xpath(locator)).sendKeys(Keys.ENTER);
+
+	}case "classname":
+		if(clearContent==true&&text!="") {
+			driver.findElement(By.className(locator)).clear();
+			driver.findElement(By.className(locator)).sendKeys(text);;
+
+}else if(key!="") {
+driver.findElement(By.className(locator)).sendKeys("Keys."+key);
+
+
+}else if(clearContent==false) {
+driver.findElement(By.className(locator)).sendKeys(text);;
+
+
+}else if(sendEnter==true) {
+	driver.findElement(By.className(locator)).sendKeys(Keys.ENTER);
+
+}
+case "tagname":
+	if(clearContent==true&&text!="") {
+		driver.findElement(By.tagName(locator)).clear();
+		driver.findElement(By.tagName(locator)).sendKeys(text);;
+
+}else if(key!="") {
+driver.findElement(By.tagName(locator)).sendKeys("Keys."+key);
+
+
+}else if(clearContent==false) {
+driver.findElement(By.tagName(locator)).sendKeys(text);;
+
+
+}	else if(sendEnter==true) {
+	driver.findElement(By.tagName(locator)).sendKeys(Keys.ENTER);
+
+}	case "partaillinktext":
+	if(clearContent==true&&text!="") {
+		driver.findElement(By.partialLinkText(locator)).clear();
+		driver.findElement(By.partialLinkText(locator)).sendKeys(text);;
+
+}else if(key!="") {
+driver.findElement(By.partialLinkText(locator)).sendKeys("Keys."+key);
+
+
+}else if(clearContent==false) {
+driver.findElement(By.partialLinkText(locator)).sendKeys(text);;
+
+
+}else if(sendEnter==true) {
+	driver.findElement(By.partialLinkText(locator)).sendKeys(Keys.ENTER);
+
+}	case "css":
+	if(clearContent==true&&text!="") {
+		driver.findElement(By.cssSelector(locator)).clear();
+		driver.findElement(By.cssSelector(locator)).sendKeys(text);;
+
+}else if(key!="") {
+driver.findElement(By.cssSelector(locator)).sendKeys("Keys."+key);
+
+
+}else if(clearContent==false) {
+driver.findElement(By.cssSelector(locator)).sendKeys(text);;
+
+
+}else if(sendEnter==true) {
+	driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
+
+}	
+
+		case "name":
+			if(clearContent==true&&text!="") {
+				driver.findElement(By.name(locator)).clear();
+				driver.findElement(By.name(locator)).sendKeys(text);;
+
+		}else if(key!="") {
+		driver.findElement(By.name(locator)).sendKeys("Keys."+key);
+
+
+		}else if(clearContent==false) {
+		driver.findElement(By.name(locator)).sendKeys(text);;
+
+
+		}else if(sendEnter==true) {
+			driver.findElement(By.name(locator)).sendKeys(Keys.ENTER);
+
+		}	
+			
+		
+		
+		
+		
+		}
+
+	} catch (NumberFormatException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}catch (Throwable e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ * @param optionValue is given then it will select value from dropdown using Value
+ * @param optionText is given then From DropDown,it will select value on basis of visibletext method
+ * @param optionNumber is given then From DropDown,it will select value on basis of selectbyindex method
+
+ *@NOTE: Only One value from optionValue,optionText,optionNumber can be given to select the value.
+ */
+public void AssertListOption(String locator,String locatorName,String optionValue,String optionText,String optionNumber) {
+	try {
+		switch(locatorName) {
+		
+		case "id":
+			if(optionValue!="") {
+			Select select=new Select(driver.findElement(By.id(locator)));
+select.selectByValue(optionValue);
+
+}else if(optionText!="") {
+Select select=new Select(driver.findElement(By.id(locator)));
+select.selectByVisibleText(optionText);
+
+}else if(optionNumber!="") {
+Select select=new Select(driver.findElement(By.id(locator)));
+select.selectByIndex(Integer.parseInt(optionNumber));
+
+}
+			case "xpath":
+				if(optionValue!="") {
+					Select select=new Select(driver.findElement(By.xpath(locator)));
+		select.selectByValue(optionValue);
+
+		}else if(optionText!="") {
+			Select select=new Select(driver.findElement(By.xpath(locator)));
+			select.selectByVisibleText(optionText);
+
+		}else if(optionNumber!="") {
+			Select select=new Select(driver.findElement(By.xpath(locator)));
+			select.selectByIndex(Integer.parseInt(optionNumber));
+
+		}
+case "classname":
+if(optionValue!="") {
+		Select select=new Select(driver.findElement(By.className(locator)));
+select.selectByValue(optionValue);
+
+}else if(optionText!="") {
+Select select=new Select(driver.findElement(By.className(locator)));
+select.selectByVisibleText(optionText);
+
+}else if(optionNumber!="") {
+Select select=new Select(driver.findElement(By.className(locator)));
+select.selectByIndex(Integer.parseInt(optionNumber));
+
+}
+case "tagname":
+			if(optionValue!="") {
+				Select select=new Select(driver.findElement(By.tagName(locator)));
+		select.selectByValue(optionValue);
+
+		}else if(optionText!="") {
+		Select select=new Select(driver.findElement(By.tagName(locator)));
+		select.selectByVisibleText(optionText);
+
+		}else if(optionNumber!="") {
+		Select select=new Select(driver.findElement(By.tagName(locator)));
+		select.selectByIndex(Integer.parseInt(optionNumber));
+
+		}	
+		case "partaillinktext":
+			if(optionValue!="") {
+				Select select=new Select(driver.findElement(By.partialLinkText(locator)));
+		select.selectByValue(optionValue);
+
+		}else if(optionText!="") {
+		Select select=new Select(driver.findElement(By.partialLinkText(locator)));
+		select.selectByVisibleText(optionText);
+
+		}else if(optionNumber!="") {
+		Select select=new Select(driver.findElement(By.partialLinkText(locator)));
+		select.selectByIndex(Integer.parseInt(optionNumber));
+
+		}	
+case "css":
+if(optionValue!="") {
+		Select select=new Select(driver.findElement(By.cssSelector(locator)));
+select.selectByValue(optionValue);
+
+}else if(optionText!="") {
+Select select=new Select(driver.findElement(By.cssSelector(locator)));
+select.selectByVisibleText(optionText);
+
+}else if(optionNumber!="") {
+Select select=new Select(driver.findElement(By.cssSelector(locator)));
+select.selectByIndex(Integer.parseInt(optionNumber));
+
+}	
+
+		case "name":
+			if(optionValue!="") {
+				Select select=new Select(driver.findElement(By.name(locator)));
+		select.selectByValue(optionValue);
+
+		}else if(optionText!="") {
+		Select select=new Select(driver.findElement(By.name(locator)));
+		select.selectByVisibleText(optionText);
+
+		}else if(optionNumber!="") {
+		Select select=new Select(driver.findElement(By.name(locator)));
+		select.selectByIndex(Integer.parseInt(optionNumber));
+
+		}}
+	} catch (NumberFormatException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}catch (NoSuchElementException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+/**
+ * @param windowNumber The number of the window to switch the focus to. Windows are numbered starting from 0, in the order they were opened.
+ * @NOTE Switch to  window opened based on order
+ */
+
+public void SwitchToWindow(int windowNumber)
+{
+	try {
+		Set<String> set=driver.getWindowHandles();
+		List<String> list=new ArrayList<String>();
+		for(String str:set) {
+			list.add(str);
+		}
+
+		String windString = list.get(windowNumber);
+driver.switchTo().window(windString);
+	} catch (NoSuchWindowException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+/**
+ * @param result Screenshot Name
+ * @NOTE Takes Current Window Screenshot
+ */
+
+public void TakeScreenshot(String result) throws IOException
+{
+    File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"//target//test//"+result+"screenshot.png"));
+
+}
+
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ 
+ *@NOTE: It will click on the element
+ */
+public void ActionsClick(String locator,String locatorName) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.click(driver.findElement(By.id(locator)));
+		case "xpath":
+			actions.click(driver.findElement(By.xpath(locator)));
+		case "classname":
+			actions.click(driver.findElement(By.className(locator)));
+		case "tagname":
+			actions.click(driver.findElement(By.tagName(locator)));
+		case "linktext":
+			actions.click(driver.findElement(By.linkText(locator)));
+		
+		
+	case "partaillinktext":
+		actions.click(driver.findElement(By.partialLinkText(locator)));
+		case "css":
+			actions.click(driver.findElement(By.cssSelector(locator)));
+	case "name":
+		actions.click(driver.findElement(By.name(locator)));
+		
+}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ 
+ *@NOTE: It will click and hold  on the element
+ */
+public void ActionsClickAndHold(String locator,String locatorName) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.clickAndHold(driver.findElement(By.id(locator)));
+		case "xpath":
+			actions.clickAndHold(driver.findElement(By.xpath(locator)));
+		case "classname":
+			actions.clickAndHold(driver.findElement(By.className(locator)));
+		case "tagname":
+			actions.clickAndHold(driver.findElement(By.tagName(locator)));
+		case "linktext":
+			actions.clickAndHold(driver.findElement(By.linkText(locator)));
+		
+		
+	case "partaillinktext":
+		actions.clickAndHold(driver.findElement(By.partialLinkText(locator)));
+		case "css":
+			actions.clickAndHold(driver.findElement(By.cssSelector(locator)));
+	case "name":
+		actions.clickAndHold(driver.findElement(By.name(locator)));
+		
+}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ 
+ *@NOTE: It will rightclick or contextclick  on the element
+ */
+public void ActionsContextClick(String locator,String locatorName) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.contextClick(driver.findElement(By.id(locator)));
+		case "xpath":
+			actions.contextClick(driver.findElement(By.xpath(locator)));
+		case "classname":
+			actions.contextClick(driver.findElement(By.className(locator)));
+		case "tagname":
+			actions.contextClick(driver.findElement(By.tagName(locator)));
+		case "linktext":
+			actions.contextClick(driver.findElement(By.linkText(locator)));
+		
+		
+	case "partaillinktext":
+		actions.contextClick(driver.findElement(By.partialLinkText(locator)));
+		case "css":
+			actions.contextClick(driver.findElement(By.cssSelector(locator)));
+	case "name":
+		actions.contextClick(driver.findElement(By.name(locator)));
+		
+}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ 
+ *@NOTE: It will doubleclick  on the element
+ */
+public void ActionsDoubleClick(String locator,String locatorName) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.doubleClick(driver.findElement(By.id(locator)));
+		case "xpath":
+			actions.doubleClick(driver.findElement(By.xpath(locator)));
+		case "classname":
+			actions.doubleClick(driver.findElement(By.className(locator)));
+		case "tagname":
+			actions.doubleClick(driver.findElement(By.tagName(locator)));
+		case "linktext":
+			actions.doubleClick(driver.findElement(By.linkText(locator)));
+		
+		
+	case "partaillinktext":
+		actions.doubleClick(driver.findElement(By.partialLinkText(locator)));
+		case "css":
+			actions.doubleClick(driver.findElement(By.cssSelector(locator)));
+	case "name":
+		actions.doubleClick(driver.findElement(By.name(locator)));
+		
+}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+  * @param locatorTarget as the Value of the locator like xpath value or id value
+ * @param locatorTargetName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+
+ *@NOTE: It will drag and drop the element using Actions Class
+ */
+public void ActionsDragAndDrop(String locator,String locatorName,String locatorTarget,String locatorTargetName) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.dragAndDrop(driver.findElement(By.id(locator)),driver.findElement(By.id(locatorTarget)));
+		case "xpath":
+			actions.dragAndDrop(driver.findElement(By.xpath(locator)),driver.findElement(By.xpath(locatorTarget)));
+		case "classname":
+			actions.dragAndDrop(driver.findElement(By.className(locator)),driver.findElement(By.className(locatorTarget)));
+		case "tagname":
+			actions.dragAndDrop(driver.findElement(By.tagName(locator)),driver.findElement(By.tagName(locatorTarget)));
+		case "linktext":
+			actions.dragAndDrop(driver.findElement(By.linkText(locator)),driver.findElement(By.linkText(locatorTarget)));
+		
+		
+	case "partaillinktext":
+		actions.dragAndDrop(driver.findElement(By.partialLinkText(locator)),driver.findElement(By.partialLinkText(locatorTarget)));
+		case "css":
+			actions.dragAndDrop(driver.findElement(By.cssSelector(locator)),driver.findElement(By.cssSelector(locatorTarget)));
+	case "name":
+		actions.dragAndDrop(driver.findElement(By.name(locator)),driver.findElement(By.name(locatorTarget)));
+		
+}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+  * @param xOffset as The horizontal move offset. Default: 0.
+ * @param yOffset as The vertical move offset. Default: 0.
+ *@NOTE: It will drag and drop the element using x-axis and y-axis
+ */
+public void ActionsDragAndDropBy(String locator,String locatorName,int xOffset,int yOffset) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.dragAndDropBy(driver.findElement(By.id(locator)), xOffset, yOffset);
+		case "xpath":
+			actions.dragAndDropBy(driver.findElement(By.xpath(locator)), xOffset, yOffset);
+		case "classname":
+			actions.dragAndDropBy(driver.findElement(By.className(locator)), xOffset, yOffset);
+		case "tagname":
+			actions.dragAndDropBy(driver.findElement(By.tagName(locator)), xOffset, yOffset);
+		case "linktext":
+			actions.dragAndDropBy(driver.findElement(By.linkText(locator)), xOffset, yOffset);
+		
+		
+	case "partaillinktext":
+		actions.dragAndDropBy(driver.findElement(By.partialLinkText(locator)), xOffset, yOffset);
+		case "css":
+			actions.dragAndDropBy(driver.findElement(By.cssSelector(locator)), xOffset, yOffset);
+	case "name":
+		actions.dragAndDropBy(driver.findElement(By.name(locator)), xOffset, yOffset);
+		
+}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+  * @param key as The key to press. Must be one of the values from the Selenium Keys enumeration ("ENTER", "CONTROL", "SHIFT", etc.). Exactly one of the key or the char arguments must be provided.
+ * @param charString as The character corresponding to the key to be pressed.
+ *@NOTE: At one time you can either pass value in key or charString.
+ */
+public void ActionsKeyDown(String locator,String locatorName,String key,String charString) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		if(charString!="") {
+		actions.keyDown(driver.findElement(By.id(locator)),charString);
+		}else if(key!="") {
+			actions.keyDown("Keys."+key);
+		}
+		case "xpath":
+			if(charString!="") {
+				actions.keyDown(driver.findElement(By.xpath(locator)),charString);
+				}else if(key!="") {
+					actions.keyDown("Keys."+key);
+				}		case "classname":
+					if(charString!="") {
+						actions.keyDown(driver.findElement(By.className(locator)),charString);
+						}else if(key!="") {
+							actions.keyDown("Keys."+key);
+						}		case "tagname":
+							if(charString!="") {
+								actions.keyDown(driver.findElement(By.tagName(locator)),charString);
+								}else if(key!="") {
+									actions.keyDown("Keys."+key);
+								}		case "linktext":
+									if(charString!="") {
+										actions.keyDown(driver.findElement(By.linkText(locator)),charString);
+										}else if(key!="") {
+											actions.keyDown("Keys."+key);
+										}		
+		
+	case "partaillinktext":
+		if(charString!="") {
+			actions.keyDown(driver.findElement(By.partialLinkText(locator)),charString);
+			}else if(key!="") {
+				actions.keyDown("Keys."+key);
+			}		case "css":
+				if(charString!="") {
+					actions.keyDown(driver.findElement(By.cssSelector(locator)),charString);
+					}else if(key!="") {
+						actions.keyDown("Keys."+key);
+					}	case "name":
+						if(charString!="") {
+							actions.keyDown(driver.findElement(By.name(locator)),charString);
+							}else if(key!="") {
+								actions.keyDown("Keys."+key);
+							}		
+}
 }
 
 }
