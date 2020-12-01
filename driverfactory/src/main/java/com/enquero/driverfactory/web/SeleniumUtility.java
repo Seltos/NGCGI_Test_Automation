@@ -2268,129 +2268,117 @@ driver.switchTo().defaultContent();
  * @param clearContent is given then From DropDown,it will select value on basis of selectbyindex method
  * @param sendEnter Instructs the action to send the ENTER key after typing the text. Useful for submitting a form after filling its last input element. Default: false.    
 
- *@NOTE: Only One value from text,key,optionNumber can be given to enter the value.
+ *@NOTE: Only One value from text,key can be given to enter the value.
  */
 public void SendKeys(String locator,String locatorName,String text,String key,boolean clearContent,boolean sendEnter) {
 	try {
 		switch(locatorName) {
 		
 		case "id":
-			if(clearContent==true&&text!="") {
+			if(clearContent==true&&text!=""&&sendEnter==true) {
 				driver.findElement(By.id(locator)).clear();
-				driver.findElement(By.id(locator)).sendKeys(text);;
+				driver.findElement(By.id(locator)).sendKeys(text);
+				driver.findElement(By.id(locator)).sendKeys(Keys.ENTER);
+
+				
 
 }else if(key!="") {
 	driver.findElement(By.id(locator)).sendKeys("Keys."+key);
 
 
-}else if(clearContent==false) {
-	driver.findElement(By.id(locator)).sendKeys(text);;
+}else if(clearContent==false&&text!=""&&sendEnter==false) {
+	driver.findElement(By.id(locator)).sendKeys(text);
 
-
-}else if(sendEnter==true) {
-	driver.findElement(By.id(locator)).sendKeys(Keys.ENTER);
 
 }
 			case "xpath":
-				if(clearContent==true&&text!="") {
+				if(clearContent==true&&text!=""&&sendEnter==true) {
 					driver.findElement(By.xpath(locator)).clear();
-					driver.findElement(By.xpath(locator)).sendKeys(text);;
+					driver.findElement(By.xpath(locator)).sendKeys(text);
+					driver.findElement(By.xpath(locator)).sendKeys(Keys.ENTER);
 
 	}else if(key!="") {
 		driver.findElement(By.xpath(locator)).sendKeys("Keys."+key);
 
 
-	}else if(clearContent==false) {
-		driver.findElement(By.xpath(locator)).sendKeys(text);;
+	}else if(clearContent==false&&text!=""&&sendEnter==false) {
+		driver.findElement(By.xpath(locator)).sendKeys(text);
 
-
-	}else if(sendEnter==true) {
-		driver.findElement(By.xpath(locator)).sendKeys(Keys.ENTER);
 
 	}case "classname":
-		if(clearContent==true&&text!="") {
+		if(clearContent==true&&text!=""&&sendEnter==true) {
 			driver.findElement(By.className(locator)).clear();
-			driver.findElement(By.className(locator)).sendKeys(text);;
+			driver.findElement(By.className(locator)).sendKeys(text);
+			driver.findElement(By.className(locator)).sendKeys(Keys.ENTER);
 
 }else if(key!="") {
 driver.findElement(By.className(locator)).sendKeys("Keys."+key);
 
 
-}else if(clearContent==false) {
-driver.findElement(By.className(locator)).sendKeys(text);;
+}else if(clearContent==false&&text!=""&&sendEnter==false) {
+driver.findElement(By.className(locator)).sendKeys(text);
 
-
-}else if(sendEnter==true) {
-	driver.findElement(By.className(locator)).sendKeys(Keys.ENTER);
 
 }
 case "tagname":
-	if(clearContent==true&&text!="") {
+	if(clearContent==true&&text!=""&&sendEnter==true) {
 		driver.findElement(By.tagName(locator)).clear();
-		driver.findElement(By.tagName(locator)).sendKeys(text);;
+		driver.findElement(By.tagName(locator)).sendKeys(text);
+		driver.findElement(By.tagName(locator)).sendKeys(Keys.ENTER);
 
 }else if(key!="") {
 driver.findElement(By.tagName(locator)).sendKeys("Keys."+key);
 
 
-}else if(clearContent==false) {
+}else if(clearContent==false&&text!=""&&sendEnter==false) {
 driver.findElement(By.tagName(locator)).sendKeys(text);;
 
 
-}	else if(sendEnter==true) {
-	driver.findElement(By.tagName(locator)).sendKeys(Keys.ENTER);
-
 }	case "partaillinktext":
-	if(clearContent==true&&text!="") {
+	if(clearContent==true&&text!=""&&sendEnter==true) {
 		driver.findElement(By.partialLinkText(locator)).clear();
-		driver.findElement(By.partialLinkText(locator)).sendKeys(text);;
+		driver.findElement(By.partialLinkText(locator)).sendKeys(text);
+		driver.findElement(By.partialLinkText(locator)).sendKeys(Keys.ENTER);
 
 }else if(key!="") {
 driver.findElement(By.partialLinkText(locator)).sendKeys("Keys."+key);
 
 
-}else if(clearContent==false) {
-driver.findElement(By.partialLinkText(locator)).sendKeys(text);;
+}else if(clearContent==false&&text!=""&&sendEnter==false) {
+driver.findElement(By.partialLinkText(locator)).sendKeys(text);
 
 
-}else if(sendEnter==true) {
-	driver.findElement(By.partialLinkText(locator)).sendKeys(Keys.ENTER);
-
-}	case "css":
-	if(clearContent==true&&text!="") {
+}case "css":
+	if(clearContent==true&&text!=""&&sendEnter==true) {
 		driver.findElement(By.cssSelector(locator)).clear();
-		driver.findElement(By.cssSelector(locator)).sendKeys(text);;
+		driver.findElement(By.cssSelector(locator)).sendKeys(text);
+		driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
 
 }else if(key!="") {
 driver.findElement(By.cssSelector(locator)).sendKeys("Keys."+key);
 
 
-}else if(clearContent==false) {
-driver.findElement(By.cssSelector(locator)).sendKeys(text);;
+}else if(clearContent==false&&text!=""&&sendEnter==false) {
+driver.findElement(By.cssSelector(locator)).sendKeys(text);
 
 
-}else if(sendEnter==true) {
-	driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
-
-}	
+}
 
 		case "name":
-			if(clearContent==true&&text!="") {
+			if(clearContent==true&&text!=""&&sendEnter==true) {
 				driver.findElement(By.name(locator)).clear();
-				driver.findElement(By.name(locator)).sendKeys(text);;
+				driver.findElement(By.name(locator)).sendKeys(text);
+				driver.findElement(By.name(locator)).sendKeys(Keys.ENTER);
 
 		}else if(key!="") {
 		driver.findElement(By.name(locator)).sendKeys("Keys."+key);
 
 
-		}else if(clearContent==false) {
-		driver.findElement(By.name(locator)).sendKeys(text);;
+		}else if(clearContent==false&&text!=""&&sendEnter==false) {
+		driver.findElement(By.name(locator)).sendKeys(text);
 
 
-		}else if(sendEnter==true) {
-			driver.findElement(By.name(locator)).sendKeys(Keys.ENTER);
-
-		}	
+		}
 			
 		
 		
@@ -2752,11 +2740,11 @@ public void ActionsDragAndDropBy(String locator,String locatorName,int xOffset,i
 /**
  * @param locator as the Value of the locator like xpath value or id value etc
  * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
-  * @param key as The key to press. Must be one of the values from the Selenium Keys enumeration ("ENTER", "CONTROL", "SHIFT", etc.). Exactly one of the key or the char arguments must be provided.
+  * @param key as The key to press.it should be Uppercase and Must be one of the values from the Selenium Keys enumeration ("ENTER", "CONTROL", "SHIFT", etc.). Exactly one of the key or the char arguments must be provided.
  * @param charString as The character corresponding to the key to be pressed.
  *@NOTE: At one time you can either pass value in key or charString.
  */
-public void ActionsKeyDown(String locator,String locatorName,String key,String charString) {
+public void ActionsKeyDown(String locator,String locatorName,String key,String charString) throws IllegalArgumentException {
 	Actions actions=new Actions(driver);
 	switch(locatorName) {
 	
