@@ -2795,4 +2795,170 @@ public void ActionsKeyDown(String locator,String locatorName,String key,String c
 }
 }
 
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+  * @param key as The key to press.it should be Uppercase and Must be one of the values from the Selenium Keys enumeration ("ENTER", "CONTROL", "SHIFT", etc.). Exactly one of the key or the char arguments must be provided.
+ * @param charString as The character corresponding to the key to be pressed.
+ *@NOTE: At one time you can either pass value in key or charString.
+ */
+public void ActionsKeyUp(String locator,String locatorName,String key,String charString) throws IllegalArgumentException {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		if(charString!="") {
+		actions.keyUp(driver.findElement(By.id(locator)),charString);
+		}else if(key!="") {
+			actions.keyUp("Keys."+key);
+		}
+		case "xpath":
+			if(charString!="") {
+				actions.keyUp(driver.findElement(By.xpath(locator)),charString);
+				}else if(key!="") {
+					actions.keyUp("Keys."+key);
+				}		case "classname":
+					if(charString!="") {
+						actions.keyUp(driver.findElement(By.className(locator)),charString);
+						}else if(key!="") {
+							actions.keyUp("Keys."+key);
+						}		case "tagname":
+							if(charString!="") {
+								actions.keyUp(driver.findElement(By.tagName(locator)),charString);
+								}else if(key!="") {
+									actions.keyUp("Keys."+key);
+								}		case "linktext":
+									if(charString!="") {
+										actions.keyUp(driver.findElement(By.linkText(locator)),charString);
+										}else if(key!="") {
+											actions.keyUp("Keys."+key);
+										}		
+		
+	case "partaillinktext":
+		if(charString!="") {
+			actions.keyUp(driver.findElement(By.partialLinkText(locator)),charString);
+			}else if(key!="") {
+				actions.keyUp("Keys."+key);
+			}		case "css":
+				if(charString!="") {
+					actions.keyUp(driver.findElement(By.cssSelector(locator)),charString);
+					}else if(key!="") {
+						actions.keyUp("Keys."+key);
+					}	case "name":
+						if(charString!="") {
+							actions.keyUp(driver.findElement(By.name(locator)),charString);
+							}else if(key!="") {
+								actions.keyUp("Keys."+key);
+							}		
+}
+}
+/**
+ * 
+  * @param xOffset as The horizontal move offset. Default: 0.
+ * @param yOffset as The vertical move offset. Default: 0.
+ *@NOTE: Moves the mouse from its current position (or 0,0) by the given offset. If the coordinates provided are outside the viewport (the mouse will end up outside the browser window) then the viewport is scrolled to match.
+ */
+public void ActionsMoveByOffset(int xOffset,int yOffset) {
+	Actions actions=new Actions(driver);
+	actions.moveByOffset(xOffset, yOffset);
+
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ 
+ *@NOTE: It will release the element using Actions Class
+ */
+public void ActionsRelease(String locator,String locatorName) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.release(driver.findElement(By.id(locator)));
+		case "xpath":
+			actions.release(driver.findElement(By.xpath(locator)));
+		case "classname":
+			actions.release(driver.findElement(By.className(locator)));
+		case "tagname":
+			actions.release(driver.findElement(By.tagName(locator)));
+		case "linktext":
+			actions.release(driver.findElement(By.linkText(locator)));
+		
+		
+	case "partaillinktext":
+		actions.release(driver.findElement(By.partialLinkText(locator)));
+		case "css":
+			actions.release(driver.findElement(By.cssSelector(locator)));
+	case "name":
+		actions.release(driver.findElement(By.name(locator)));
+		
+}
+}
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ 
+ *@NOTE: It will pause using Actions Class
+ */
+public void ActionsPause(long durationMs) {
+	Actions actions=new Actions(driver);
+	actions.pause(durationMs);
+}
+/**
+ 
+ *@NOTE: It will perform using Actions Class
+ */
+public void ActionsPerform() {
+	Actions actions=new Actions(driver);
+	actions.perform();
+}
+
+/**
+ * @param locator as the Value of the locator like xpath value or id value etc
+ * @param locatorName as the name of the locator.e.g:"xpath" or "id" or "linktext" or "tagname" or "partiallinktext" or "name" or "classname".
+ 
+ *@NOTE: It will move to the element using Actions Class
+ */
+public void ActionsMoveTo(String locator,String locatorName) {
+	Actions actions=new Actions(driver);
+	switch(locatorName) {
+	
+	case "id":
+		actions.moveToElement(driver.findElement(By.id(locator)));
+		case "xpath":
+			actions.moveToElement(driver.findElement(By.xpath(locator)));
+		case "classname":
+			actions.moveToElement(driver.findElement(By.className(locator)));
+		case "tagname":
+			actions.moveToElement(driver.findElement(By.tagName(locator)));
+		case "linktext":
+			actions.moveToElement(driver.findElement(By.linkText(locator)));
+		
+		
+	case "partaillinktext":
+		actions.moveToElement(driver.findElement(By.partialLinkText(locator)));
+		case "css":
+			actions.moveToElement(driver.findElement(By.cssSelector(locator)));
+	case "name":
+		actions.moveToElement(driver.findElement(By.name(locator)));
+		
+}
+}
+/**
+ * @param text The text to type. Exactly one of the text or key arguments must be provided.
+ * @param key One of the values from the Selenium Keys enumeration ("ENTER", "CONTROL", "SHIFT", etc.)
+ 
+ *@NOTE: Only One value from text,key can be given to enter the value.
+ */
+public void ActionsSendKeys(String text,String key) {
+	Actions actions=new Actions(driver);
+	if(text!="") {
+		actions.sendKeys(text);
+}else if(key!="") {
+actions.sendKeys("Keys."+key);
+
+
+}
+}	
+
 }
