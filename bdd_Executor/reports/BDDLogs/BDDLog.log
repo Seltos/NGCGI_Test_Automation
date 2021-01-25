@@ -1,10 +1,18 @@
-2020-06-18 16:06:137 INFO  WebDriverManager:615 - Using chromedriver 83.0.4103.39 (since Google Chrome 83 is installed in your machine)
-2020-06-18 16:06:160 INFO  WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\SwatiChetty\.m2\repository\webdriver\chromedriver\win32\83.0.4103.39\chromedriver.exe
-2020-06-18 16:06:25 INFO  browser:36 - Driver is initialized
-2020-06-18 16:06:26 INFO  browser:37 - *******Execution Started**************
-2020-06-18 16:06:425 INFO  browser:82 - Navigated to the urlhttps://vivek-enquero.atlassian.net/
-2020-06-18 16:06:994 INFO  browser:59 - Username Enteredvivek.verma@enquero.com
-2020-06-18 16:06:210 INFO  browser:74 - Sigin into the Application
-2020-06-18 16:06:30 INFO  browser:67 - Password EnteredQazxsw12
-2020-06-18 16:06:157 INFO  browser:74 - Sigin into the Application
-2020-06-18 16:06:181 INFO  ServiceHooks:88 - Atlassian_login is pass
+2020-11-26 18:11:473 INFO  WebDriverManager:615 - Using chromedriver 87.0.4280.20 (since Google Chrome 87 is installed in your machine)
+2020-11-26 18:11:486 INFO  WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\GauravMahajan\.m2\repository\webdriver\chromedriver\win32\87.0.4280.20\chromedriver.exe
+2020-11-26 18:11:974 INFO  browser:35 - Driver is initialized
+2020-11-26 18:11:974 INFO  browser:36 - *******Execution Started**************
+2020-11-26 18:11:947 INFO  browser:80 - Navigated to the urlhttps://vivek-enquero.atlassian.net/
+2020-11-26 18:11:181 INFO  browser:57 - Username Enteredvivek.verma@enquero.com
+2020-11-26 18:11:264 INFO  browser:72 - Sigin into the Application
+2020-11-26 18:11:807 INFO  browser:65 - Password EnteredQazxsw12
+2020-11-26 18:11:914 INFO  browser:72 - Sigin into the Application
+2020-11-26 18:11:934 INFO  ServiceHooks:88 - Atlassian_login is pass
+2020-11-26 18:11:230 INFO  browser:204 - Adding SummmaryNew customer
+2020-11-26 18:11:787 INFO  ServiceHooks:88 - Create Story in Jira is pass
+2020-11-26 18:11:745 INFO  browser:204 - Adding SummmaryCreate an Instance of Partner
+2020-11-26 18:11:341 INFO  ServiceHooks:88 - Create Bug in Jira is pass
+2020-11-26 18:11:347 INFO  ServiceHooks:88 - Create Ticket on Failures is pass
+2020-11-26 18:11:79 INFO  browser:47 - Driver is Terminated
+2020-11-26 18:11:81 INFO  browser:48 - *******Execution Stopped**************
+2020-11-26 18:11:82 INFO  ServiceHooks:88 - Logout From the Application is pass

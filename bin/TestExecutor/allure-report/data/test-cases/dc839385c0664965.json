@@ -1,0 +1,97 @@
+{
+  "uid" : "dc839385c0664965",
+  "name" : "testLoginFacebook",
+  "fullName" : "com.enquero.webapp.driscolls.tests.Testloginjson.testLoginFacebook",
+  "historyId" : "ca3138032dc9844bf65ca647adc742db",
+  "time" : {
+    "start" : 1589463666909,
+    "stop" : 1589463670163,
+    "duration" : 3254
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1589463621336,
+      "stop" : 1589463630196,
+      "duration" : 8860
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1589463670166,
+      "stop" : 1589463670790,
+      "duration" : 624
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.enquero.webapp.driscolls.tests.Testloginjson"
+  }, {
+    "name" : "testClass",
+    "value" : "com.enquero.webapp.driscolls.tests.Testloginjson"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginFacebook"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.enquero.webapp.driscolls.tests.Testloginjson"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-IOVO5AK9"
+  }, {
+    "name" : "thread",
+    "value" : "10268@LAPTOP-IOVO5AK9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "com.enquero.datafactory.DataFactory.TestDataFactory@150fc7a7"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dc839385c0664965.json",
+  "parameterValues" : [ "com.enquero.datafactory.DataFactory.TestDataFactory@150fc7a7" ]
+}
