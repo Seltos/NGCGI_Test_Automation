@@ -9,9 +9,5 @@ public class Endpoints {
     public static final String DELETE_EMPLOYEE = "/delete/";
     public static final String UPDATE_EMPLOYEE = "/update/";
     public static final int STATUSCODE = 200;
-    public static final String USERNAME = "vivek.verma@enquero.com";
-    public static final String PASSWORD = "m69JDrTMceDPsP44d0hQ58BF";
-
-
 
 }
